@@ -1,0 +1,149 @@
+/* START NAVBAR */
+nav {
+  width: 70%;
+  margin: 0 auto;
+}
+
+nav .menu {
+  height: 60px;
+  background: #36363f;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* center the li */
+}
+
+nav .menu li {
+  display: inline-block; 
+}
+
+nav .menu li a {
+  font-family: arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 60px;
+  vertical-align: middle;
+  padding: 20px;
+  transition: all 0.5s;
+}
+
+nav .menu li:hover > a {
+  background: #25252B;
+  transition: all 0.5s;
+  color: #ccc;
+}
+
+/* sub-menus */
+
+.menu li > ul {
+  position: absolute;
+  margin-left: -2.21%;
+  display: none;
+  animation: slide 0.1s linear 0s normal;
+}
+
+.menu li > ul > li {
+  display: block;
+  background: #25252b;
+  border-top: 1px solid #25252f;
+}
+
+.menu li > ul > li > a {
+  display: block;
+  padding: 5px 12px;
+}
+
+.menu li:hover > ul {
+  display: block;
+  animation: slide 0.1s linear 0s normal;
+}
+
+.menu li:hover > ul li:hover > a {
+  background: #18181F;
+}
+
+
+
+@keyframes slide {
+  from  { transform: rotateY(35deg) skewX(10deg); }
+  to     { transform: rotateY(0deg) skewX(0deg); }
+}
+
+
+
+
+
+
+body:after {
+            content: "";
+            background-image:url('../img/bg.jpg');
+            background-repeat:repeat;
+            background-position:center;
+            background-attachment:fixed;
+            background-size:cover;
+            opacity: 0.7;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+}
+
+
+
+.column{
+  border-radius: 10px;
+}
+
+.inner{
+  padding: 40px 20px 40px;
+  text-align:center;
+  color:white;
+}
+
+.outer{
+  background:#006BA6;
+  height: 300px;
+  width: 400px;
+}
+
+.c1 {
+    margin-right: 40px;
+    margin-left: 0px;
+}
+
+.c2 {
+    margin-left: 40px;
+    margin-right: 0px;
+}
+
+.home {
+
+  /* Make it a flex container */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; 
+  
+  /* Align the bootstrap's container vertically */
+    -webkit-box-align : center;
+  -webkit-align-items : center;
+       -moz-box-align : center;
+       -ms-flex-align : center;
+          align-items : center;
+  
+  
+  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+     hence the bootstrap's container won't be aligned to the center anymore.
+  
+     Therefore, we should use the following declarations to get it centered again */
+         -webkit-box-pack : center;
+            -moz-box-pack : center;
+            -ms-flex-pack : center;
+  -webkit-justify-content : center;
+          justify-content : center;
+
+}

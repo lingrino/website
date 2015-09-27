@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+      <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+
+    <script>
+var map;
+
+function initialize() {
+  var mapOptions = {
+    zoom: 14
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+  // Try HTML5 geolocation
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = new google.maps.LatLng(position.coords.latitude,
+                                       position.coords.longitude);
+
+      /*var infowindow = new google.maps.InfoWindow({
+        map: map,
+        position: pos,
+        content: 'Current Location'
+      });*/
+
+        var blah_kaiser = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading">Current Location</h3>'+
+      '</div>';
+
+  var infowindow3 = new google.maps.InfoWindow({
+      content: blah_kaiser
+  });
+
+  var marker2 = new google.maps.Marker({
+      position: pos,
+      map: map,
+      title: 'Current Location',
+      icon: "http://maps.google.com/mapfiles/ms/icons/blue.png"
+  });
+
+  google.maps.event.addListener(marker2, 'click', function() {
+    infowindow3.open(map,marker2);
+  });
+
+      map.setCenter(pos);
+    }, function() {
+      handleNoGeolocation(true);
+    });
+  } else {
+    // Browser doesn't support Geolocation
+    handleNoGeolocation(false);
+  }
+
+
+
+
+
+var nw_kaiser = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading">Northwest D.C. Medical Office Bldg</h3>'+
+      'Call: (202) 346-3000</div>';
+
+  var infowindow1 = new google.maps.InfoWindow({
+      content: nw_kaiser
+  });
+
+  var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(38.905439, -77.050399),
+      map: map,
+      title: 'Northwest D.C. Medical Office Bldg'
+  });
+
+  /*google.maps.event.addListener(marker, 'click', function() {
+    infowindow1.open(map,marker);
+  });*/
+  infowindow1.open(map,marker);
+
+
+
+  var sw_kaiser = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading">Kaiser Permanente Capitol Hill Medical Center</h3>'+
+      'Call: (202) 419-6200</div>';
+
+  var infowindow2 = new google.maps.InfoWindow({
+      content: sw_kaiser
+  });
+
+  var marker1 = new google.maps.Marker({
+      position: new google.maps.LatLng(38.899527, -77.004008),
+      map: map,
+      title: 'Kaiser Permanente Capitol Hill Medical Center'
+  });
+
+  /*google.maps.event.addListener(marker1, 'click', function() {
+    infowindow2.open(map,marker1);
+  });*/
+  infowindow2.open(map,marker1);
+
+}
+
+function handleNoGeolocation(errorFlag) {
+  if (errorFlag) {
+    var content = 'Error: The Geolocation service failed.';
+  } else {
+    var content = 'Error: Your browser doesn\'t support geolocation.';
+  }
+
+  var options = {
+    map: map,
+    position: new google.maps.LatLng(60, 105),
+    content: content
+  };
+
+  var infowindow = new google.maps.InfoWindow(options);
+  map.setCenter(options.position);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+<nav>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="login_symptom.html">Symptom Tracker</a></li>
+    <li><a href="login_history.html">Medical History</a></li>
+    <li><a href="#">About us</a></li>
+    <li><a href="destination.html">Uber</a></li>
+  </ul>
+</nav>
+
+
+
+    <div id="map-canvas"></div>
+  </body>
+</html>
