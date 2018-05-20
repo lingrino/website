@@ -11,7 +11,7 @@ jobs:
       - checkout
       - run:
           name: Install awscli
-          command: pip install --user awscli
+          command: pip install --no-warn-script-location --user awscli
       - run:
           name: Upload the new site to S3
           command: /home/circleci/.local/bin/aws --region us-east-2 s3 sync . s3://srlingren.com-20180520011541205400000001
