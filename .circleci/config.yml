@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6
+    parallelism: 4
+    branches:
+      only:
+        - master
+    steps:
+      - checkout
+      - run:
+          name: Install awscli
+          command: pip install awscli
+      - run:
+          name: Upload the new site to S3
+          command: aws --region us-east-2 s3 sync . s3://srlingren.com-20180520011541205400000001
+      - run:
+          name: Invalidate the cloudfront cache
+          command: aws cloudfront create-invalidation --distribution-id E26KI76826AIUA --paths "/*"
