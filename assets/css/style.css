@@ -1,5 +1,5 @@
 body {
-  background-image: url('../images/wall.jpg');
+  background-image: url('../images/wall.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -14,7 +14,7 @@ body {
   font-size: 20px !important;
 }
 
-.churner-logo {
+.vaku-logo {
   padding: 6px;
 }
 
