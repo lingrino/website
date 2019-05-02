@@ -10,5 +10,5 @@ publish:
       - master
   script:
     - pip install awscli
-    - aws --region us-east-2 s3 sync . s3://srlingren.com-20180520011541205400000001
-    - aws cloudfront create-invalidation --distribution-id E26KI76826AIUA --paths "/*"
+    - aws --region "${S3_REGION}"" s3 sync . "s3://${S3_BUCKET_NAME}"
+    - aws cloudfront create-invalidation --distribution-id "${CF_DISTRIBUTION_ID}" --paths "/*"
