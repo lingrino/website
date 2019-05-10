@@ -1,3 +1,3 @@
 # My Personal Website
 
-https://srlingren.com
+https://lingrino.com
