@@ -1,4 +1,4 @@
-image: python:3-alpine
+image: registry.gitlab.com/lingrino/docker/ci:latest
 
 stages:
   - publish
@@ -9,6 +9,5 @@ publish:
     refs:
       - master
   script:
-    - pip install awscli
     - aws --region "${S3_REGION}" s3 sync . "s3://${S3_BUCKET_NAME}" --sse AES256
     - aws cloudfront create-invalidation --distribution-id "${CF_DISTRIBUTION_ID}" --paths "/*"
