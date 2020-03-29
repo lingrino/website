@@ -1,3 +1,3 @@
 # My Personal Website
 
-https://lingrino.com
+<https://lingrino.com>
