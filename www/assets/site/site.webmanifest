@@ -1,0 +1,20 @@
+{
+    "name": "lingrino",
+    "short_name": "lingrino",
+    "description": "Sean Lingren's Personal Website",
+    "display": "standalone",
+    "theme_color": "#ececec",
+    "background_color": "#222831",
+    "icons": [
+        {
+            "src": "assets/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

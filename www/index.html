@@ -2,235 +2,189 @@
 <html lang="en">
 
   <head>
-    <title>Sean Lingren</title>
-    <meta name="Description" content="Sean Lingren's Personal Wesbite">
+    <!--
+      HTML Head Tags
+      Docs: https://github.com/joshbuchea/HEAD
+    -->
+
+    <!-- Rendering Info -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Headers -->
-    <!-- https://infosec.mozilla.org/guidelines/web_security -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; font-src 'self' https://fonts.googleapis.com;
-    img-src 'self'; style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com https://cdnjs.cloudflare.com">
-    <meta http-equiv="Strict-Transport-Security" content="max-age=63072000; includeSubDomains; preload">
+    <!--
+      Security Headers
+      These are set in HTML because the alternative for this static site is a cloudfront lambda
+      Docs: https://infosec.mozilla.org/guidelines/web_security
+
+      Content Security Policy
+      Docs: https://infosec.mozilla.org/guidelines/web_security#content-security-policy
+      Generator: https://report-uri.com/home/generate
+      Evaluator: https://csp-evaluator.withgoogle.com/
+    -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'none';
+        style-src 'self';
+        img-src 'self';
+        font-src 'self';
+        upgrade-insecure-requests;
+        block-all-mixed-content;
+        require-trusted-types-for 'script';">
+
+    <!--
+      Strict Transport Security
+      Docs: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+      Docs: https://infosec.mozilla.org/guidelines/web_security#http-strict-transport-security
+    -->
+    <meta http-equiv="Strict-Transport-Security" content="
+      max-age=63072000;
+      includeSubDomains;
+      preload;">
+
+    <!--
+      X-XSS-Protection
+      Docs: https://infosec.mozilla.org/guidelines/web_security#x-xss-protection
+    -->
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+
+    <!--
+      X-Content-Type-Options
+      Docs: https://infosec.mozilla.org/guidelines/web_security#x-content-type-options
+    -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
 
-    <link rel="shortcut icon" href="assets/images/favicon.webp" type="image/webp" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Metadata -->
+    <meta name="referrer" content="no-referrer">
+    <link rel="manifest" href="assets/site/site.webmanifest">
+
+    <!-- Titles -->
+    <title>Sean Lingren</title>
+    <meta name="description" content="Sean Lingren's Personal Wesbite">
+
+    <!--
+      Icons
+      Docs: https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/
+      Generated: https://favicon.io/favicon-generator/?t=SL&ff=Ubuntu+Mono&fs=90&fc=%23ececec&b=rounded&bc=%23222831
+    -->
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/favicon-192x192.png">
+    <link rel="apple-touch-startup-image" href="assets/icons/favicon-192x192.png">
+
+    <!--
+      Colors
+      Docs: https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/
+    -->
+    <meta name="theme-color" content="#222831">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/water/dark.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
   <body>
-    <div class="container">
-      <div class="row top-row">
-        <div class="col s3"></div>
-        <div class="col s12 m6">
-          <main>
-            <div class="row">
-              <div class="card z-depth-5">
-                <div class="card-content blue-grey lighten-5">
-                  <span class="card-title name-title">Sean Lingren -
-                    Infrastructure Engineer</span>
-                  <p>
-                    Infrastructure Engineer interested in building high quality
-                    tools at high quality organizations. Working at GitHub.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </main>
-          <main>
-            <div class="row">
-              <div class="card horizontal blue-grey darken-1 z-depth-3">
-                <div class="card-image">
-                  <a href="https://github.com/lingrino/vaku" target="_blank" rel="noopener"
-                    aria-label="Vaku GitHub Link">
-                    <picture>
-                      <source type="image/webp" srcset="assets/images/vaku-logo.webp">
-                      <source type="image/png" srcset="assets/images/vaku-logo.png">
-                      <img src="assets/images/vaku-logo.png" height="135px" width="135px" alt="Vaku Logo" class="vaku-logo blue-grey
-                      darken-3">
-                    </picture>
-                  </a>
-                </div>
-                <div class="card-stacked">
-                  <div class="card-content white-text">
-                    <span class="card-title">Vaku</span>
-                    <p>A powerful CLI and Go API for Vault</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="card horizontal blue-grey darken-1 z-depth-3">
-                <div class="card-image">
-                  <a href="https://github.com/avantoss/vault-infra" target="_blank" rel="noopener" aria-label="Vault Infra GitHub
-                  Link">
-                    <picture>
-                      <source type="image/webp" srcset="assets/images/vault-logo.webp">
-                      <source type="image/png" srcset="assets/images/vault-logo.png">
-                      <img src="assets/images/vault-logo.png" height="135px" width="135px" alt="Vault Infra Logo">
-                    </picture>
-                  </a>
-                </div>
-                <div class="card-stacked">
-                  <div class="card-content white-text">
-                    <span class="card-title">Vault Infra</span>
-                    <p>Deploy Vault securely</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="card horizontal blue-grey darken-1 z-depth-3">
-                <div class="card-image">
-                  <a href="https://github.com/lingrino/glen" target="_blank" rel="noopener"
-                    aria-label="Glen GitHub Link">
-                    <picture>
-                      <source type="image/webp" srcset="assets/images/glen-logo.webp">
-                      <source type="image/png" srcset="assets/images/glen-logo.png">
-                      <img src="assets/images/glen-logo.png" height="135px" width="135px" alt="Glen Logo"
-                        class="blue-grey darken-3">
-                    </picture>
-                  </a>
-                </div>
-                <div class="card-stacked">
-                  <div class="card-content white-text">
-                    <span class="card-title">Glen</span>
-                    <p>Export GitLab variables locally</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="card horizontal blue-grey darken-1 z-depth-3">
-                <div class="card-image">
-                  <a href="https://github.com/lingrino/infra-personal" target="_blank" rel="noopener" aria-label="Infra Personal
-                  GitHub Link">
-                    <picture>
-                      <source type="image/webp" srcset="assets/images/terraform-logo.webp">
-                      <source type="image/png" srcset="assets/images/terraform-logo.png">
-                      <img src="assets/images/terraform-logo.png" height="135px" width="135px" alt="Terraform Logo"
-                        class="blue-grey
-                      darken-3">
-                    </picture>
-                  </a>
-                </div>
-                <div class="card-stacked">
-                  <div class="card-content white-text">
-                    <span class="card-title">Infra Personal</span>
-                    <p>My personal infrastructure, all in code</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="card horizontal blue-grey darken-1 z-depth-3">
-                <div class="card-image">
-                  <a href="https://github.com/lingrino/dotfiles" target="_blank" rel="noopener"
-                    aria-label="Dotfiles GitHub Link">
-                    <picture>
-                      <source type="image/webp" srcset="assets/images/dotfiles-logo.webp">
-                      <source type="image/png" srcset="assets/images/dotfiles-logo.png">
-                      <img src="assets/images/dotfiles-logo.png" height="135px" width="135px" alt="Dotfiles Logo" class="blue-grey
-                      darken-3">
-                    </picture>
-                  </a>
-                </div>
-                <div class="card-stacked">
-                  <div class="card-content white-text">
-                    <span class="card-title">Dotfiles</span>
-                    <p>Maintain your local environment with Ansible</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="card horizontal blue-grey darken-1 z-depth-3">
-                <div class="card-image">
-                  <a href="https://github.com/lingrino" target="_blank" rel="noopener"
-                    aria-label="Personal GitHub Link">
-                    <picture>
-                      <source type="image/webp" srcset="assets/images/github-logo.webp">
-                      <source type="image/png" srcset="assets/images/github-logo.png">
-                      <img src="assets/images/github-logo.png" height="135px" width="135px" alt="GitHub Logo">
-                    </picture>
-                  </a>
-                </div>
-                <div class="card-stacked">
-                  <div class="card-content white-text">
-                    <span class="card-title">GitHub</span>
-                    <p>See my projects</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="card horizontal blue-grey darken-1 z-depth-3">
-                <div class="card-image">
-                  <a href="https://www.linkedin.com/in/lingrino" target="_blank" rel="noopener"
-                    aria-label="Personal LinkedIn Link">
-                    <picture>
-                      <source type="image/webp" srcset="assets/images/linkedin-logo.webp">
-                      <source type="image/png" srcset="assets/images/linkedin-logo.png">
-                      <img src="assets/images/linkedin-logo.png" height="135px" width="135px" alt="LinkedIn Logo">
-                    </picture>
-                  </a>
-                </div>
-                <div class="card-stacked">
-                  <div class="card-content white-text">
-                    <span class="card-title">LinkedIn</span>
-                    <p>Connect with me</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col s12 m4">
-                <div class="card horizontal grey lighten-5 z-depth-3">
-                  <div class="card-stacked">
-                    <div class="card-content white-text">
-                      <p class="center-align">
-                        <a href="https://keybase.io/lingrino" target="_blank" rel="noopener"
-                          class="blue-text text-accent-4">
-                          Keybase
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col s12 m4">
-                <div class="card horizontal grey lighten-5 z-depth-3">
-                  <div class="card-stacked">
-                    <div class="card-content white-text">
-                      <p class="center-align">
-                        <a href="assets/security/SeanLingrenPGP.asc" target="_blank" rel="noopener" class="blue-text
-                        text-accent-4">
-                          PGP
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col s12 m4">
-                <div class="card horizontal grey lighten-5 z-depth-3">
-                  <div class="card-stacked">
-                    <div class="card-content white-text">
-                      <p class="center-align">
-                        <a href="assets/security/SeanLingrenCA.pem" target="_blank" rel="noopener" class="blue-text
-                        text-accent-4">
-                          CA
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </main>
+    <div>
+      <h1>Sean Lingren</h1>
+      <p>
+        I'm an SRE at GitHub working on improving the ownership and reliability of our services. I
+        also contribute to open source and have a few projects of my own.
+      </p>
+      <a href="https://github.com/lingrino" target="_blank" rel="noopener"
+        aria-label="Lingrino GitHub Profile">GitHub</a>
+      &nbsp•&nbsp
+      <a href="https://www.linkedin.com/in/lingrino" target="_blank" rel="noopener"
+        aria-label="Sean Lingren LinkedIn Link">LinkedIn</a>
+      &nbsp•&nbsp
+      <a href="assets/security/SeanLingrenPGP.asc" target="_blank" rel="noopener"
+        aria-label="Sean Lingren PGP Key">PGP</a>
+    </div>
+
+    <div>
+      <div>
+        <h2>Fault</h2>
+        <p>
+          <code>go-fault</code> is a fault injection library that I wrote and open sourced while
+          on the Chaos Engineering team at GitHub. Fault is written in Go and provides a fault
+          injection interface through standard <code>net/http</code> middleware.
+        </p>
+        <a href="https://github.com/github/go-fault" target="_blank" rel="noopener"
+          aria-label="Fault GitHub Link">GitHub</a>
+      </div>
+
+      <div>
+        <h2>Vaku</h2>
+        <div>
+          <p>
+            <code>vaku</code> is a project written in Go that provides an API and CLI for advanced
+            functions on <a href="https://www.vaultproject.io/" target="_blank" rel="noopener"
+              aria-label="Vault Website">Vault</a> k/v secret engines. Use <code>vaku</code> to
+            copy, move, and search Vault folders, even between <code>v1</code> and <code>v2</code>
+            backends.
+          </p>
+          <a href="https://vaku.dev/" target="_blank" rel="noopener"
+            aria-label="Vaku Website">Website</a>
+          &nbsp•&nbsp
+          <a href="https://github.com/lingrino/vaku" target="_blank" rel="noopener"
+            aria-label="Vaku GitHub Link">GitHub</a>
         </div>
+      </div>
+
+      <div>
+        <h2>Vault Infra</h2>
+        <div>
+          <p>
+            <code>Vault Infra</code> is a project I wrote and open sourced at <a
+              href=https://www.amount.com/ target="_blank" rel="noopener"
+              aria-label="Amount Website">Amount</a> that provides a secure <a
+              href="https://www.vaultproject.io/" target="_blank" rel="noopener"
+              aria-label="Vault Website">Vault</a> deployment in AWS using Packer and Terraform.
+          </p>
+          <a href="https://github.com/avantoss/vault-infra" target="_blank" rel="noopener"
+            aria-label="Vault Infra GitHub Link">GitHub</a>
+        </div>
+      </div>
+
+      <div>
+        <h2>Infra Personal</h2>
+        <div>
+          <p>
+            <code>Infra Personal</code> is an open source repo that contains 100% of my personal
+            infrastructure, including the resources to run this website. It securely manages my home
+            network and multi-account AWS setup. This project is sponsored by AWS Open Source.
+          </p>
+          <a href="https://github.com/lingrino/infra-personal" target="_blank" rel="noopener"
+            aria-label="Infra Personal GitHub Link">GitHub</a>
+        </div>
+      </div>
+
+      <div>
+        <h2>Dotfiles</h2>
+        <p>
+          My <code>dotfiles</code> continuously configure all of my local machines using Ansible.
+          Every system settting, package install, and shell alias is defined in this repo and
+          applied with a simple <code>dot</code> command that I run daily.
+        </p>
+        <a href="https://github.com/lingrino/dotfiles" target="_blank" rel="noopener"
+          aria-label="Infra Personal GitHub Link">GitHub</a>
+      </div>
+
+      <div>
+        <h2>Cami</h2>
+        <p>
+          <code>cami</code> is a simple CLI/API for removing unused AMIs from an AWS account.
+        </p>
+        <a href="https://github.com/lingrino/cami" target="_blank" rel="noopener"
+          aria-label="Cami GitHub Link">GitHub</a>
+      </div>
+
+      <div>
+        <h2>Glen</h2>
+        <p>
+          <code>glen</code> is a simple CLI that reads your GitLab CI variables and exports them
+          locally.
+        </p>
+        <a href="https://github.com/lingrino/glen" target="_blank" rel="noopener"
+          aria-label="Glen GitHub Link">GitHub</a>
       </div>
     </div>
   </body>
