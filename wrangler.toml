@@ -1,0 +1,29 @@
+name = "site-personal"
+
+type       = "webpack"
+account_id = "27a6422e1d64fbe9408ab703847ecdab"
+
+[site]
+bucket      = "./www"
+entry-point = "workers-site"
+
+[env.lingrino-dev]
+zone_id = "cbbb8f4186a3b6bf4dcf72cd980b9195"
+routes  = [
+  "lingrino.dev/*",
+  "www.lingrino.dev/*"
+]
+
+[env.lingrino-com]
+zone_id = "4941d5c79fffeda234d17dbb0d0add16"
+routes  = [
+  "lingrino.com/*",
+  "www.lingrino.com/*"
+]
+
+[env.srlingren-com]
+zone_id = "36cdd2ad4f88527184c36e236e4d99e3"
+routes  = [
+  "srlingren.com/*",
+  "www.srlingren.com/*"
+]
