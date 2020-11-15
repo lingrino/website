@@ -8,3 +8,5 @@ plugins:
     enabled: true
   shellcheck:
     enabled: true
+exclude_patterns:
+  - "workers-site/**"
