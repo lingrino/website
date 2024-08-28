@@ -55,151 +55,45 @@
 
     <!-- Metadata -->
     <meta name="referrer" content="no-referrer">
-    <link rel="manifest" href="assets/site/site.webmanifest">
 
     <!-- Titles -->
     <title>Sean Lingren</title>
-    <meta name="description" content="Sean Lingren's Personal Wesbite">
-
-    <!--
-      Icons
-      Docs: https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/
-      Generated: https://favicon.io/favicon-generator/?t=SL&ff=Ubuntu+Mono&fs=90&fc=%23ececec&b=rounded&bc=%23222831
-    -->
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/favicon-192x192.png">
-    <link rel="apple-touch-startup-image" href="assets/icons/favicon-192x192.png">
-
-    <!--
-      Colors
-      Docs: https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/
-    -->
-    <meta name="theme-color" content="#222831">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="Sean Lingren's Personal Website">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/water/dark.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="assets/fonts/BerkeleyMonoVariable-Regular.woff2">
   </head>
 
   <body>
-    <div>
-      <h1>Sean Lingren</h1>
-      <p>
-        I am the Director of Infrastructure, Security, and Developer Experience at
-        <a href="https://www.loom.com/" target="_blank" rel="noopener" aria-label="loom.com Link">Loom</a>
-        building tools to scale our platform. I also contribute to open source and have a few projects of my own.
-      </p>
-      <a href="https://github.com/lingrino" target="_blank" rel="noopener"
-        aria-label="Lingrino GitHub Profile">GitHub</a>
-      &nbsp•&nbsp
-      <a href="https://www.linkedin.com/in/lingrino" target="_blank" rel="noopener"
-        aria-label="Sean Lingren LinkedIn Link">LinkedIn</a>
-      &nbsp•&nbsp
-      <a href="assets/security/SeanLingrenPGP.asc" target="_blank" rel="noopener"
-        aria-label="Sean Lingren PGP Key">PGP</a>
-    </div>
-
-    <div>
+    <div class="main">
       <div>
-        <h2>Uptime</h2>
-        <p>
-          <code>uptime</code> is a simple static site that helps you calculate what duration of
-          downtime is permitted for a given availability percentage.
-        </p>
-          <a href="https://uptime.how/" target="_blank" rel="noopener"
-            aria-label="Uptime Website">Website</a>
-          &nbsp•&nbsp
-          <a href="https://github.com/lingrino/uptime" target="_blank" rel="noopener"
-            aria-label="Uptime GitHub Link">GitHub</a>
-      </div>
+        <h1>Sean Lingren</h1>
 
-      <div>
-        <h2>Fault</h2>
-        <p>
-          <code>go-fault</code> is a fault injection library that I wrote and open sourced while
-          on the Chaos Engineering team at GitHub. Fault is written in Go and provides a fault
-          injection interface through standard <code>net/http</code> middleware.
-        </p>
-        <a href="https://github.com/github/go-fault" target="_blank" rel="noopener"
-          aria-label="Fault GitHub Link">GitHub</a>
-      </div>
+        <h2>Work</h2>
+        <p>I lead <a href="https://www.loom.com/" target="_blank" rel="noopener" aria-label="loom.com Link">Loom's</a> Infrastructure, Developer Experience, and Security teams. Loom was <a href="https://www.loom.com/" target="_blank" rel="noopener" aria-label="Atlassian Acquires Loom Blog Post">acquired by Atlassian</a> in October 2023.</p>
 
-      <div>
-        <h2>Vaku</h2>
-        <div>
-          <p>
-            <code>vaku</code> is a project written in Go that provides an API and CLI for advanced
-            functions on <a href="https://www.vaultproject.io/" target="_blank" rel="noopener"
-              aria-label="Vault Website">Vault</a> k/v secret engines. Use <code>vaku</code> to
-            copy, move, and search Vault folders, even between <code>v1</code> and <code>v2</code>
-            backends.
-          </p>
-          <a href="https://vaku.dev/" target="_blank" rel="noopener"
-            aria-label="Vaku Website">Website</a>
-          &nbsp•&nbsp
-          <a href="https://github.com/lingrino/vaku" target="_blank" rel="noopener"
-            aria-label="Vaku GitHub Link">GitHub</a>
-        </div>
-      </div>
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="https://github.com/lingrino/vaku" target="_blank" rel="noopener" aria-label="Vaku GitHub Repo">vaku</a>: A CLI and go library wrapping a vault client and providing useful k/v functions like searching, copying, and deleting folders.</li>
+          <li><a href="https://uptime.how/" target="_blank" rel="noopener" aria-label="Uptime Website">uptime</a>: Website for converting availability percentages into downtime durations.</li>
+          <li><a href="https://github.com/lingrino/go-fault" target="_blank" rel="noopener" aria-label="Go Fault GitHub Repo">go-fault</a>: Fault injection library in go on top of standard net/http middleware. Written at GitHub.</li>
+          <li><a href="https://github.com/loomhq/lock-exec" target="_blank" rel="noopener" aria-label="Lock Exec GitHub Repo">lock-exec</a>: A CLI and go library for long-lived distributed locking in DynamoDB. Written at Loom.</li>
+          <li><a href="https://github.com/loomhq/datadog-exporter" target="_blank" rel="noopener" aria-label="Datadog Exporter GitHub Repo">datadog-exporter</a>: A CLI for exporting datadog dashboard, monitor, and metric json definitions into a local backup. Written at Loom.</li>
+          <li><a href="https://github.com/lingrino/glen" target="_blank" rel="noopener" aria-label="Glen GitHub Repo">glen</a>: A CLI to export your GitLab environment variables locally.</li>
+          <li><a href="https://github.com/avantoss/vault-infra" target="_blank" rel="noopener" aria-label="Vault Infra GitHub Repo">vault-infra</a>: Terraform and Packer to bootstrap a secure Vault cluster. Written at Avant.</li>
+          <li><a href="https://github.com/lingrino/infra-personal" target="_blank" rel="noopener" aria-label="Infra Personal GitHub Repo">infra-personal</a>: My personal infrastructure automated with Terraform and other tools.</li>
+          <li><a href="https://github.com/lingrino/dotfiles" target="_blank" rel="noopener" aria-label="Dotfiles GitHub Repo">dotfiles</a>: My dotfiles of course.</li>
+        </ul>
 
-      <div>
-        <h2>Vault Infra</h2>
-        <div>
-          <p>
-            <code>Vault Infra</code> is a project I wrote and open sourced at <a
-              href=https://www.amount.com/ target="_blank" rel="noopener"
-              aria-label="Amount Website">Amount</a> that provides a secure <a
-              href="https://www.vaultproject.io/" target="_blank" rel="noopener"
-              aria-label="Vault Website">Vault</a> deployment in AWS using Packer and Terraform.
-          </p>
-          <a href="https://github.com/avantoss/vault-infra" target="_blank" rel="noopener"
-            aria-label="Vault Infra GitHub Link">GitHub</a>
-        </div>
-      </div>
-
-      <div>
-        <h2>Infra Personal</h2>
-        <div>
-          <p>
-            <code>Infra Personal</code> is an open source repo that contains 100% of my personal
-            infrastructure, including the resources to run this website. It securely manages my home
-            network and multi-account AWS setup. This project is sponsored by AWS Open Source.
-          </p>
-          <a href="https://github.com/lingrino/infra-personal" target="_blank" rel="noopener"
-            aria-label="Infra Personal GitHub Link">GitHub</a>
-        </div>
-      </div>
-
-      <div>
-        <h2>Dotfiles</h2>
-        <p>
-          My <code>dotfiles</code> continuously configure all of my local machines using Ansible.
-          Every system settting, package install, and shell alias is defined in this repo and
-          applied with a simple <code>dot</code> command that I run daily.
-        </p>
-        <a href="https://github.com/lingrino/dotfiles" target="_blank" rel="noopener"
-          aria-label="Infra Personal GitHub Link">GitHub</a>
-      </div>
-
-      <div>
-        <h2>Cami</h2>
-        <p>
-          <code>cami</code> is a simple CLI/API for removing unused AMIs from an AWS account.
-        </p>
-        <a href="https://github.com/lingrino/cami" target="_blank" rel="noopener"
-          aria-label="Cami GitHub Link">GitHub</a>
-      </div>
-
-      <div>
-        <h2>Glen</h2>
-        <p>
-          <code>glen</code> is a simple CLI that reads your GitLab CI variables and exports them
-          locally.
-        </p>
-        <a href="https://github.com/lingrino/glen" target="_blank" rel="noopener"
-          aria-label="Glen GitHub Link">GitHub</a>
+        <h2>Contact</h2>
+        <ul>
+          <li>sean@lingren.com</li>
+          <li><a href="https://github.com/lingrino" target="_blank" rel="noopener" aria-label="Lingrino GitHub Profile">github.com/lingrino</a></li>
+          <li><a href="https://www.linkedin.com/in/lingrino/" target="_blank" rel="noopener" aria-label="Sean Lingren LinkedIn Profile">linkedin.com/in/lingrino</a></li>
+        </ul>
       </div>
     </div>
   </body>

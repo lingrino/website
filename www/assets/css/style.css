@@ -1,3 +1,15 @@
 body {
   font-size: 1.25rem;
 }
+
+.main {
+  margin: auto;
+  padding: 30px 10px 10px;
+  max-width: 650px;
+  font-family: "Berkeley Mono", monospace;
+}
+
+li {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
