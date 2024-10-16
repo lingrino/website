@@ -18,7 +18,7 @@
       max-age=63072000;
       includeSubDomains;
       preload;">
-          
+
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="no-referrer">
@@ -33,6 +33,8 @@
     <div class="main">
       <div>
         <h1>Journal</h1>
+
+        <p>generated at {{ .Time }}</p>
 
         <ul>
           <li><a href="https://lingrino.com" target="_blank" rel="noopener" aria-label="Journal Entry 1">https://lingrino.com</a></li>

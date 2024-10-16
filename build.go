@@ -1,39 +1,78 @@
 package main
 
 import (
-	"fmt"
 	"html/template"
+	"io"
+	"io/fs"
+	"log/slog"
 	"os"
+	"path/filepath"
+	"strings"
+	"time"
 )
 
-func parse(path string) {
-	t, err := template.ParseFiles(path)
+type data struct {
+	Time time.Time
+}
+
+func logError(err error) {
 	if err != nil {
-		fmt.Println(err)
-		return
+		slog.Error(err.Error())
+	}
+}
+
+func copyTemplate(path string) error {
+	tmpl, err := template.ParseFiles(path)
+	if err != nil {
+		return err
 	}
 
-	f, err := os.Create(path)
+	file, err := os.Create(filepath.Join("public", strings.TrimSuffix(strings.TrimPrefix(path, "site"), ".tmpl")))
 	if err != nil {
-		fmt.Println("create file: ", err)
-		return
+		return err
 	}
+	defer file.Close()
 
-	// A sample config
-	config := map[string]string{
-		"textColor":      "#abcdef",
-		"linkColorHover": "#ffaacc",
-	}
+	return tmpl.Execute(file, data{Time: time.Now()})
+}
 
-	err = t.Execute(f, config)
+func copyFile(path string) error {
+	src, err := os.Open(path)
 	if err != nil {
-		fmt.Println("execute: ", err)
-		return
+		return err
 	}
-	f.Close()
+	defer src.Close()
+
+	dst, err := os.Create(filepath.Join("public", strings.TrimPrefix(path, "site")))
+	if err != nil {
+		return err
+	}
+	defer dst.Close()
+
+	_, err = io.Copy(dst, src)
+
+	return err
 }
 
 func main() {
-	os.Mkdir("public", 0755)
-	// parse("t.html")
+	err := os.MkdirAll("public", 0755)
+	logError(err)
+
+	err = filepath.WalkDir("site", func(path string, d fs.DirEntry, err error) error {
+		if err != nil {
+			return err
+		}
+
+		if d.IsDir() {
+			return os.MkdirAll(filepath.Join("public", strings.TrimPrefix(path, "site")), 0755)
+		}
+
+		if strings.HasSuffix(path, ".tmpl") {
+			return copyTemplate(path)
+		}
+
+		return copyFile(path)
+	})
+
+	logError(err)
 }
