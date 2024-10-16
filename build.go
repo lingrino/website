@@ -8,11 +8,10 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
-	"time"
 )
 
-type data struct {
-	Time time.Time
+type Templater struct {
+	Data any
 }
 
 func logError(err error) {
@@ -21,7 +20,7 @@ func logError(err error) {
 	}
 }
 
-func copyTemplate(path string) error {
+func (t *Templater) copyTemplate(path string) error {
 	tmpl, err := template.ParseFiles(path)
 	if err != nil {
 		return err
@@ -33,7 +32,7 @@ func copyTemplate(path string) error {
 	}
 	defer file.Close()
 
-	return tmpl.Execute(file, data{Time: time.Now()})
+	return tmpl.Execute(file, t.Data)
 }
 
 func copyFile(path string) error {
@@ -55,6 +54,8 @@ func copyFile(path string) error {
 }
 
 func main() {
+	templater := Templater{Data: map[string]any{"journal": []string{}}}
+
 	err := os.MkdirAll("public", 0755)
 	logError(err)
 
@@ -68,7 +69,7 @@ func main() {
 		}
 
 		if strings.HasSuffix(path, ".tmpl") {
-			return copyTemplate(path)
+			return templater.copyTemplate(path)
 		}
 
 		return copyFile(path)
