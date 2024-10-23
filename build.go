@@ -10,17 +10,13 @@ import (
 	"strings"
 )
 
-type Templater struct {
-	Data any
-}
-
 func logError(err error) {
 	if err != nil {
 		slog.Error(err.Error())
 	}
 }
 
-func (t *Templater) copyTemplate(path string) error {
+func (t *templater) copyTemplate(path string) error {
 	tmpl, err := template.ParseFiles(path)
 	if err != nil {
 		return err
@@ -32,7 +28,7 @@ func (t *Templater) copyTemplate(path string) error {
 	}
 	defer file.Close()
 
-	return tmpl.Execute(file, t.Data)
+	return tmpl.Execute(file, t.journalEntries)
 }
 
 func copyFile(path string) error {
@@ -54,7 +50,7 @@ func copyFile(path string) error {
 }
 
 func main() {
-	templater := Templater{Data: map[string]any{"journal": []string{}}}
+	templater := templater{journalEntries: []journal{}}
 
 	err := os.MkdirAll("public", 0755)
 	logError(err)
