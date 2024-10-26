@@ -6,8 +6,16 @@ on:
         required: true
 
 jobs:
-  print-entry:
+  add-entry:
     runs-on: ubuntu-latest
     steps:
-      - name: print journal entry
-        run: echo "${{ inputs.entry }}"
+      - name: checkout repo
+        uses: actions/checkout@v4
+      - name: append entry
+        run: echo "${{ inputs.entry }}" >> journal/journal.txt
+      - name: commit entry
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git commit -am "automated: add journal entry"
+          git push
