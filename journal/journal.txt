@@ -853,4 +853,4 @@
 2024-10-23 https://www.allthingsdistributed.com/2024/08/continuous-reinvention-a-brief-history-of-block-storage-at-aws.html
 2024-10-23 https://nadia.xyz/jhanas
 2024-10-24 https://www.youtube.com/watch?v=E9yZ0JusME4
-2024-10-23 https://www.notion.so/product/mail
+2024-10-25 https://www.notion.so/product/mail
