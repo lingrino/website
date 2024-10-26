@@ -1,0 +1,13 @@
+on:
+  workflow_dispatch:
+    inputs:
+      entry:
+        type: string
+        required: true
+
+jobs:
+  print-entry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print journal entry
+        run: echo "${{ inputs.entry }}"
