@@ -21,6 +21,10 @@
   max-width: 800px;
 }
 
+.journal-list {
+  padding-left: 0;
+}
+
 .journal-entry {
   display: grid;
   grid-template-columns: auto 1fr;
