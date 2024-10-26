@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'none';
+        style-src 'self';
+        img-src 'self';
+        font-src 'self';
+        manifest-src 'self';
+        upgrade-insecure-requests;
+        block-all-mixed-content;
+        require-trusted-types-for 'script';">
+    <meta http-equiv="Strict-Transport-Security" content="
+      max-age=63072000;
+      includeSubDomains;
+      preload;">
+
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="no-referrer">
+
+    <title>Sean - Journal</title>
+    <meta name="description" content="Sean Lingren's Personal Website">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="assets/fonts/BerkeleyMonoVariable-Regular.woff2">
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="journal">
+        <h1>Journal</h1>
+        <p><strong>A list of what I've been reading</strong></p>
+
+        <ul>
+        {{- range $i, $j := .JournalEntries }}
+          <li class="journal-entry">
+            <span class="journal-date">{{ $j.Date }}</span>
+            <span class="journal-url"><a href="{{ $j.URL }}" target="_blank" rel="noopener" aria-label="Journal Entry {{ $i }}">{{ $j.URL }}</a></span>
+          </li>
+        {{- end }}
+        </ul>
+
+      </div>
+    </div>
+  </body>
+
+</html>

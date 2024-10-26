@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!--
+      HTML Head Tags
+      Docs: https://github.com/joshbuchea/HEAD
+    -->
+
+    <!-- Rendering Info -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      Security Headers
+      These are set in HTML because the alternative for this static site is a cloudfront lambda
+      Docs: https://infosec.mozilla.org/guidelines/web_security
+
+      Content Security Policy
+      Docs: https://infosec.mozilla.org/guidelines/web_security#content-security-policy
+      Generator: https://report-uri.com/home/generate
+      Evaluator: https://csp-evaluator.withgoogle.com/
+    -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'none';
+        style-src 'self';
+        img-src 'self';
+        font-src 'self';
+        manifest-src 'self';
+        upgrade-insecure-requests;
+        block-all-mixed-content;
+        require-trusted-types-for 'script';">
+
+    <!--
+      Strict Transport Security
+      Docs: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+      Docs: https://infosec.mozilla.org/guidelines/web_security#http-strict-transport-security
+    -->
+    <meta http-equiv="Strict-Transport-Security" content="
+      max-age=63072000;
+      includeSubDomains;
+      preload;">
+
+    <!--
+      X-XSS-Protection
+      Docs: https://infosec.mozilla.org/guidelines/web_security#x-xss-protection
+    -->
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+
+    <!--
+      X-Content-Type-Options
+      Docs: https://infosec.mozilla.org/guidelines/web_security#x-content-type-options
+    -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+    <!-- Metadata -->
+    <meta name="referrer" content="no-referrer">
+
+    <!-- Titles -->
+    <title>Sean Lingren</title>
+    <meta name="description" content="Sean Lingren's Personal Website">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="assets/fonts/BerkeleyMonoVariable-Regular.woff2">
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="home">
+        <h1>Sean Lingren</h1>
+
+        <h2>Work</h2>
+        <p>I lead <a href="https://www.loom.com/" target="_blank" rel="noopener" aria-label="loom.com Link">Loom's</a> Infrastructure, Developer Experience, and Security teams. Loom was <a href="https://www.loom.com/" target="_blank" rel="noopener" aria-label="Atlassian Acquires Loom Blog Post">acquired by Atlassian</a> in October 2023.</p>
+
+        <h2>Journal</h2>
+        <p>My <a href="./journal" rel="noopener" aria-label="Sean's Journal Page">journal</a> is a collection of some of the interesting things I've read over the years.</p>
+
+        <h2>Projects</h2>
+        <ul>
+          <li class="home-li"><a href="https://github.com/lingrino/vaku" target="_blank" rel="noopener" aria-label="Vaku GitHub Repo">vaku</a>: A CLI and go library wrapping a vault client and providing useful k/v functions like searching, copying, and deleting folders.</li>
+          <li class="home-li"><a href="https://uptime.how/" target="_blank" rel="noopener" aria-label="Uptime Website">uptime</a>: Website for converting availability percentages into downtime durations.</li>
+          <li class="home-li"><a href="https://github.com/lingrino/go-fault" target="_blank" rel="noopener" aria-label="Go Fault GitHub Repo">go-fault</a>: Fault injection library in go on top of standard net/http middleware. Written at GitHub.</li>
+          <li class="home-li"><a href="https://github.com/loomhq/lock-exec" target="_blank" rel="noopener" aria-label="Lock Exec GitHub Repo">lock-exec</a>: A CLI and go library for long-lived distributed locking in DynamoDB. Written at Loom.</li>
+          <li class="home-li"><a href="https://github.com/loomhq/datadog-exporter" target="_blank" rel="noopener" aria-label="Datadog Exporter GitHub Repo">datadog-exporter</a>: A CLI for exporting datadog dashboard, monitor, and metric json definitions into a local backup. Written at Loom.</li>
+          <li class="home-li"><a href="https://github.com/lingrino/glen" target="_blank" rel="noopener" aria-label="Glen GitHub Repo">glen</a>: A CLI to export your GitLab environment variables locally.</li>
+          <li class="home-li"><a href="https://github.com/avantoss/vault-infra" target="_blank" rel="noopener" aria-label="Vault Infra GitHub Repo">vault-infra</a>: Terraform and Packer to bootstrap a secure Vault cluster. Written at Avant.</li>
+          <li class="home-li"><a href="https://github.com/lingrino/infra-personal" target="_blank" rel="noopener" aria-label="Infra Personal GitHub Repo">infra-personal</a>: My personal infrastructure automated with Terraform and other tools.</li>
+          <li class="home-li"><a href="https://github.com/lingrino/dotfiles" target="_blank" rel="noopener" aria-label="Dotfiles GitHub Repo">dotfiles</a>: My dotfiles of course.</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <ul>
+          <li class="home-li">sean@lingren.com</li>
+          <li class="home-li"><a href="https://github.com/lingrino" target="_blank" rel="noopener" aria-label="Lingrino GitHub Profile">github.com/lingrino</a></li>
+          <li class="home-li"><a href="https://www.linkedin.com/in/lingrino/" target="_blank" rel="noopener" aria-label="Sean Lingren LinkedIn Profile">linkedin.com/in/lingrino</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+</html>
