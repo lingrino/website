@@ -1,15 +1,39 @@
-body {
-  font-size: 1.25rem;
-}
-
 .main {
-  margin: auto;
-  padding: 30px 10px 10px;
-  max-width: 650px;
   font-family: "Berkeley Mono", monospace;
 }
 
-li {
+.home {
+  font-size: 1.25rem;
+  margin: auto;
+  max-width: 650px;
+  padding: 30px 10px 10px;
+}
+
+.home-li {
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.journal {
+  font-size: 1.15rem;
+  margin: auto;
+  padding: 30px 10px 10px;
+  max-width: 800px;
+}
+
+.journal-entry {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.journal-date {
+  white-space: nowrap;
+}
+
+.journal-url {
+  word-break: break-word;
+  overflow-wrap: break-word;
 }

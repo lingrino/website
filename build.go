@@ -1,19 +1,76 @@
 package main
 
 import (
+	"bufio"
 	"html/template"
 	"io"
 	"io/fs"
 	"log/slog"
 	"os"
 	"path/filepath"
+	"slices"
 	"strings"
+	"time"
+)
+
+const (
+	inputDir    = "site"
+	outputDir   = "public"
+	journalFule = "journal/journal.txt"
 )
 
 func logError(err error) {
 	if err != nil {
 		slog.Error(err.Error())
+		os.Exit(1)
 	}
+}
+
+func main() {
+	templater, err := newTemplater()
+	logError(err)
+
+	err = os.MkdirAll(outputDir, 0755)
+	logError(err)
+
+	err = templater.build()
+	logError(err)
+}
+
+type templater struct {
+	JournalEntries []journal
+}
+
+type journal struct {
+	Date string
+	URL  string
+}
+
+func newTemplater() (*templater, error) {
+	je, err := loadJournal()
+	if err != nil {
+		return nil, err
+	}
+
+	return &templater{JournalEntries: je}, nil
+}
+
+func (t *templater) build() error {
+	return filepath.WalkDir(inputDir, func(path string, d fs.DirEntry, err error) error {
+		if err != nil {
+			return err
+		}
+
+		if d.IsDir() {
+			return os.MkdirAll(filepath.Join(outputDir, strings.TrimPrefix(path, inputDir)), 0755)
+		}
+
+		if strings.HasSuffix(path, ".tmpl") {
+			return t.copyTemplate(path)
+		}
+
+		return t.copyFile(path)
+	})
 }
 
 func (t *templater) copyTemplate(path string) error {
@@ -22,23 +79,23 @@ func (t *templater) copyTemplate(path string) error {
 		return err
 	}
 
-	file, err := os.Create(filepath.Join("public", strings.TrimSuffix(strings.TrimPrefix(path, "site"), ".tmpl")))
+	file, err := os.Create(filepath.Join(outputDir, strings.TrimSuffix(strings.TrimPrefix(path, inputDir), ".tmpl")))
 	if err != nil {
 		return err
 	}
 	defer file.Close()
 
-	return tmpl.Execute(file, t.journalEntries)
+	return tmpl.Execute(file, t)
 }
 
-func copyFile(path string) error {
+func (t *templater) copyFile(path string) error {
 	src, err := os.Open(path)
 	if err != nil {
 		return err
 	}
 	defer src.Close()
 
-	dst, err := os.Create(filepath.Join("public", strings.TrimPrefix(path, "site")))
+	dst, err := os.Create(filepath.Join(outputDir, strings.TrimPrefix(path, inputDir)))
 	if err != nil {
 		return err
 	}
@@ -49,27 +106,35 @@ func copyFile(path string) error {
 	return err
 }
 
-func main() {
-	templater := templater{journalEntries: []journal{}}
+func loadJournal() ([]journal, error) {
+	file, err := os.Open(journalFule)
+	if err != nil {
+		return nil, err
+	}
+	defer file.Close()
 
-	err := os.MkdirAll("public", 0755)
-	logError(err)
+	entries := []journal{}
 
-	err = filepath.WalkDir("site", func(path string, d fs.DirEntry, err error) error {
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		fields := strings.Fields(scanner.Text())
+
+		dt, err := time.Parse(time.DateOnly, fields[0])
 		if err != nil {
-			return err
+			return nil, err
 		}
 
-		if d.IsDir() {
-			return os.MkdirAll(filepath.Join("public", strings.TrimPrefix(path, "site")), 0755)
-		}
+		entries = append(entries, journal{Date: dt.Format(time.DateOnly), URL: fields[1]})
+	}
 
-		if strings.HasSuffix(path, ".tmpl") {
-			return templater.copyTemplate(path)
-		}
+	err = scanner.Err()
+	if err != nil {
+		return nil, err
+	}
 
-		return copyFile(path)
+	slices.SortStableFunc(entries, func(a, b journal) int {
+		return strings.Compare(b.Date, a.Date)
 	})
 
-	logError(err)
+	return entries, nil
 }
