@@ -855,3 +855,4 @@
 2024-10-24 https://www.youtube.com/watch?v=E9yZ0JusME4
 2024-10-25 https://www.notion.so/product/mail
 2024-10-26 https://island94.org/2024/01/trigger-github-actions-workflows-from-apple-shortcuts
+2024-10-26 https://caseyhandmer.wordpress.com/2024/10/26/we-can-terraform-the-american-west/
