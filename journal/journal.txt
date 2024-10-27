@@ -858,3 +858,4 @@
 2024-10-26 https://caseyhandmer.wordpress.com/2024/10/26/we-can-terraform-the-american-west/
 2024-10-27 https://en.m.wikipedia.org/wiki/O-ring_theory_of_economic_development
 2024-10-27 https://jeremymorrell.dev/blog/a-practitioners-guide-to-wide-events/
+2024-10-27 https://rfd.shared.oxide.computer/rfd/0002
