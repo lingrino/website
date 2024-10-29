@@ -861,3 +861,4 @@
 2024-10-27 https://rfd.shared.oxide.computer/rfd/0002
 2024-10-28 https://newsroom.aboutrobinhood.com/introducing-the-presidential-election-market/
 2024-10-28 https://kk.org/thetechnium/amish-hackers-a/?ref=thediff.co
+2024-10-28 https://stripe.com/blog/canonical-log-lines
