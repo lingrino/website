@@ -864,3 +864,4 @@
 2024-10-28 https://stripe.com/blog/canonical-log-lines
 2024-10-28 https://globalchinapulse.net/character-amnesia-in-china/
 2024-10-29 https://www.shayon.dev/post/2024/303/using-ctid-based-pagination-for-data-cleanups-in-postgresql/
+2024-10-29 https://surfingcomplexity.blog/2024/10/29/the-carefulness-knob/
