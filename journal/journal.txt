@@ -866,3 +866,4 @@
 2024-10-29 https://www.shayon.dev/post/2024/303/using-ctid-based-pagination-for-data-cleanups-in-postgresql/
 2024-10-29 https://surfingcomplexity.blog/2024/10/29/the-carefulness-knob/
 2024-10-29 https://practical.engineering/blog/2024/8/6/how-french-drains-work
+2024-11-04 https://aws.amazon.com/blogs/networking-and-content-delivery/improving-security-and-performance-with-additional-dns-resource-record-types-in-amazon-route-53/
