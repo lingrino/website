@@ -867,3 +867,4 @@
 2024-10-29 https://surfingcomplexity.blog/2024/10/29/the-carefulness-knob/
 2024-10-29 https://practical.engineering/blog/2024/8/6/how-french-drains-work
 2024-11-04 https://aws.amazon.com/blogs/networking-and-content-delivery/improving-security-and-performance-with-additional-dns-resource-record-types-in-amazon-route-53/
+2024-11-08 https://sarahconstantin.substack.com/p/bigger-livers
