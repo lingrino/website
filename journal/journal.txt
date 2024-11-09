@@ -871,3 +871,4 @@
 2024-11-08 https://www.vulture.com/article/quincy-jones-in-conversation.html?utm_source=substack&utm_medium=email
 2024-11-08 https://en.m.wikipedia.org/wiki/Baumol_effect
 2024-11-08 https://danluu.com/ballmer/
+2024-11-09 https://jondlm.github.io/website/blog/leaving_stripe/
