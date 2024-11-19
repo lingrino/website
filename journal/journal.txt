@@ -874,3 +874,4 @@
 2024-11-09 https://jondlm.github.io/website/blog/leaving_stripe/
 2024-11-09 http://rachelbythebay.com/w/2024/11/03/metrics/
 2024-11-19 https://www.macchaffee.com/blog/2024/tunneling/
+2024-11-19 https://mtlynch.io/lessons-from-my-first-exit/
