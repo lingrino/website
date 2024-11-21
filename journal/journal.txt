@@ -879,3 +879,4 @@
 2024-11-19 https://ferd.ca/local-optimizations-don-t-lead-to-global-optimums.html
 2024-11-19 https://blog.omnivore.app/p/omnivore-is-joining-elevenlabs
 2024-11-19 https://www.gitpod.io/blog/we-are-leaving-kubernetes
+2024-11-20 https://www.edbatista.com/2024/11/when-leaders-break-glass.html
