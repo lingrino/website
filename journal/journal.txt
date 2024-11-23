@@ -883,3 +883,4 @@
 2024-11-20 https://vercel.com/blog/vercel-acquires-grep
 2024-11-22 https://tailscale.com/blog/infra-team-stays-small
 2024-11-23 https://www.usestable.com
+2024-11-23 https://surfingcomplexity.blog/2024/11/23/ttr-the-out-of-control-metric/
