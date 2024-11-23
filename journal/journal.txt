@@ -881,3 +881,4 @@
 2024-11-19 https://www.gitpod.io/blog/we-are-leaving-kubernetes
 2024-11-20 https://www.edbatista.com/2024/11/when-leaders-break-glass.html
 2024-11-20 https://vercel.com/blog/vercel-acquires-grep
+2024-11-22 https://tailscale.com/blog/infra-team-stays-small
