@@ -4,10 +4,13 @@ on:
       entry:
         type: string
         required: true
+        description: "entry url to save"
 
 jobs:
   add-entry:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: checkout repo
         uses: actions/checkout@v4
