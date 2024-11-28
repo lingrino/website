@@ -890,3 +890,4 @@
 2024-11-26 https://nickd.org/
 2024-11-26 https://sdsa.ai/
 2024-11-26 https://www.lesswrong.com/posts/5jjk4CDnj9tA7ugxr/openai-email-archives-from-musk-v-altman
+2024-11-28 https://surfingcomplexity.blog/2024/11/28/quick-takes-on-the-latest-cloudflare-public-incident-write-up/
