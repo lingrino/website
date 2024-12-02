@@ -893,3 +893,4 @@
 2024-11-28 https://surfingcomplexity.blog/2024/11/28/quick-takes-on-the-latest-cloudflare-public-incident-write-up/
 2024-12-01 https://www.myforevernotes.com
 2024-12-01 https://timdellinger.substack.com/p/hey-wait-is-employee-performance
+2024-12-01 https://blog.oodle.ai/go-profiling-in-production/
