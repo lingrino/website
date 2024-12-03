@@ -896,3 +896,4 @@
 2024-12-01 https://blog.oodle.ai/go-profiling-in-production/
 2024-12-01 https://tidbyt.com/blogs/tidbyt/tidbyt-is-joining-modal
 2024-12-02 https://aws.amazon.com/about-aws/whats-new/2024/12/amazon-eks-auto-mode/
+2024-12-03 https://sustainability.atmeta.com/blog/2024/12/03/accelerating-the-next-wave-of-nuclear-to-power-ai-innovation/
