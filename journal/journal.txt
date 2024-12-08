@@ -909,3 +909,4 @@
 2024-12-08 https://www.dotwork.com/
 2024-12-08 https://piccalil.li/blog/a-handful-of-reasons-javascript-wont-be-available/
 2024-12-08 https://www.latimes.com/opinion/story/2024-11-18/special-education-schools-gifted
+2024-12-08 https://www.gov.uk/service-manual/technology/using-progressive-enhancement
