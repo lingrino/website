@@ -914,3 +914,4 @@
 2024-12-08 https://moxie.org/2024/09/23/a-good-engineer.html
 2024-12-08 https://brooker.co.za:443/blog/2024/12/03/aurora-dsql.html
 2024-12-08 https://brooker.co.za:443/blog/2024/12/04/inside-dsql.html
+2024-12-08 https://brooker.co.za:443/blog/2024/12/05/inside-dsql-writes.html
