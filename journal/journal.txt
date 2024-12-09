@@ -917,3 +917,4 @@
 2024-12-08 https://brooker.co.za:443/blog/2024/12/05/inside-dsql-writes.html
 2024-12-08 https://brooker.co.za:443/blog/2024/12/06/inside-dsql-cap.html
 2024-12-08 https://www.dotwork.com/
+2024-12-08 https://scrollprize.org/jobs
