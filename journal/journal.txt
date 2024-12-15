@@ -922,3 +922,4 @@
 2024-12-08 https://www.cip.org/
 2024-12-13 https://openai.com/index/elon-musk-wanted-an-openai-for-profit/
 2024-12-15 https://antirez.com/news/144
+2024-12-15 https://dropbox.tech/machine-learning/selecting-model-semantic-search-dropbox-ai
