@@ -924,3 +924,4 @@
 2024-12-15 https://antirez.com/news/144
 2024-12-15 https://dropbox.tech/machine-learning/selecting-model-semantic-search-dropbox-ai
 2024-12-15 https://tomtunguz.com/ai-use-in-one-afternoon/
+2024-12-16 https://darioamodei.com/machines-of-loving-grace
