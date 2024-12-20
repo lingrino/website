@@ -934,3 +934,4 @@
 2024-12-20 https://engineering.fb.com/2024/12/19/developer-tools/glean-open-source-code-indexing/
 2024-12-20 https://lethain.com/2024-in-review/
 2024-12-20 https://sarahconstantin.substack.com/p/what-goes-without-saying
+2024-12-20 https://tailscale.com/blog/crossword-any-port-in-a-storm
