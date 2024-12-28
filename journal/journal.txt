@@ -947,3 +947,4 @@
 2024-12-25 https://github.com/gilbertchen/duplicacy
 2024-12-27 https://mitchellh.com/writing/ghostty-1-0-reflection
 2024-12-27 https://ghostty.org/
+2024-12-28 https://arun.is/blog/photo-storage/
