@@ -954,3 +954,4 @@
 2024-12-30 https://buttondown.com/blog/2024
 2024-12-31 https://blog.lawrencejones.dev/2024/
 2024-12-31 https://monokai.pro/
+2024-12-31 https://blog.cloudflare.com/h3i/
