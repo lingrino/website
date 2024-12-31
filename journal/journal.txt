@@ -951,3 +951,4 @@
 2024-12-29 https://www.plasticlist.org/
 2024-12-29 https://fishshell.com/blog/rustport/
 2024-12-30 https://www.mathacademy.com/
+2024-12-30 https://buttondown.com/blog/2024
