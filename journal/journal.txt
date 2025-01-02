@@ -955,5 +955,5 @@
 2024-12-31 https://blog.lawrencejones.dev/2024/
 2024-12-31 https://monokai.pro/
 2024-12-31 https://blog.cloudflare.com/h3i/
-2024-12-31 https://newsletters.feedbinusercontent.com/98b/98b1c316387e524c4b60d818d377eff4db8f1dea.html
+2024-12-31 https://map.simonsarris.com/p/resist-summary
 2025-01-02 https://blog.cloudflare.com/behind-the-scenes-with-stream-live-cloudflares-live-streaming-service/
