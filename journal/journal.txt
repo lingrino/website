@@ -958,3 +958,4 @@
 2024-12-31 https://map.simonsarris.com/p/resist-summary
 2025-01-02 https://blog.cloudflare.com/behind-the-scenes-with-stream-live-cloudflares-live-streaming-service/
 2025-01-02 https://vinay.sh/i-am-rich-and-have-no-idea-what-to-do-with-my-life/
+2025-01-03 https://newsletter.vickiboykis.com/archive/everything-i-did-in-2024/
