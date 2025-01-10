@@ -973,3 +973,4 @@
 2025-01-08 https://tailscale.com/blog/living-in-the-future
 2025-01-08 https://pont.is/p/how-luma-works
 2025-01-09 https://planetscale.com/blog/database-sharding
+2025-01-10 https://quickwit.io/blog/quickwit-joins-datadog
