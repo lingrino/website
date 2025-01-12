@@ -977,3 +977,4 @@
 2025-01-10 https://www.sfgate.com/tech/article/watch-duty-palisades-eaton-fires-20025818.php
 2025-01-10 https://automattic.com/2025/01/09/aligning-automattics-sponsored-contributions-to-wordpress/
 2025-01-11 https://www.adaptivecapacitylabs.com/2025/01/07/revisiting-what-we-think-we-already-know/?utm_source=rss&utm_medium=rss&utm_campaign=revisiting-what-we-think-we-already-know
+2025-01-12 https://blog.rossry.net/chisness/
