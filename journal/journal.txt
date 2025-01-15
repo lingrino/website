@@ -984,3 +984,4 @@
 2025-01-14 https://leebyron.com/til/mac-xdg/
 2025-01-14 https://www.jefftk.com/p/voluntary-salary-reduction
 2025-01-14 https://tailscale.com/blog/welcome-grace-lin-10000-customers
+2025-01-15 https://linear.app/blog/how-we-built-multi-region-support-for-linear
