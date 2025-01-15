@@ -981,3 +981,4 @@
 2025-01-12 https://www.koyfin.com/
 2025-01-13 https://rachelbythebay.com/w/2025/01/09/lag/
 2025-01-13 https://gist.github.com/adrienne/aea9dd7ca19c8985157d9c42f7fc225d
+2025-01-14 https://leebyron.com/til/mac-xdg/
