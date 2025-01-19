@@ -993,3 +993,4 @@
 2025-01-18 https://namespace.so/
 2025-01-18 https://jessitron.com/2025/01/12/cascading-okrs-we-can-do-better/
 2025-01-19 https://www.corememory.com/p/so-begins-core-memory-a-new-sci-tech
+2025-01-19 https://en.m.wikipedia.org/wiki/Local_knowledge_problem
