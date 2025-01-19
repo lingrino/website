@@ -996,3 +996,4 @@
 2025-01-19 https://en.m.wikipedia.org/wiki/Local_knowledge_problem
 2025-01-19 https://caseyhandmer.wordpress.com/2025/01/17/the-los-angeles-wildfires-are-self-inflicted/
 2025-01-19 https://lowtechguys.com/rcmd/
+2025-01-19 https://jvns.ca/blog/2025/01/11/getting-a-modern-terminal-setup/
