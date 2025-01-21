@@ -999,3 +999,4 @@
 2025-01-19 https://jvns.ca/blog/2025/01/11/getting-a-modern-terminal-setup/
 2025-01-20 https://arslan.io/2025/01/20/four-years-at-planetscale/
 2025-01-20 https://www.anthropic.com/research/building-effective-agents
+2025-01-21 https://ma.tt/2025/01/2025-bag/
