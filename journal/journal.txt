@@ -1001,3 +1001,4 @@
 2025-01-20 https://www.anthropic.com/research/building-effective-agents
 2025-01-21 https://ma.tt/2025/01/2025-bag/
 2025-01-21 https://www.honeycomb.io/blog/most-important-developer-productivity-metric-build-times
+2025-01-21 https://openai.com/index/announcing-the-stargate-project/
