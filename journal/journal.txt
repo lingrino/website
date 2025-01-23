@@ -1003,3 +1003,4 @@
 2025-01-21 https://www.honeycomb.io/blog/most-important-developer-productivity-metric-build-times
 2025-01-21 https://openai.com/index/announcing-the-stargate-project/
 2025-01-22 https://rachelbythebay.com/w/2025/01/22/feedback/
+2025-01-23 https://openai.com/index/computer-using-agent/
