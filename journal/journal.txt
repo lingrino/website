@@ -1004,3 +1004,4 @@
 2025-01-21 https://openai.com/index/announcing-the-stargate-project/
 2025-01-22 https://rachelbythebay.com/w/2025/01/22/feedback/
 2025-01-23 https://openai.com/index/computer-using-agent/
+2025-01-26 https://registerspill.thorstenball.com/p/judging-code
