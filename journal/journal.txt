@@ -1014,3 +1014,4 @@
 2025-01-31 https://registerspill.thorstenball.com/p/how-might-ai-change-programming
 2025-02-01 https://sarahconstantin.substack.com/p/whats-behind-the-synbio-bust
 2025-02-01 https://seths.blog/2003/06/naming_a_busine/
+2025-02-01 https://blog.lawrencejones.dev/ai-mvp/
