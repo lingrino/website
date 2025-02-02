@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "Berkeley Mono Variable", ui-monospace;
-  src: local("./assets/fonts/berkeley-mono-variable.woff2") format("woff2");
+  font-family: "berkeley-mono-variable", ui-monospace;
+  src: url("berkeley-mono-variable.woff2");
 }
 
 .main {
-  font-family: "Berkeley Mono Variable", ui-monospace;
+  font-family: "berkeley-mono-variable", ui-monospace;
 }
 
 .home {
