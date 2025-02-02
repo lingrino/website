@@ -1,6 +1,6 @@
 @font-face {
   font-family: "berkeley-mono-variable", ui-monospace;
-  src: url("berkeley-mono-variable.woff2");
+  src: local("berkeley-mono-variable.woff2");
 }
 
 .main {
