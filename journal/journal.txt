@@ -1017,3 +1017,4 @@
 2025-02-01 https://blog.lawrencejones.dev/ai-mvp/
 2025-02-01 https://blog.nelhage.com/post/personal-software-with-claude/
 2025-02-01 https://www.bitsaboutmoney.com/archive/chicago-casino-investment-offering/
+2025-02-02 https://openai.com/index/introducing-deep-research/
