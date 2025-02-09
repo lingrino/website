@@ -1021,3 +1021,4 @@
 2025-02-04 https://robpostonblog.wordpress.com/2025/02/04/dealing-with-chaos-during-cardiac-surgery/
 2025-02-09 https://www.pgmustard.com/blog/index-scan-doesnt-mean-its-fast
 2025-02-09 https://lethain.com/user-data-access-strategy/
+2025-02-09 https://brooker.co.za/blog/2025/02/04/versioning.html
