@@ -1032,3 +1032,4 @@
 2025-02-16 https://jmduke.com/posts/post/what-gives/
 2025-02-16 https://muratbuffalo.blogspot.com/2025/02/my-time-at-mit.html
 2025-02-16 https://blog.lawrencejones.dev/ai-dont-need-python/
+2025-02-16 https://engineering.fb.com/2025/02/14/connectivity/project-waterworth-ai-subsea-infrastructure/
