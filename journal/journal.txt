@@ -1033,3 +1033,4 @@
 2025-02-16 https://muratbuffalo.blogspot.com/2025/02/my-time-at-mit.html
 2025-02-16 https://blog.lawrencejones.dev/ai-dont-need-python/
 2025-02-16 https://engineering.fb.com/2025/02/14/connectivity/project-waterworth-ai-subsea-infrastructure/
+2025-02-17 http://blog.jgc.org/2025/02/i-have-come-to-loath-acronyms.html
