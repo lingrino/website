@@ -1036,3 +1036,4 @@
 2025-02-17 http://blog.jgc.org/2025/02/i-have-come-to-loath-acronyms.html
 2025-02-19 https://www.clay.com/community-equity-offering
 2025-02-19 https://jzhao.xyz/
+2025-02-20 https://huggingface.co/spaces/nanotron/ultrascale-playbook
