@@ -1038,3 +1038,4 @@
 2025-02-19 https://jzhao.xyz/
 2025-02-20 https://huggingface.co/spaces/nanotron/ultrascale-playbook
 2025-02-21 https://nyadgar.com/posts/scaling-grpc-with-kubernetes-using-go/
+2025-02-21 https://world.hey.com/dhh/stick-with-the-customer-4942402f
