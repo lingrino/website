@@ -1042,3 +1042,4 @@
 2025-02-21 https://caseyhandmer.wordpress.com/2025/02/04/stuff-you-should-have-been-taught-in-college-but-werent/
 2025-02-21 https://jmduke.com/posts/post/yolo-squashing/
 2025-02-21 https://www.dwarkeshpatel.com/p/ai-firm
+2025-02-21 https://fly.io/blog/wrong-about-gpu/
