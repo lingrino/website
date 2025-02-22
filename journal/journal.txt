@@ -1039,3 +1039,4 @@
 2025-02-20 https://huggingface.co/spaces/nanotron/ultrascale-playbook
 2025-02-21 https://nyadgar.com/posts/scaling-grpc-with-kubernetes-using-go/
 2025-02-21 https://world.hey.com/dhh/stick-with-the-customer-4942402f
+2025-02-21 https://caseyhandmer.wordpress.com/2025/02/04/stuff-you-should-have-been-taught-in-college-but-werent/
