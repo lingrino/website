@@ -1046,3 +1046,4 @@
 2025-02-22 https://go.dev/blog/synctest
 2025-02-23 https://rachelbythebay.com/w/2025/02/22/war/
 2025-02-23 https://serce.me/posts/2025-02-07-the-llm-curve-of-impact-on-software-engineers
+2025-02-23 https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/
