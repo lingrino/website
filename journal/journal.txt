@@ -1044,3 +1044,4 @@
 2025-02-21 https://www.dwarkeshpatel.com/p/ai-firm
 2025-02-21 https://fly.io/blog/wrong-about-gpu/
 2025-02-22 https://go.dev/blog/synctest
+2025-02-23 https://rachelbythebay.com/w/2025/02/22/war/
