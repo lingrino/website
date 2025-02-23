@@ -1049,3 +1049,4 @@
 2025-02-23 https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/
 2025-02-23 https://linear.app/blog/the-profitable-startup
 2025-02-23 https://marginalrevolution.com/marginalrevolution/2025/02/why-i-think-ai-take-off-is-relatively-slow.html
+2025-02-23 https://www.honeycomb.io/blog/slicing-up-and-iterating-on-slos
