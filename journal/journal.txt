@@ -1052,3 +1052,4 @@
 2025-02-23 https://www.honeycomb.io/blog/slicing-up-and-iterating-on-slos
 2025-02-24 https://www.anthropic.com/news/claude-3-7-sonnet
 2025-02-24 https://arun.is/blog/year-long-sabbatical/
+2025-02-24 https://blog.danielna.com/high-ownership-high-urgency/
