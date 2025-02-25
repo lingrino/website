@@ -1050,3 +1050,4 @@
 2025-02-23 https://linear.app/blog/the-profitable-startup
 2025-02-23 https://marginalrevolution.com/marginalrevolution/2025/02/why-i-think-ai-take-off-is-relatively-slow.html
 2025-02-23 https://www.honeycomb.io/blog/slicing-up-and-iterating-on-slos
+2025-02-24 https://www.anthropic.com/news/claude-3-7-sonnet
