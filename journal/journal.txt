@@ -1058,3 +1058,4 @@
 2025-02-26 https://boz.com/articles/finding-the-line
 2025-02-27 https://jmduke.com/posts/post/hq1/
 2025-03-02 https://www.anthropic.com/thisshouldnotexist
+2025-03-03 https://www.anthropic.com/news/anthropic-raises-series-e-at-usd61-5b-post-money-valuation
