@@ -1060,3 +1060,4 @@
 2025-03-02 https://www.anthropic.com/thisshouldnotexist
 2025-03-03 https://www.anthropic.com/news/anthropic-raises-series-e-at-usd61-5b-post-money-valuation
 2025-03-04 https://mitchellh.com/writing/as-code
+2025-03-04 https://www.nytimes.com/2025/02/16/science/gila-monsters-cryptosporidium.html
