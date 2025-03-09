@@ -1069,3 +1069,4 @@
 2025-03-08 https://github.com/anysphere/whitepaper/blob/main/main.pdf
 2025-03-08 https://www.val.town/
 2025-03-08 https://www.eatradius.com/chicken/
+2025-03-08 https://github.com/janestreet/magic-trace
