@@ -1070,3 +1070,4 @@
 2025-03-08 https://www.val.town/
 2025-03-08 https://www.eatradius.com/chicken/
 2025-03-08 https://github.com/janestreet/magic-trace
+2025-03-09 https://www.cursor.sh/blog/instant-apply
