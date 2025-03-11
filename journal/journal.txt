@@ -1072,3 +1072,4 @@
 2025-03-08 https://github.com/janestreet/magic-trace
 2025-03-09 https://www.cursor.sh/blog/instant-apply
 2025-03-09 https://pmc.ncbi.nlm.nih.gov/articles/PMC8956028/
+2025-03-11 https://devblogs.microsoft.com/typescript/typescript-native-port/
