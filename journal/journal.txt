@@ -1074,3 +1074,4 @@
 2025-03-09 https://pmc.ncbi.nlm.nih.gov/articles/PMC8956028/
 2025-03-11 https://devblogs.microsoft.com/typescript/typescript-native-port/
 2025-03-12 https://github.com/microsoft/typescript-go/discussions/411
+2025-03-12 https://x.com/benspringwater/status/1899879594142171564
