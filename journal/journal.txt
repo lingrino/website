@@ -1075,3 +1075,4 @@
 2025-03-11 https://devblogs.microsoft.com/typescript/typescript-native-port/
 2025-03-12 https://github.com/microsoft/typescript-go/discussions/411
 2025-03-12 https://x.com/benspringwater/status/1899879594142171564
+2025-03-12 https://ferd.ca/ai-where-in-the-loop-should-humans-go.html
