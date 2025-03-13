@@ -1077,3 +1077,4 @@
 2025-03-12 https://x.com/benspringwater/status/1899879594142171564
 2025-03-12 https://ferd.ca/ai-where-in-the-loop-should-humans-go.html
 2025-03-12 https://resilienceinsoftware.org/news/1092580
+2025-03-12 https://surfingcomplexity.blog/2025/03/09/paxos-made-visual-in-fizzbee/
