@@ -1080,3 +1080,4 @@
 2025-03-12 https://surfingcomplexity.blog/2025/03/09/paxos-made-visual-in-fizzbee/
 2025-03-12 https://planetscale.com/blog/planetscale-metal-theres-no-replacement-for-displacement
 2025-03-12 https://blog.lawrencejones.dev/ai-dilemma/
+2025-03-14 https://paulstamatiou.com/browse-no-more
