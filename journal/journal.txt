@@ -1084,3 +1084,4 @@
 2025-03-14 https://github.com/containers/bubblewrap
 2025-03-15 https://steveklabnik.com/writing/choosing-languages/
 2025-03-15 https://daringfireball.net/2025/03/something_is_rotten_in_the_state_of_cupertino
+2025-03-15 https://www.newyorker.com/news/the-lede/geothermal-power-is-a-climate-moon-shot-beneath-our-feet
