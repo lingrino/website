@@ -1082,3 +1082,4 @@
 2025-03-12 https://blog.lawrencejones.dev/ai-dilemma/
 2025-03-14 https://paulstamatiou.com/browse-no-more
 2025-03-14 https://github.com/containers/bubblewrap
+2025-03-15 https://steveklabnik.com/writing/choosing-languages/
