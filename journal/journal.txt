@@ -1091,3 +1091,4 @@
 2025-03-16 https://www.benkuhn.net/pjm/
 2025-03-16 https://antirez.com/news/147
 2025-03-16 https://jvns.ca/blog/2025/01/11/getting-a-modern-terminal-setup/
+2025-03-16 https://www.honeycomb.io/blog/restructuring-how-we-think-about-alerts
