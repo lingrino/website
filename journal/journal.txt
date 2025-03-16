@@ -1090,3 +1090,4 @@
 2025-03-15 https://nav.al/build-a-team-that-ships
 2025-03-16 https://www.benkuhn.net/pjm/
 2025-03-16 https://antirez.com/news/147
+2025-03-16 https://jvns.ca/blog/2025/01/11/getting-a-modern-terminal-setup/
