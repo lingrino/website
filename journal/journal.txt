@@ -1102,3 +1102,4 @@
 2025-03-22 https://newsletter.vickiboykis.com/archive/20-years-of-yc/
 2025-03-23 https://boz.com/articles/disagree
 2025-03-23 https://planetscale.com/blog/the-real-fail-rate-of-ebs
+2025-03-23 https://planetscale.com/blog/faster-interpreters-in-go-catching-up-with-cpp
