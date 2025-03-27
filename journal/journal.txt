@@ -1104,3 +1104,4 @@
 2025-03-23 https://planetscale.com/blog/the-real-fail-rate-of-ebs
 2025-03-23 https://planetscale.com/blog/faster-interpreters-in-go-catching-up-with-cpp
 2025-03-25 https://resilienceinsoftware.org/news/1157532
+2025-03-26 https://arslan.io/2025/03/26/i-was-wrong-about-ai-coding/
