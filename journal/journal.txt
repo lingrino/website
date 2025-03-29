@@ -1106,3 +1106,4 @@
 2025-03-25 https://resilienceinsoftware.org/news/1157532
 2025-03-26 https://arslan.io/2025/03/26/i-was-wrong-about-ai-coding/
 2025-03-28 https://julian.digital/2025/03/27/the-case-against-conversational-interfaces/
+2025-03-28 https://fly.io/blog/operationalizing-macaroons/
