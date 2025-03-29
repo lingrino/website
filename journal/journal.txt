@@ -1108,3 +1108,4 @@
 2025-03-28 https://julian.digital/2025/03/27/the-case-against-conversational-interfaces/
 2025-03-28 https://fly.io/blog/operationalizing-macaroons/
 2025-03-28 https://sarahconstantin.substack.com/p/ai-deep-research-tools-reviewed
+2025-03-28 https://www.macchaffee.com/blog/2025/security-treadmill/
