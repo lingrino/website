@@ -1117,3 +1117,4 @@
 2025-04-05 https://www.benkuhn.net/tmgr/
 2025-04-05 https://www.itsonlyamodel.com/
 2025-04-05 https://go.dev/blog/testing-b-loop
+2025-04-05 https://surfingcomplexity.blog/2025/03/31/models-models-every-where-so-lets-have-a-think/
