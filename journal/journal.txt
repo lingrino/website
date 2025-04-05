@@ -1116,3 +1116,4 @@
 2025-04-01 https://map.simonsarris.com/p/creatures-of-temperament
 2025-04-05 https://www.benkuhn.net/tmgr/
 2025-04-05 https://www.itsonlyamodel.com/
+2025-04-05 https://go.dev/blog/testing-b-loop
