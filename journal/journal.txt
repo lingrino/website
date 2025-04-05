@@ -1114,3 +1114,4 @@
 2025-03-29 https://go.dev/blog/coretypes
 2025-03-31 http://blog.jgc.org/2025/03/debugging-lotus-1-2-3-by-fax.html
 2025-04-01 https://map.simonsarris.com/p/creatures-of-temperament
+2025-04-05 https://www.benkuhn.net/tmgr/
