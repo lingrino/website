@@ -1122,3 +1122,4 @@
 2025-04-06 https://www.edbatista.com/2025/04/on-leadership-transitions-and-public-narratives.html
 2025-04-09 https://github.com/bensadeh/tailspin
 2025-04-10 https://tldraw.dev/blog/announcements/announcing-tldraw-series-a
+2025-04-10 https://incident.io/blog/incident.io-raises-62m
