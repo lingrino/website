@@ -1120,3 +1120,4 @@
 2025-04-05 https://surfingcomplexity.blog/2025/03/31/models-models-every-where-so-lets-have-a-think/
 2025-04-05 http://antirez.com/news/149
 2025-04-06 https://www.edbatista.com/2025/04/on-leadership-transitions-and-public-narratives.html
+2025-04-09 https://github.com/bensadeh/tailspin
