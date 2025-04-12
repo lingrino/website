@@ -1129,3 +1129,4 @@
 2025-04-12 https://arslan.io/2025/04/08/managing-friction/
 2025-04-12 https://incident.io/blog/why-hire-ai-engineers
 2025-04-12 https://muratbuffalo.blogspot.com/2025/04/what-id-do-as-college-freshman.html
+2025-04-12 https://tailscale.com/blog/series-c
