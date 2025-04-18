@@ -1137,3 +1137,4 @@
 2025-04-12 https://deming.org/the-idea-of-performance-rating-to-capture-merit-is-alluring/
 2025-04-15 https://s3.documentcloud.org/documents/25896886/metas-opening-statement-slides.pdf
 2025-04-17 http://antirez.com/news/150
+2025-04-18 https://github.com/mfontanini/presenterm
