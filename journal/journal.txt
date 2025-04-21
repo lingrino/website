@@ -1139,3 +1139,4 @@
 2025-04-17 http://antirez.com/news/150
 2025-04-18 https://github.com/mfontanini/presenterm
 2025-04-20 https://chrisgillett.org/amazon-power-retail
+2025-04-20 https://www.socratify.com/
