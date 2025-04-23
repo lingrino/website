@@ -1143,3 +1143,4 @@
 2025-04-20 https://www.benkuhn.net/impact/
 2025-04-21 https://a16z.com/introducing-erik-torenberg/
 2025-04-21 https://www.mechanize.work/
+2025-04-23 https://blog.atuin.sh/atuin-desktop-runbooks-that-run/
