@@ -1146,3 +1146,4 @@
 2025-04-23 https://blog.atuin.sh/atuin-desktop-runbooks-that-run/
 2025-04-25 https://caseyhandmer.wordpress.com/2025/04/25/why-am-i-searched-every-time-i-go-to-australia/
 2025-05-07 https://www.anthropic.com/news/web-search-api
+2025-05-08 https://sketch.dev/blog/lightweight-merge-queue
