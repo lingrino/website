@@ -1147,3 +1147,4 @@
 2025-04-25 https://caseyhandmer.wordpress.com/2025/04/25/why-am-i-searched-every-time-i-go-to-australia/
 2025-05-07 https://www.anthropic.com/news/web-search-api
 2025-05-08 https://sketch.dev/blog/lightweight-merge-queue
+2025-05-08 https://www.gatesnotes.com/home/home-page-topic/reader/n20-years-to-give-away-virtually-all-my-wealth
