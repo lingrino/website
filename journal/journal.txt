@@ -1148,3 +1148,4 @@
 2025-05-07 https://www.anthropic.com/news/web-search-api
 2025-05-08 https://sketch.dev/blog/lightweight-merge-queue
 2025-05-08 https://www.gatesnotes.com/home/home-page-topic/reader/n20-years-to-give-away-virtually-all-my-wealth
+2025-05-08 https://registerspill.thorstenball.com/p/theres-beauty-in-ai
