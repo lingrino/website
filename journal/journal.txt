@@ -1155,3 +1155,4 @@
 2025-05-10 https://antirez.com/news/151
 2025-05-10 https://www.farmkind.giving/compassion-calculator
 2025-05-10 http://research.swtch.com/diffcover
+2025-05-10 https://surfingcomplexity.blog/2025/05/10/when-a-bad-analysis-is-worse-than-none-at-all/
