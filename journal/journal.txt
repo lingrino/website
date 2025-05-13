@@ -1161,3 +1161,4 @@
 2025-05-10 https://surfingcomplexity.blog/2025/05/10/on-work-processes-and-outcomes/
 2025-05-11 https://fxrant.blogspot.com/2025/04/the-movie-mistake-mystery-from-revenge.html
 2025-05-12 https://en.wikipedia.org/wiki/Timeline_of_the_far_future?wprov=sfti1
+2025-05-13 https://github.com/hashicorp/terraform-provider-aws/issues/41101
