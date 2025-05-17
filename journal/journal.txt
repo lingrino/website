@@ -1166,3 +1166,4 @@
 2025-05-15 https://github.com/buresdv/Cork
 2025-05-15 https://github.blog/changelog/2025-05-08-updated-rate-limits-for-unauthenticated-requests/
 2025-05-15 https://noahkalina.substack.com/p/newsletter-183-poppy-seed-bagel-rerun
+2025-05-17 https://www.youtube.com/watch?v=bJD1NpdMY5s
