@@ -1174,3 +1174,4 @@
 2025-05-18 https://incident.io/building-with-ai/the-timeline-to-fully-automated-incident-response
 2025-05-18 https://www.anthropic.com/research/reasoning-models-dont-say-think
 2025-05-18 https://oxide.computer/blog/oxides-compensation-model-how-is-it-going
+2025-05-18 https://www.anthropic.com/research/tracing-thoughts-language-model
