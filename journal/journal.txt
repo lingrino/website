@@ -1171,3 +1171,4 @@
 2025-05-17 https://surfingcomplexity.blog/2025/05/15/labeling-a-root-cause-is-predicting-the-future-poorly/
 2025-05-18 https://engineering.atspotify.com/2025/5/incident-report-spotify-outage-on-april-16-2025
 2025-05-18 https://nymag.com/intelligencer/article/openai-chatgpt-ai-cheating-education-college-students-school.html
+2025-05-18 https://incident.io/building-with-ai/the-timeline-to-fully-automated-incident-response
