@@ -1180,3 +1180,4 @@
 2025-05-18 https://www.morpheus-research.com/backblaze/
 2025-05-18 https://filiph.github.io/unsure/
 2025-05-18 https://www.wired.com/story/inside-arxiv-most-transformative-code-science/
+2025-05-18 https://collabfund.com/blog/pure-independence/
