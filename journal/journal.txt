@@ -1194,3 +1194,4 @@
 2025-05-22 https://www.anthropic.com/news/claude-4
 2025-05-22 https://phantom-nape-ffe.notion.site/Turpentine-master-plan-524e460771354cb7a84328939c5d9cf1
 2025-05-22 https://www.dwarkesh.com/p/questions-about-ai
+2025-05-22 https://transactional.blog/blog/2025-decomposing-transactional-systems
