@@ -1197,3 +1197,4 @@
 2025-05-22 https://transactional.blog/blog/2025-decomposing-transactional-systems
 2025-05-22 https://hamel.dev/blog/posts/field-guide/
 2025-05-22 https://support.mozilla.org/en-US/kb/future-of-pocket
+2025-05-22 https://windowsontheory.org/2025/01/24/six-thoughts-on-ai-safety/
