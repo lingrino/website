@@ -1200,3 +1200,4 @@
 2025-05-22 https://windowsontheory.org/2025/01/24/six-thoughts-on-ai-safety/
 2025-05-22 https://www.anthropic.com/engineering/claude-think-tool
 2025-05-22 https://www.builder.io/blog/cursor-tips
+2025-05-22 https://github.com/PostHog/posthog/blob/master/.cursorrules
