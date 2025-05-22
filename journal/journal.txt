@@ -1203,3 +1203,4 @@
 2025-05-22 https://github.com/PostHog/posthog/blob/master/.cursorrules
 2025-05-22 https://dynomight.net/theanine/
 2025-05-22 https://www.anthropic.com/news/activating-asl3-protections
+2025-05-22 https://www.theatlantic.com/magazine/archive/2025/02/american-loneliness-personality-politics/681091/
