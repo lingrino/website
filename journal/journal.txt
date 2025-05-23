@@ -1208,3 +1208,4 @@
 2025-05-22 https://ampcode.com/how-to-build-an-agent
 2025-05-22 https://planetscale.com/blog/io-devices-and-latency
 2025-05-22 https://www.newyorker.com/magazine/2025/03/17/rot-padraic-x-scanlan-book-review
+2025-05-22 https://simonwillison.net/2025/Mar/11/using-llms-for-code/
