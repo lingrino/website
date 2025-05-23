@@ -1206,3 +1206,4 @@
 2025-05-22 https://www.theatlantic.com/magazine/archive/2025/02/american-loneliness-personality-politics/681091/
 2025-05-22 https://www.anthropic.com/engineering/claude-code-best-practices
 2025-05-22 https://ampcode.com/how-to-build-an-agent
+2025-05-22 https://planetscale.com/blog/io-devices-and-latency
