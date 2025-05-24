@@ -1215,3 +1215,4 @@
 2025-05-23 https://www.thewayofcode.com/
 2025-05-24 https://planetscale.com/blog/faster-interpreters-in-go-catching-up-with-cpp
 2025-05-24 https://lethain.com/stuff-learned-at-carta/
+2025-05-24 https://inessential.com/2025/05/24/retirement_and_netnewswire.html
