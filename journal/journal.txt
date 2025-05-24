@@ -1212,3 +1212,4 @@
 2025-05-22 https://saurabhs.org/macos-tips
 2025-05-22 https://rachelbythebay.com/w/2025/05/22/ssl/
 2025-05-23 https://lethain.com/stuff-learned-at-carta/
+2025-05-23 https://www.thewayofcode.com/
