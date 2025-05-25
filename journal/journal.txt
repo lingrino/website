@@ -1224,3 +1224,4 @@
 2025-05-24 https://hypercritical.co/2025/05/20/apple-turnaround
 2025-05-24 https://sketch.dev/blog/agent-loop
 2025-05-24 https://blog.rossry.net/figgie/
+2025-05-24 https://www.economist.com/1843/2025/02/28/tyler-cowen-the-man-who-wants-to-know-everything
