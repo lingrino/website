@@ -1230,3 +1230,4 @@
 2025-05-25 https://surfingcomplexity.blog/2025/05/25/llms-are-weird-man/
 2025-05-26 https://briefer.cloud/blog/posts/least-squares/
 2025-05-26 https://surfingcomplexity.blog/2025/05/26/the-same-incident-never-happens-twice-but-the-patterns-recur-over-and-over/
+2025-05-26 https://www.askell.blog/the-optimal-rate-of-failure/
