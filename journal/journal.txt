@@ -1228,3 +1228,4 @@
 2025-05-24 https://www.theatlantic.com/magazine/archive/2025/03/gary-shteyngart-bespoke-suit-mens-fashion-self-love/681441/
 2025-05-25 https://zhengdongwang.com/2024/12/29/2024-letter.html
 2025-05-25 https://surfingcomplexity.blog/2025/05/25/llms-are-weird-man/
+2025-05-26 https://briefer.cloud/blog/posts/least-squares/
