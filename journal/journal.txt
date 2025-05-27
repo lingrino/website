@@ -1235,3 +1235,4 @@
 2025-05-26 https://www.askell.blog/ai-bias-and-the-problems-of-ethical-locality/
 2025-05-26 https://ai-2027.com/
 2025-05-26 https://www.litellm.ai/
+2025-05-27 https://blog.benjojo.co.uk/post/bgp-attr-40-junos-arista-session-reset-incident
