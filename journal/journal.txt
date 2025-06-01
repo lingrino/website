@@ -1238,3 +1238,4 @@
 2025-05-27 https://blog.benjojo.co.uk/post/bgp-attr-40-junos-arista-session-reset-incident
 2025-05-27 https://browsercompany.substack.com/p/letter-to-arc-members-2025
 2025-05-27 https://www.adaptivecapacitylabs.com/2020/01/23/the-resilience-of-bone-and-resilience-engineering/
+2025-05-31 https://chrisgillett.org/grid-cost-power-law
