@@ -1242,3 +1242,4 @@
 2025-05-31 https://www.tbray.org/ongoing/When/202x/2025/05/30/Number-Comparison-Representation
 2025-06-02 https://www.crunchydata.com/blog/crunchy-data-joins-snowflake
 2025-06-02 https://antinote.io/
+2025-06-02 https://www.theatlantic.com/technology/archive/2023/05/problem-counterfeit-people/674075/
