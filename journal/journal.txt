@@ -1250,3 +1250,4 @@
 2025-06-02 https://www.dwarkesh.com/p/give-ais-a-stake-in-the-future
 2025-06-02 https://www.allthingsdistributed.com/2025/05/just-make-it-scale-an-aurora-dsql-story.html
 2025-06-02 https://americanaffairsjournal.org/2025/05/rewriting-the-californian-ideology/
+2025-06-03 https://yuxi-liu-wired.github.io/logs/posts/2025-patel-dinner/
