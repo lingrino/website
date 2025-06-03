@@ -1243,3 +1243,4 @@
 2025-06-02 https://www.crunchydata.com/blog/crunchy-data-joins-snowflake
 2025-06-02 https://antinote.io/
 2025-06-02 https://www.theatlantic.com/technology/archive/2023/05/problem-counterfeit-people/674075/
+2025-06-02 https://rachelbythebay.com/w/2025/05/31/sync/
