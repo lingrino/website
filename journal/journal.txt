@@ -1253,3 +1253,4 @@
 2025-06-03 https://yuxi-liu-wired.github.io/logs/posts/2025-patel-dinner/
 2025-06-04 https://sarahconstantin.substack.com/p/broad-spectrum-cancer-treatments
 2025-06-04 https://go.dev/blog/error-syntax
+2025-06-04 https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf
