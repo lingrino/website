@@ -1256,3 +1256,4 @@
 2025-06-04 https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf
 2025-06-05 https://openai.com/index/response-to-nyt-data-demands/
 2025-06-05 https://elevenlabs.io/v3
+2025-06-06 https://blog.benjojo.co.uk/post/picking-unused-rfc1918-ip-space
