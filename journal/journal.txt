@@ -1257,3 +1257,4 @@
 2025-06-05 https://openai.com/index/response-to-nyt-data-demands/
 2025-06-05 https://elevenlabs.io/v3
 2025-06-06 https://blog.benjojo.co.uk/post/picking-unused-rfc1918-ip-space
+2025-06-07 https://reservoirsamples.substack.com/p/some-thoughts-on-human-ai-relationships
