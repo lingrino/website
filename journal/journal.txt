@@ -1259,3 +1259,4 @@
 2025-06-06 https://blog.benjojo.co.uk/post/picking-unused-rfc1918-ip-space
 2025-06-07 https://reservoirsamples.substack.com/p/some-thoughts-on-human-ai-relationships
 2025-06-08 https://www.vulture.com/article/generative-ai-hollywood-movies-tv.html
+2025-06-08 https://openpipe.ai/blog/art-e-mail-agent
