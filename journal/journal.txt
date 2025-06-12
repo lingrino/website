@@ -1265,3 +1265,4 @@
 2025-06-10 https://www.reuters.com/business/atlassian-competitor-linear-raises-funding-125-billion-valuation-2025-06-10/
 2025-06-10 https://www.honeycomb.io/blog/its-the-end-of-observability-as-we-know-it-and-i-feel-fine
 2025-06-11 https://www.diabrowser.com/
+2025-06-12 https://antimetal.com/
