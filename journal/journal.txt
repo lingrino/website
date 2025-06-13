@@ -1266,3 +1266,4 @@
 2025-06-10 https://www.honeycomb.io/blog/its-the-end-of-observability-as-we-know-it-and-i-feel-fine
 2025-06-11 https://www.diabrowser.com/
 2025-06-12 https://antimetal.com/
+2025-06-12 https://blog.cloudflare.com/cloudflare-service-outage-june-12-2025/
