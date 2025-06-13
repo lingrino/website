@@ -1268,3 +1268,4 @@
 2025-06-12 https://antimetal.com/
 2025-06-12 https://blog.cloudflare.com/cloudflare-service-outage-june-12-2025/
 2025-06-12 https://github.com/apple/container
+2025-06-12 https://boltai.com/
