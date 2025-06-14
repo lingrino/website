@@ -1281,3 +1281,4 @@
 2025-06-14 https://leerob.com/ai
 2025-06-14 https://marc-bowes.com/dsql-avoid-hot-keys.html
 2025-06-14 https://blog.cloudflare.com/cloudflare-service-outage-june-12-2025/
+2025-06-14 https://apenwarr.ca/log/20250530
