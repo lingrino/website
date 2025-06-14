@@ -1272,3 +1272,4 @@
 2025-06-12 https://steipete.me/posts/2025/claude-code-is-my-computer
 2025-06-12 https://spiess.dev/blog/how-i-use-claude-code
 2025-06-13 https://supabase.com/blog/multigres-vitess-for-postgres
+2025-06-13 https://aws.amazon.com/about-aws/whats-new/2025/06/open-sourcing-pgactive-active-active-replication-extension-postgresql/
