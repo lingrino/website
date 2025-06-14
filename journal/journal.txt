@@ -1284,3 +1284,4 @@
 2025-06-14 https://apenwarr.ca/log/20250530
 2025-06-14 https://blog.samaltman.com/the-gentle-singularity
 2025-06-14 https://ferd.ca/the-gap-through-which-we-praise-the-machine.html
+2025-06-14 https://blog.singleton.io/posts/2025-06-14-coding-agents-cross-a-chasm/
