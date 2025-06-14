@@ -1276,3 +1276,4 @@
 2025-06-13 https://robpostonblog.wordpress.com/2025/06/11/moving-beyond-politics-in-the-cardiac-or/
 2025-06-13 https://tailscale.com/blog/frequent-reath-security
 2025-06-13 https://greatcircle.com/blog/2025/06/09/why-slack-outshines-zoom-for-incident-management/
+2025-06-13 https://www.jefftk.com/p/ghiblification-for-privacy
