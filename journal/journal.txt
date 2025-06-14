@@ -1283,3 +1283,4 @@
 2025-06-14 https://blog.cloudflare.com/cloudflare-service-outage-june-12-2025/
 2025-06-14 https://apenwarr.ca/log/20250530
 2025-06-14 https://blog.samaltman.com/the-gentle-singularity
+2025-06-14 https://ferd.ca/the-gap-through-which-we-praise-the-machine.html
