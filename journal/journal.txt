@@ -1280,3 +1280,4 @@
 2025-06-13 https://www.mooreds.com/wordpress/archives/3706
 2025-06-14 https://leerob.com/ai
 2025-06-14 https://marc-bowes.com/dsql-avoid-hot-keys.html
+2025-06-14 https://blog.cloudflare.com/cloudflare-service-outage-june-12-2025/
