@@ -1288,3 +1288,4 @@
 2025-06-14 https://status.cloud.google.com/incidents/ow5i3PPK96RduMcb1SsW
 2025-06-15 https://surfingcomplexity.blog/2017/06/24/a-conjecture-on-why-reliable-systems-fail/
 2025-06-15 https://blog.singleton.io/posts/2025-06-14-coding-agents-cross-a-chasm/
+2025-06-15 https://ampcode.com/agents-for-the-agent
