@@ -1286,3 +1286,4 @@
 2025-06-14 https://ferd.ca/the-gap-through-which-we-praise-the-machine.html
 2025-06-14 https://blog.singleton.io/posts/2025-06-14-coding-agents-cross-a-chasm/
 2025-06-14 https://status.cloud.google.com/incidents/ow5i3PPK96RduMcb1SsW
+2025-06-15 https://surfingcomplexity.blog/2017/06/24/a-conjecture-on-why-reliable-systems-fail/
