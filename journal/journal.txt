@@ -1290,3 +1290,4 @@
 2025-06-15 https://blog.singleton.io/posts/2025-06-14-coding-agents-cross-a-chasm/
 2025-06-15 https://ampcode.com/agents-for-the-agent
 2025-06-16 https://crawshaw.io/blog/programming-with-agents
+2025-06-16 https://www.norbauer.co/pages/the-seneca
