@@ -1294,3 +1294,4 @@
 2025-06-16 https://github.com/aws/pgactive
 2025-06-18 https://sourcegraph.com/blog/the-brute-squad
 2025-06-19 https://www.theinformation.com/articles/meta-talks-hire-former-github-ceo-nat-friedman-daniel-gross-join-ai-efforts?ref=thediff.co
+2025-06-19 https://brandur.org/fragments/testing-request-cancellation
