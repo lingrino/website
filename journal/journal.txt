@@ -1298,3 +1298,4 @@
 2025-06-19 https://marc-bowes.com/dsql-scales-to-zero.html
 2025-06-21 https://fly.io/blog/phoenix-new-the-remote-ai-runtime/
 2025-06-21 http://brooker.co.za/blog/2025/06/20/career.html
+2025-06-21 https://www.barry.ooo/posts/fde-culture?ref=thediff.co
