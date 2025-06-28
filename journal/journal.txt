@@ -1302,3 +1302,4 @@
 2025-06-22 https://www.youtube.com/watch?v=BGgsoIgbT_Y
 2025-06-22 https://www.anthropic.com/engineering/built-multi-agent-research-system
 2025-06-27 https://danpalmer.me/2025-06-25-what-is-simplicity/
+2025-06-28 https://simonsarris.com/h/work-of-local-culture
