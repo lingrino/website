@@ -1310,3 +1310,4 @@
 2025-06-30 https://noahkalina.substack.com/p/newsletter-185-faith-no-mores-midlife
 2025-06-30 https://www.cursor.com/blog/agent-web
 2025-06-30 https://rachelbythebay.com/w/2025/06/29/feedback/
+2025-07-03 https://planetscale.com/blog/the-principles-of-extreme-fault-tolerance
