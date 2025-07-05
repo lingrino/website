@@ -1311,3 +1311,4 @@
 2025-06-30 https://www.cursor.com/blog/agent-web
 2025-06-30 https://rachelbythebay.com/w/2025/06/29/feedback/
 2025-07-03 https://planetscale.com/blog/the-principles-of-extreme-fault-tolerance
+2025-07-05 https://jmduke.com/posts/post/uber-for-tokens/
