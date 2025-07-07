@@ -1312,3 +1312,4 @@
 2025-06-30 https://rachelbythebay.com/w/2025/06/29/feedback/
 2025-07-03 https://planetscale.com/blog/the-principles-of-extreme-fault-tolerance
 2025-07-05 https://jmduke.com/posts/post/uber-for-tokens/
+2025-07-06 https://andre.arko.net/2025/06/30/you-should-delete-tests/
