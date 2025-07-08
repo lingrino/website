@@ -1314,3 +1314,4 @@
 2025-07-05 https://jmduke.com/posts/post/uber-for-tokens/
 2025-07-06 https://andre.arko.net/2025/06/30/you-should-delete-tests/
 2025-07-07 https://rachelbythebay.com/w/2025/07/07/support/
+2025-07-08 https://www.splitgraph.com/blog/poetry-dependency-resolver-sudoku
