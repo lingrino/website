@@ -1316,3 +1316,4 @@
 2025-07-07 https://rachelbythebay.com/w/2025/07/07/support/
 2025-07-08 https://www.splitgraph.com/blog/poetry-dependency-resolver-sudoku
 2025-07-11 https://zhengdongwang.com/2025/07/10/superhuman-ai-in-a-normal-age.html
+2025-07-12 https://planetscale.com/blog/caching
