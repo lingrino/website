@@ -1320,3 +1320,4 @@
 2025-07-12 https://apenwarr.ca/log/20250711
 2025-07-13 https://adamunikowsky.substack.com/p/automating-oral-argument
 2025-07-16 https://neon.com/blog/an-apology-and-a-recap-on-may-june-stability
+2025-07-16 https://calv.info/openai-reflections
