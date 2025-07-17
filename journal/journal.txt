@@ -1323,3 +1323,4 @@
 2025-07-16 https://calv.info/openai-reflections
 2025-07-16 https://tonsky.me/blog/gaslight-driven-development/
 2025-07-16 https://geomys.org/
+2025-07-16 https://go.dev/blog/fips140
