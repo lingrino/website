@@ -1322,3 +1322,4 @@
 2025-07-16 https://neon.com/blog/an-apology-and-a-recap-on-may-june-stability
 2025-07-16 https://calv.info/openai-reflections
 2025-07-16 https://tonsky.me/blog/gaslight-driven-development/
+2025-07-16 https://geomys.org/
