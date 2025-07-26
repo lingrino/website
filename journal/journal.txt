@@ -1328,3 +1328,4 @@
 2025-07-20 https://tidyfirst.substack.com/p/tokens-the-new-oil
 2025-07-26 https://boz.com/articles/product-discovery
 2025-07-26 https://every.to/source-code/how-i-use-claude-code-to-ship-like-a-team-of-five
+2025-07-26 http://antirez.com/news/154
