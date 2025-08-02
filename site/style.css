@@ -3,46 +3,175 @@
   src: url("fonts/berkeley-mono-variable.woff2") format('woff2');
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #fafafa;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
 .main {
-  font-family: "berkeley-mono-variable", ui-monospace;
+  font-family: "berkeley-mono-variable", ui-monospace, monospace;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .home {
-  font-size: 1.25rem;
-  margin: auto;
-  max-width: 650px;
-  padding: 30px 10px 10px;
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 60px 20px 40px;
+}
+
+.home h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.home h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 3rem 0 1rem 0;
+  color: #000;
+  letter-spacing: -0.01em;
+}
+
+.home h2:first-of-type {
+  margin-top: 0;
+}
+
+.home p {
+  margin-bottom: 1.2rem;
+  line-height: 1.65;
+}
+
+.home ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.home .contact-list {
+  margin-bottom: 1.5rem;
+}
+
+.home .contact-list .home-li {
+  padding-left: 0;
+}
+
+.home .contact-list .home-li::before {
+  display: none;
 }
 
 .home-li {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 0.4rem 0;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.home-li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  color: #666;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.home a {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.home a:hover {
+  text-decoration-color: #1a1a1a;
+}
+
+.home-li a:first-child {
+  font-weight: 500;
+  color: #000;
 }
 
 .journal {
-  font-size: 1.15rem;
-  margin: auto;
-  padding: 30px 10px 10px;
-  max-width: 800px;
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 60px 20px 40px;
+}
+
+.journal h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 .journal-list {
   padding-left: 0;
+  list-style: none;
 }
 
 .journal-entry {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 10px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  gap: 1rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.journal-entry:last-child {
+  border-bottom: none;
 }
 
 .journal-date {
   white-space: nowrap;
+  color: #666;
+  font-weight: 400;
 }
 
 .journal-url {
   word-break: break-word;
   overflow-wrap: break-word;
+}
+
+.journal a {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.journal a:hover {
+  text-decoration-color: #1a1a1a;
+}
+
+.journal .back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.journal .back-link:hover {
+  color: #1a1a1a;
+}
+
+.journal .journal-url a {
+  color: #555;
 }
