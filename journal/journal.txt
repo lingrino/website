@@ -1336,3 +1336,4 @@
 2025-08-01 https://map.simonsarris.com/p/californias
 2025-08-02 https://www.theintrinsicperspective.com/p/literacy-lag-we-start-reading-too
 2025-08-05 https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/
+2025-08-05 https://openai.com/open-models/
