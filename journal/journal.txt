@@ -1338,3 +1338,4 @@
 2025-08-05 https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/
 2025-08-05 https://openai.com/open-models/
 2025-08-05 https://www.anthropic.com/news/claude-opus-4-1
+2025-08-06 https://blog.samaltman.com/how-to-be-successful
