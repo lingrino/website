@@ -1339,3 +1339,4 @@
 2025-08-05 https://openai.com/open-models/
 2025-08-05 https://www.anthropic.com/news/claude-opus-4-1
 2025-08-06 https://blog.samaltman.com/how-to-be-successful
+2025-08-07 https://openai.com/index/gpt-5-new-era-of-work/
