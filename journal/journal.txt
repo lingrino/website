@@ -1347,3 +1347,4 @@
 2025-08-10 https://blog.cloudflare.com/perplexity-is-using-stealth-undeclared-crawlers-to-evade-website-no-crawl-directives/
 2025-08-10 https://www.seangoedecke.com/gpt-oss-is-phi-5/
 2025-08-10 https://ethanding.substack.com/p/windsurf-gets-margin-called
+2025-08-10 https://alexw.substack.com/p/hire
