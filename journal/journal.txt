@@ -1349,3 +1349,4 @@
 2025-08-10 https://ethanding.substack.com/p/windsurf-gets-margin-called
 2025-08-10 https://alexw.substack.com/p/hire
 2025-08-11 https://planetscale.com/blog/announcing-neki
+2025-08-14 https://tailscale.com/blog/encrypting-data-at-rest
