@@ -1351,3 +1351,4 @@
 2025-08-11 https://planetscale.com/blog/announcing-neki
 2025-08-14 https://tailscale.com/blog/encrypting-data-at-rest
 2025-08-16 https://www.anthropic.com/research/end-subset-conversations
+2025-08-16 https://www.mooreds.com/wordpress/archives/3710
