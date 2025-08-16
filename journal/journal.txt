@@ -1353,3 +1353,4 @@
 2025-08-16 https://www.anthropic.com/research/end-subset-conversations
 2025-08-16 https://www.mooreds.com/wordpress/archives/3710
 2025-08-16 https://mitchellh.com/writing/ghostty-gtk-rewrite
+2025-08-16 https://loyal.com/
