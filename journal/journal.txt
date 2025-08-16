@@ -1358,3 +1358,4 @@
 2025-08-16 https://go.dev/blog/go1.25
 2025-08-16 http://antirez.com/news/155
 2025-08-16 http://brooker.co.za/blog/2025/08/15/dynamo-dynamodb-dsql.html
+2025-08-16 https://chrisgillett.org/rising-rates
