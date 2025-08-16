@@ -1357,3 +1357,4 @@
 2025-08-16 https://nayafia.substack.com/p/playing-tai-chi-with-memetic-warfare
 2025-08-16 https://go.dev/blog/go1.25
 2025-08-16 http://antirez.com/news/155
+2025-08-16 http://brooker.co.za/blog/2025/08/15/dynamo-dynamodb-dsql.html
