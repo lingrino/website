@@ -1360,3 +1360,4 @@
 2025-08-16 http://brooker.co.za/blog/2025/08/15/dynamo-dynamodb-dsql.html
 2025-08-16 https://chrisgillett.org/rising-rates
 2025-08-16 https://chrisgillett.org/rate-history
+2025-08-16 https://surfingcomplexity.blog/2025/08/16/the-trap-of-tech-thats-great-in-the-small-but-not-in-the-large/
