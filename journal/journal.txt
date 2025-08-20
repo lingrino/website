@@ -1371,3 +1371,4 @@
 2025-08-19 https://lethain.com/migration-isnt-failing-due-to-lack-of-staffing/
 2025-08-20 https://www.lastweekinaws.com/blog/aws-in-2025-the-stuff-you-think-you-know-thats-now-wrong/
 2025-08-20 https://mitchellh.com/writing/advice-for-tech-nonprofits
+2025-08-20 https://mitchellh.com/writing/advice-for-tech-nonprofits
