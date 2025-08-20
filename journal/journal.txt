@@ -1367,3 +1367,4 @@
 2025-08-19 https://en.m.wikipedia.org/wiki/Luhn_algorithm
 2025-08-19 https://www.bitsaboutmoney.com/archive/open-banking-and-payments-competition/
 2025-08-19 https://www.grug.design/know
+2025-08-19 https://github.com/ghostty-org/ghostty/pull/8289
