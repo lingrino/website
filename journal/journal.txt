@@ -1369,3 +1369,4 @@
 2025-08-19 https://www.grug.design/know
 2025-08-19 https://github.com/ghostty-org/ghostty/pull/8289
 2025-08-19 https://lethain.com/migration-isnt-failing-due-to-lack-of-staffing/
+2025-08-20 https://www.lastweekinaws.com/blog/aws-in-2025-the-stuff-you-think-you-know-thats-now-wrong/
