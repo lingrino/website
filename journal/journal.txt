@@ -1373,3 +1373,4 @@
 2025-08-20 https://mitchellh.com/writing/advice-for-tech-nonprofits
 2025-08-20 https://mitchellh.com/writing/advice-for-tech-nonprofits
 2025-08-21 https://joshuavaldez.com/the-unbearable-slowness-of-ai-coding/
+2025-08-21 https://robpostonblog.wordpress.com/2025/08/21/how-the-copilot-impacts-cardiac-surgical-safety/
