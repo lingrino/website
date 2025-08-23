@@ -1388,3 +1388,4 @@
 2025-08-23 https://aaronson.org/blog/i-drank-every-cocktail
 2025-08-23 https://blog.puzzmo.com/posts/2025/07/30/six-weeks-of-claude-code/
 2025-08-23 https://dwyer.co.za/static/claude-code-is-all-you-need.html
+2025-08-23 https://stackoverflow.blog/2025/07/16/the-great-unracking-saying-goodbye-to-the-servers-at-our-physical-datacenter/
