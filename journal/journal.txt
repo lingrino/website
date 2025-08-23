@@ -1382,3 +1382,4 @@
 2025-08-23 https://blog.nilenso.com/blog/2025/06/23/how-i-keep-up-with-ai-progress/
 2025-08-23 https://blog.florianherrengt.com/how-llms-work.html
 2025-08-23 https://notes.crmarsh.com/python-tooling-could-be-much-much-faster
+2025-08-23 https://www.onkernel.com/
