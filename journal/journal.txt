@@ -1383,3 +1383,4 @@
 2025-08-23 https://blog.florianherrengt.com/how-llms-work.html
 2025-08-23 https://notes.crmarsh.com/python-tooling-could-be-much-much-faster
 2025-08-23 https://www.onkernel.com/
+2025-08-23 https://www.catherinejue.com/fast
