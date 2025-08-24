@@ -16,9 +16,9 @@ jobs:
         uses: actions/checkout@v4
       - name: clean and append entry
         run: |
-          # Remove common tracking parameters while preserving functional ones
           clean_url="${{ inputs.entry }}"
-          # Remove specific tracking parameters
+
+          # remove tracking parameters
           clean_url=$(echo "$clean_url" | sed -E 's/[&?]ref=[^&]*//g')
           clean_url=$(echo "$clean_url" | sed -E 's/[&?]utm_[^&]*=[^&]*//g')
           clean_url=$(echo "$clean_url" | sed -E 's/[&?]source=[^&]*//g')
@@ -28,9 +28,13 @@ jobs:
           clean_url=$(echo "$clean_url" | sed -E 's/[&?]gclid=[^&]*//g')
           clean_url=$(echo "$clean_url" | sed -E 's/[&?]_ga=[^&]*//g')
           clean_url=$(echo "$clean_url" | sed -E 's/[&?]_gl=[^&]*//g')
-          # Clean up any leftover ? or & at the end
+
+          # clean up any leftover ? or & at the end
           clean_url=$(echo "$clean_url" | sed -E 's/[?&]$//')
-          echo "$clean_url" >> journal/journal.txt
+
+          # add timestamp to entry
+          timestamp=$(date +%s)
+          echo "$timestamp $clean_url" >> journal/journal.txt
       - name: commit entry
         run: |
           git config --global user.name 'github-actions[bot]'

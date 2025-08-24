@@ -9,6 +9,7 @@ import (
 	"os"
 	"path/filepath"
 	"slices"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -119,11 +120,15 @@ func loadJournal() ([]journal, error) {
 	for scanner.Scan() {
 		fields := strings.Fields(scanner.Text())
 
-		dt, err := time.Parse(time.DateOnly, fields[0])
+		// Parse unix timestamp
+		timestamp, err := strconv.ParseInt(fields[0], 10, 64)
 		if err != nil {
 			return nil, err
 		}
 
+		// Convert to time and format as date
+		dt := time.Unix(timestamp, 0)
+		
 		entries = append(entries, journal{Date: dt.Format(time.DateOnly), URL: fields[1]})
 	}
 
