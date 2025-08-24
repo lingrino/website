@@ -43,8 +43,9 @@ type templater struct {
 }
 
 type journal struct {
-	Date string
-	URL  string
+	Timestamp int64
+	Date      string
+	URL       string
 }
 
 func newTemplater() (*templater, error) {
@@ -127,7 +128,7 @@ func loadJournal() ([]journal, error) {
 
 		date := time.Unix(timestamp, 0).Format(time.DateOnly)
 
-		entries = append(entries, journal{Date: date, URL: fields[1]})
+		entries = append(entries, journal{Timestamp: timestamp, Date: date, URL: fields[1]})
 	}
 
 	err = scanner.Err()
@@ -136,7 +137,7 @@ func loadJournal() ([]journal, error) {
 	}
 
 	slices.SortStableFunc(entries, func(a, b journal) int {
-		return strings.Compare(b.Date, a.Date)
+		return int(b.Timestamp - a.Timestamp)
 	})
 
 	return entries, nil
