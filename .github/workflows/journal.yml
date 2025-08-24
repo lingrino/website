@@ -45,5 +45,11 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          if git diff --quiet; then
+            echo "no changes to commit"
+            exit 0
+          fi
+
           git commit -am "automated: add journal entry"
           git push
