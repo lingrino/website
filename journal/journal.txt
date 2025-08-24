@@ -1385,3 +1385,4 @@
 1755998845 https://damek.github.io/random/basic-facts-about-gpus/
 1756070963 https://medium.com/@jamesacowling/stepping-stones-not-milestones-e6be0073563f
 1756071239 https://maddie.wtf/posts/2025-07-21-jujutsu-for-busy-devs
+1756071599 https://eoghanmccabe.com/
