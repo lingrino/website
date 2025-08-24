@@ -845,7 +845,6 @@
 1729666800 https://tailscale.com/blog/kubernetes-direct-connections
 1729666800 https://expressjs.com/2024/10/15/v5-release.html
 1729666800 https://www.11ty.dev/blog/eleventy-font-awesome/
-1729666800 https://akuity.io/blog/introducing-kubevision-feature
 1729666800 https://nabeelqu.co/reflections-on-palantir
 1729666800 https://handbook.directory/
 1729666800 https://blot.im/
@@ -916,7 +915,6 @@
 1733644800 https://brooker.co.za:443/blog/2024/12/04/inside-dsql.html
 1733644800 https://brooker.co.za:443/blog/2024/12/05/inside-dsql-writes.html
 1733644800 https://brooker.co.za:443/blog/2024/12/06/inside-dsql-cap.html
-1733644800 https://www.dotwork.com/
 1733644800 https://scrollprize.org/jobs
 1733644800 https://en.wikipedia.org/wiki/Socialist_calculation_debate
 1733644800 https://www.cip.org/
@@ -1024,7 +1022,6 @@
 1739088000 https://brooker.co.za/blog/2025/02/04/versioning.html
 1739088000 https://mtlynch.io/solo-developer-year-7/
 1739088000 https://map.simonsarris.com/p/love-grows
-1739088000 https://lethain.com/user-data-access-strategy/
 1739088000 https://blog.samaltman.com/three-observations
 1739260800 https://www.theverge.com/ai-artificial-intelligence/610408/perplexity-f1-oracle-red-bull-racing-tiktok-stargate
 1739347200 https://churchkey.info/
@@ -1090,7 +1087,6 @@
 1742022000 https://nav.al/build-a-team-that-ships
 1742108400 https://www.benkuhn.net/pjm/
 1742108400 https://antirez.com/news/147
-1742108400 https://jvns.ca/blog/2025/01/11/getting-a-modern-terminal-setup/
 1742108400 https://www.honeycomb.io/blog/restructuring-how-we-think-about-alerts
 1742108400 https://blog.bitdrift.io/post/dont-build-bitdrift
 1742108400 https://yosefk.com/blog/managers-have-no-human-rights.html
@@ -1185,7 +1181,6 @@
 1747724400 https://docs.readwise.io/reader/guides/ghostreader/overview
 1747724400 https://airiskbutt.com/
 1747724400 https://culturedcode.com/things/blog/2025/05/a-swift-cloud/
-1747724400 https://buttondown.com/thirdsouthcapital/archive/may-2025/
 1747724400 https://ampcode.com/fif
 1747724400 https://fly.io/blog/litestream-revamped/
 1747724400 https://blog.cloudflare.com/loving-performance-measurements/
@@ -1213,8 +1208,6 @@
 1747897200 https://rachelbythebay.com/w/2025/05/22/ssl/
 1747983600 https://lethain.com/stuff-learned-at-carta/
 1747983600 https://www.thewayofcode.com/
-1748070000 https://planetscale.com/blog/faster-interpreters-in-go-catching-up-with-cpp
-1748070000 https://lethain.com/stuff-learned-at-carta/
 1748070000 https://inessential.com/2025/05/24/retirement_and_netnewswire.html
 1748070000 https://inessential.com/2025/05/23/love_letter.html
 1748070000 https://assets.stripeassets.com/fzn2n1nzq965/2pt3yIHthraqR1KwXgr98U/b6301040587a62d5b6ef7b76c904032d/Stripe-annual-letter-2024.pdf
@@ -1306,7 +1299,6 @@
 1751180400 https://chrisgillett.org/industrial-power
 1751180400 https://longform.asmartbear.com/chaos-at-start/
 1751180400 https://thick-coins.net/
-1751180400 https://thick-coins.net/
 1751266800 https://noahkalina.substack.com/p/newsletter-185-faith-no-mores-midlife
 1751266800 https://www.cursor.com/blog/agent-web
 1751266800 https://rachelbythebay.com/w/2025/06/29/feedback/
@@ -1371,11 +1363,10 @@
 1755586800 https://lethain.com/migration-isnt-failing-due-to-lack-of-staffing/
 1755673200 https://www.lastweekinaws.com/blog/aws-in-2025-the-stuff-you-think-you-know-thats-now-wrong/
 1755673200 https://mitchellh.com/writing/advice-for-tech-nonprofits
-1755673200 https://mitchellh.com/writing/advice-for-tech-nonprofits
 1755759600 https://joshuavaldez.com/the-unbearable-slowness-of-ai-coding/
 1755759600 https://robpostonblog.wordpress.com/2025/08/21/how-the-copilot-impacts-cardiac-surgical-safety/
 1755846000 https://www.jefftk.com/p/pasta-cooking-time
-1755932400 https://www.experimental-history.com/p/face-it-youre-a-crazy-person?ref=thediff.co
+1755932400 https://www.experimental-history.com/p/face-it-youre-a-crazy-person
 1755932400 https://caseyhandmer.wordpress.com/2025/08/19/economics-and-ai-take-off/
 1755932400 https://www.nytimes.com/1970/09/13/archives/a-friedman-doctrine-the-social-responsibility-of-business-is-to.html
 1755932400 https://maalvika.substack.com/p/being-too-ambitious-is-a-clever-form
@@ -1390,5 +1381,4 @@
 1755932400 https://dwyer.co.za/static/claude-code-is-all-you-need.html
 1755932400 https://stackoverflow.blog/2025/07/16/the-great-unracking-saying-goodbye-to-the-servers-at-our-physical-datacenter/
 1755932400 https://www.itsnicethat.com/features/how-we-built-bluey-s-world-cartoon-background-scenery-art-director-catriona-drummond-animation-090725
-1755932400 https://www.brendangregg.com/blog/2025-08-04/when-to-hire-a-computer-performance-engineering-team-2025-part1.html
 1755932400 https://www.brendangregg.com/blog/2025-08-04/when-to-hire-a-computer-performance-engineering-team-2025-part1.html

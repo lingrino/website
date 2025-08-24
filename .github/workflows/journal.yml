@@ -32,6 +32,12 @@ jobs:
           # clean up any leftover ? or & at the end
           clean_url=$(echo "$clean_url" | sed -E 's/[?&]$//')
 
+          # check if URL already exists in journal
+          if grep -q " $clean_url$" journal/journal.txt; then
+            echo "entry already exists: $clean_url"
+            exit 0
+          fi
+
           # add timestamp to entry
           timestamp=$(date +%s)
           echo "$timestamp $clean_url" >> journal/journal.txt
