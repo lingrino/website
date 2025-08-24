@@ -28,6 +28,7 @@ jobs:
           clean_url=$(echo "$clean_url" | sed -E 's/[&?]gclid=[^&]*//g')
           clean_url=$(echo "$clean_url" | sed -E 's/[&?]_ga=[^&]*//g')
           clean_url=$(echo "$clean_url" | sed -E 's/[&?]_gl=[^&]*//g')
+          clean_url=$(echo "$clean_url" | sed -E 's/[&?]__readwiseLocation=[^&]*//g')
 
           # clean up any leftover ? or & at the end
           clean_url=$(echo "$clean_url" | sed -E 's/[?&]$//')
