@@ -40,7 +40,7 @@ jobs:
           fi
 
           # add timestamp to entry
-          timestamp=$(TZ='America/Los_Angeles' date +%s)
+          timestamp=$(date +%s)
           echo "$timestamp $clean_url" >> journal/journal.txt
       - name: commit entry
         run: |

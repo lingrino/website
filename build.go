@@ -126,7 +126,11 @@ func loadJournal() ([]journal, error) {
 			return nil, err
 		}
 
-		date := time.Unix(timestamp, 0).Format(time.DateOnly)
+		location, err := time.LoadLocation("America/Los_Angeles")
+		if err != nil {
+			return nil, err
+		}
+		date := time.Unix(timestamp, 0).In(location).Format(time.DateOnly)
 
 		entries = append(entries, journal{Timestamp: timestamp, Date: date, URL: fields[1]})
 	}
