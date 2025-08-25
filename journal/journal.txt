@@ -1386,3 +1386,4 @@
 1756070963 https://medium.com/@jamesacowling/stepping-stones-not-milestones-e6be0073563f
 1756071239 https://maddie.wtf/posts/2025-07-21-jujutsu-for-busy-devs
 1756071599 https://eoghanmccabe.com/
+1756162499 2025-08-25 https://engineering.fb.com/2025/08/06/developer-tools/diff-risk-score-drs-ai-risk-aware-software-development-meta/
