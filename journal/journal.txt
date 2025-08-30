@@ -1388,3 +1388,4 @@
 1756071599 https://eoghanmccabe.com/
 1756162499 2025-08-25 https://engineering.fb.com/2025/08/06/developer-tools/diff-risk-score-drs-ai-risk-aware-software-development-meta/
 1756395457 https://www.seangoedecke.com/dangerous-advice/
+1756569949 https://mitchellh.com/writing/feel-it
