@@ -1390,3 +1390,4 @@
 1756395457 https://www.seangoedecke.com/dangerous-advice/
 1756569949 https://mitchellh.com/writing/feel-it
 1756660226 https://go.dev/blog/testing-time
+1756660310 https://blog.danielna.com/thank-you-squarespace/
