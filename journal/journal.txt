@@ -1398,3 +1398,4 @@
 1756830133 https://jmduke.com/posts/post/github-next/
 1757188992 2025-09-06 https://jmduke.com/posts/post/goodwill/
 1757273531 https://www.seangoedecke.com/breaking-rules/
+1757273787 https://www.seangoedecke.com/seeing-like-a-software-company/
