@@ -1386,16 +1386,16 @@
 1756070963 https://medium.com/@jamesacowling/stepping-stones-not-milestones-e6be0073563f
 1756071239 https://maddie.wtf/posts/2025-07-21-jujutsu-for-busy-devs
 1756071599 https://eoghanmccabe.com/
-1756162499 2025-08-25 https://engineering.fb.com/2025/08/06/developer-tools/diff-risk-score-drs-ai-risk-aware-software-development-meta/
+1756162499 https://engineering.fb.com/2025/08/06/developer-tools/diff-risk-score-drs-ai-risk-aware-software-development-meta/
 1756395457 https://www.seangoedecke.com/dangerous-advice/
 1756569949 https://mitchellh.com/writing/feel-it
 1756660226 https://go.dev/blog/testing-time
 1756660310 https://blog.danielna.com/thank-you-squarespace/
 1756660625 https://www.eatradius.com/beef-plastic-testing/
-1756660863 https://www.wsj.com/business/media/the-onion-print-subscribers-6c24649c?st=Lz4Dyt&reflink=desktopwebshare_permalink
+1756660863 https://www.wsj.com/business/media/the-onion-print-subscribers-6c24649c
 1756661356 https://nayafia.substack.com/p/what-embryo-selection-cant-do-yet
 1756664111 https://carta.com/data/startup-compensation-h1-2025/
 1756830133 https://jmduke.com/posts/post/github-next/
-1757188992 2025-09-06 https://jmduke.com/posts/post/goodwill/
+1757188992 https://jmduke.com/posts/post/goodwill/
 1757273531 https://www.seangoedecke.com/breaking-rules/
 1757273787 https://www.seangoedecke.com/seeing-like-a-software-company/
