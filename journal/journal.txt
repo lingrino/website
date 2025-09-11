@@ -1404,3 +1404,4 @@
 1757569007 https://blog.cloudflare.com/cloudflares-most-efficient-ai-inference-engine/
 1757569098 https://github.com/vllm-project/vllm
 1757569140 https://linear.app/now/why-is-quality-so-rare
+1757570743 https://paper.design/
