@@ -1408,3 +1408,4 @@
 1757570806 https://octolens.com/
 1757570842 https://security.apple.com/blog/memory-integrity-enforcement/
 1757651539 https://blog.samaltman.com/jakub-and-szymon
+1757804794 https://robpostonblog.wordpress.com/2025/09/13/read-this-before-starting-a-new-robotic-cardiac-program/
