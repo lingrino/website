@@ -1410,3 +1410,4 @@
 1757651539 https://blog.samaltman.com/jakub-and-szymon
 1757804794 https://robpostonblog.wordpress.com/2025/09/13/read-this-before-starting-a-new-robotic-cardiac-program/
 1758056594 https://ghostty.org/docs/install/release-notes/1-2-0
+1758219824 https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues
