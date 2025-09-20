@@ -1412,3 +1412,4 @@
 1758056594 https://ghostty.org/docs/install/release-notes/1-2-0
 1758219824 https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues
 1758403618 https://surfingcomplexity.blog/2025/09/20/fixation-the-ever-present-risk-during-incident-handling/
+1758403649 https://surfingcomplexity.blog/2025/09/13/the-hidden-trade-offs-of-fine-grained-progressive-rollouts/
