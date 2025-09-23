@@ -1417,3 +1417,4 @@
 1758589109 https://planetscale.com/blog/postgres-ha-with-cdc
 1758590555 https://readwise.io/reader/document_raw_content/355710802
 1758590607 https://openai.com/index/teen-safety-freedom-and-privacy/
+1758590727 https://courses.csail.mit.edu/6.803/pdf/hubbard1899.pdf
