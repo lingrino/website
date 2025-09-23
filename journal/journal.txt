@@ -1425,3 +1425,4 @@
 1758654229 http://brooker.co.za/blog/2025/09/18/firecracker.html
 1758655101 https://sendcutsend.com/
 1758655545 https://blog.samaltman.com/abundant-intelligence
+1758659552 https://cudaforfun.substack.com/p/outperforming-cublas-on-h100-a-worklog
