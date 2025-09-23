@@ -1422,3 +1422,4 @@
 1758612212 https://mitchellh.com/writing/libghostty-is-coming
 1758646122 https://worksinprogress.co/print/
 1758653921 https://strandsagents.com/latest/
+1758654170 https://github.com/firecracker-microvm/firecracker/blob/main/docs/snapshotting/random-for-clones.md
