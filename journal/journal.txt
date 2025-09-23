@@ -1420,3 +1420,4 @@
 1758590727 https://courses.csail.mit.edu/6.803/pdf/hubbard1899.pdf
 1758590855 https://progressandpoverty.substack.com/p/so-you-want-to-abolish-property-taxes?r=4rhmcp&triedRedirect=true
 1758612212 https://mitchellh.com/writing/libghostty-is-coming
+1758646122 https://worksinprogress.co/print/
