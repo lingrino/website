@@ -1414,3 +1414,4 @@
 1758403618 https://surfingcomplexity.blog/2025/09/20/fixation-the-ever-present-risk-during-incident-handling/
 1758403649 https://surfingcomplexity.blog/2025/09/13/the-hidden-trade-offs-of-fine-grained-progressive-rollouts/
 1758577240 https://www.henrikkarlsson.xyz/p/attention
+1758589109 https://planetscale.com/blog/postgres-ha-with-cdc
