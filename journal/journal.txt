@@ -1415,3 +1415,4 @@
 1758403649 https://surfingcomplexity.blog/2025/09/13/the-hidden-trade-offs-of-fine-grained-progressive-rollouts/
 1758577240 https://www.henrikkarlsson.xyz/p/attention
 1758589109 https://planetscale.com/blog/postgres-ha-with-cdc
+1758590555 https://readwise.io/reader/document_raw_content/355710802
