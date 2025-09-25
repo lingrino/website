@@ -1427,3 +1427,4 @@
 1758655545 https://blog.samaltman.com/abundant-intelligence
 1758659552 https://cudaforfun.substack.com/p/outperforming-cublas-on-h100-a-worklog
 1758696540 https://boz.com/articles/two-things
+1758830898 https://openai.com/index/gdpval/
