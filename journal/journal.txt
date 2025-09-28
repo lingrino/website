@@ -1436,3 +1436,4 @@
 1758916008 https://blog.cloudflare.com/20-percent-internet-upgrade/
 1758917717 https://go.dev/blog/flight-recorder
 1759085335 https://www.brandons.me/blog/thoughts-on-testing
+1759085392 https://www.newsminimalist.com/?from=5.3&to=10
