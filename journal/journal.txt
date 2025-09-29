@@ -1441,3 +1441,4 @@
 1759085981 https://seangoedecke.com/taste/
 1759086320 https://planetscale.com/blog/processes-and-threads
 1759093582 https://www.julian.ac/blog/2025/09/27/failing-to-understand-the-exponential-again/
+1759119364 https://surfingcomplexity.blog/2025/09/28/a-statistic-is-as-a-statistic-does/
