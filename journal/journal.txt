@@ -1445,3 +1445,4 @@
 1759258746 https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
 1759259029 https://periodic.com/
 1759259851 https://blog.samaltman.com/sora-2
+1759275193 https://github.com/atuinsh/desktop
