@@ -1448,3 +1448,4 @@
 1759275193 https://github.com/atuinsh/desktop
 1759282539 https://joel.drapper.me/p/rubygems-takeover/
 1759366285 https://thinkingmachines.ai/blog/announcing-tinker/
+1759524081 https://muratbuffalo.blogspot.com/2025/10/the-invisible-curriculum-of-research.html
