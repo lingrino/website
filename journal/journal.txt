@@ -1451,3 +1451,4 @@
 1759524081 https://muratbuffalo.blogspot.com/2025/10/the-invisible-curriculum-of-research.html
 1759540210 https://mitchellh.com/writing/zig-builds-getting-faster
 1759639722 https://www.seangoedecke.com/how-to-influence-politics/
+1759639897 https://bcantrill.dtrace.org/2025/10/04/a-parade-in-oakland/
