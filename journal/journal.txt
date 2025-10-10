@@ -1453,3 +1453,4 @@
 1759639722 https://www.seangoedecke.com/how-to-influence-politics/
 1759639897 https://bcantrill.dtrace.org/2025/10/04/a-parade-in-oakland/
 1759973520 https://fly.io/blog/kurt-got-got/
+1760073230 https://byroot.github.io/opensource/ruby/2025/10/09/dear-rubyists.html
