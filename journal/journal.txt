@@ -1457,3 +1457,4 @@
 1760075080 https://andre.arko.net/2025/10/09/the-rubygems-security-incident/
 1760075136 https://rubycentral.org/news/rubygems-org-aws-root-access-event-september-2025/
 1760075687 https://mikemcquaid.com/bootstrapping-gem-coop-governance/
+1760075813 https://justin.searls.co/links/2025-10-09-people-jumped-to-conclusions-about-this-rubygems-thing/
