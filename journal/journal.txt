@@ -1466,3 +1466,4 @@
 1760209427 https://surfingcomplexity.blog/2025/10/08/the-illegible-nature-of-software-development-talent/
 1760209615 https://mitchellh.com/writing/non-trivial-vibing
 1760213166 https://boz.com/articles/look-for-yes
+1760213207 https://boz.com/articles/self-actualization
