@@ -1465,3 +1465,4 @@
 1760208852 https://jvns.ca/blog/2025/10/10/notes-on-switching-to-helix-from-vim/
 1760209427 https://surfingcomplexity.blog/2025/10/08/the-illegible-nature-of-software-development-talent/
 1760209615 https://mitchellh.com/writing/non-trivial-vibing
+1760213166 https://boz.com/articles/look-for-yes
