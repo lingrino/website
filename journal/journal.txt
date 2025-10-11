@@ -1461,3 +1461,4 @@
 1760077185 https://www.tigrisdata.com/
 1760205576 http://brooker.co.za/blog/2025/10/05/locality.html
 1760206745 https://seangoedecke.com/ai-research-with-codex/
+1760208426 https://blog.cloudflare.com/how-we-found-a-bug-in-gos-arm64-compiler/
