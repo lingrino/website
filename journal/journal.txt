@@ -1464,3 +1464,4 @@
 1760208426 https://blog.cloudflare.com/how-we-found-a-bug-in-gos-arm64-compiler/
 1760208852 https://jvns.ca/blog/2025/10/10/notes-on-switching-to-helix-from-vim/
 1760209427 https://surfingcomplexity.blog/2025/10/08/the-illegible-nature-of-software-development-talent/
+1760209615 https://mitchellh.com/writing/non-trivial-vibing
