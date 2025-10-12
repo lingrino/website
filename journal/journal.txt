@@ -1472,3 +1472,4 @@
 1760218902 https://www.mechanize.work/blog/technological-determinism/
 1760289636 https://vkoskiv.com/first-linux-patch/
 1760290441 http://hintjens.com/blog:106
+1760292550 https://www.seangoedecke.com/clarity/
