@@ -1479,3 +1479,4 @@
 1760385940 https://jmduke.com/posts/post/cheetah/
 1760414735 https://www.erikhollnagel.com/ideas/etto-principle/index.html
 1760721649 https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/
+1760726422 https://planetscale.com/blog/benchmarking-postgres-17-vs-18
