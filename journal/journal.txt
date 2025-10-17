@@ -1481,3 +1481,4 @@
 1760721649 https://blog.cloudflare.com/unpacking-cloudflare-workers-cpu-performance-benchmarks/
 1760726422 https://planetscale.com/blog/benchmarking-postgres-17-vs-18
 1760726575 https://sarahconstantin.substack.com/p/ss26-color-stats
+1760726975 https://tonsky.me/blog/syntax-highlighting/
