@@ -1487,3 +1487,4 @@
 1761014714 https://www.anthropic.com/news/claude-code-on-the-web
 1761024554 https://seangoedecke.com/text-tokens-as-image-tokens/
 1761064117 https://updog.ai/
+1761065032 https://github.com/steveyegge/beads
