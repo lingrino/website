@@ -1484,3 +1484,4 @@
 1760726975 https://tonsky.me/blog/syntax-highlighting/
 1760727353 https://tailscale.com/blog/nat-traversal-improvements-pt-1
 1760799810 https://www.praf.me/great-eng-teams
+1761014714 https://www.anthropic.com/news/claude-code-on-the-web
