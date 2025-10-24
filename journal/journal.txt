@@ -1492,3 +1492,4 @@
 1761091452 https://chatgpt.com/atlas
 1761093670 https://slack.engineering/unified-grid-how-we-re-architected-slack-for-our-largest-customers/
 1761195783 https://aws.amazon.com/message/101925/
+1761273063 https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services
