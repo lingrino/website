@@ -1497,3 +1497,4 @@
 1762014622 https://render.com/blog/how-we-found-7-tib-of-memory-just-sitting-around
 1762017156 https://newsletter.vickiboykis.com/archive/i-want-to-see-the-claw/
 1762017217 https://planetscale.com/blog/5-dollar-planetscale
+1762017473 https://go.dev/blog/greenteagc
