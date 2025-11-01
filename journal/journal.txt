@@ -1495,3 +1495,4 @@
 1761273063 https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services
 1761511461 https://jmduke.com/posts/post/authorship/
 1762014622 https://render.com/blog/how-we-found-7-tib-of-memory-just-sitting-around
+1762017156 https://newsletter.vickiboykis.com/archive/i-want-to-see-the-claw/
