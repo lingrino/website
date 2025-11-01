@@ -1509,3 +1509,4 @@
 1762022066 https://destraynor.com/writing/the-purpose-of-a-system-is-what-it-does/
 1762022603 https://www.nan.fyi/database
 1762023675 https://www.dwarkesh.com/p/thoughts-on-the-ai-buildout
+1762024609 https://tailscale.com/blog/nat-traversal-improvements-pt-2-cloud-environments
