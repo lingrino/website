@@ -1503,3 +1503,4 @@
 1762020110 https://tailscale.com/blog/services-beta
 1762020154 https://tailscale.com/blog/peer-relays-beta
 1762020286 https://boz.com/articles/honesty-best
+1762020344 https://boz.com/articles/you-are-how-you-act
