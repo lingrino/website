@@ -1510,3 +1510,4 @@
 1762022603 https://www.nan.fyi/database
 1762023675 https://www.dwarkesh.com/p/thoughts-on-the-ai-buildout
 1762024609 https://tailscale.com/blog/nat-traversal-improvements-pt-2-cloud-environments
+1762024788 https://tailscale.com/blog/nat-traversal-improvements-pt3-looking-ahead
