@@ -1505,3 +1505,4 @@
 1762020286 https://boz.com/articles/honesty-best
 1762020344 https://boz.com/articles/you-are-how-you-act
 1762020630 https://seangoedecke.com/ai-and-informal-science/
+1762020890 https://seangoedecke.com/good-code-reviews/
