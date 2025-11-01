@@ -1511,3 +1511,4 @@
 1762023675 https://www.dwarkesh.com/p/thoughts-on-the-ai-buildout
 1762024609 https://tailscale.com/blog/nat-traversal-improvements-pt-2-cloud-environments
 1762024788 https://tailscale.com/blog/nat-traversal-improvements-pt3-looking-ahead
+1762028730 https://docs.google.com/document/u/0/d/1fDJc1e0itJdh0MXMFJtkRiBcxGEFtye6Xc6Ui7eMX4o/mobilebasic?pli=1
