@@ -1499,3 +1499,4 @@
 1762017217 https://planetscale.com/blog/5-dollar-planetscale
 1762017473 https://go.dev/blog/greenteagc
 1762018798 https://fly.io/blog/corrosion/
+1762020031 http://brooker.co.za/blog/2025/10/22/uuidv7.html
