@@ -1506,3 +1506,4 @@
 1762020344 https://boz.com/articles/you-are-how-you-act
 1762020630 https://seangoedecke.com/ai-and-informal-science/
 1762020890 https://seangoedecke.com/good-code-reviews/
+1762022066 https://destraynor.com/writing/the-purpose-of-a-system-is-what-it-does/
