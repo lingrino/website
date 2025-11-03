@@ -1513,3 +1513,4 @@
 1762024788 https://tailscale.com/blog/nat-traversal-improvements-pt3-looking-ahead
 1762028730 https://docs.google.com/document/u/0/d/1fDJc1e0itJdh0MXMFJtkRiBcxGEFtye6Xc6Ui7eMX4o/mobilebasic?pli=1
 1762101524 https://map.simonsarris.com/p/viscerality
+1762181536 https://surfingcomplexity.blog/2025/11/02/youll-never-see-attrition-referenced-in-an-rca/
