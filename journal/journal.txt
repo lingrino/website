@@ -1515,3 +1515,4 @@
 1762101524 https://map.simonsarris.com/p/viscerality
 1762181536 https://surfingcomplexity.blog/2025/11/02/youll-never-see-attrition-referenced-in-an-rca/
 1762181649 https://netflixtechblog.com/empowering-netflix-engineers-with-incident-management-ebb967871de4
+1762183364 https://brooker.co.za/blog/2025/11/02/thinking-dsql.html
