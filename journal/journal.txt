@@ -1519,3 +1519,4 @@
 1762538714 https://lethain.com/good-eng-mgmt-is-a-fad/
 1762555156 https://fly.io/blog/everyone-write-an-agent/
 1762723381 https://seangoedecke.com/technical-communication/
+1762731844 https://jsteuernagel.de/posts/a-prison-of-my-own-making/
