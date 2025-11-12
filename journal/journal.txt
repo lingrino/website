@@ -1531,3 +1531,4 @@
 1762919768 https://loops.so/
 1762923062 https://okayfail.com/2025/in-praise-of-dhh.html
 1762924317 https://www.seangoedecke.com/pure-and-impure-engineering/
+1762924724 https://steve-yegge.medium.com/introducing-beads-a-coding-agent-memory-system-637d7d92514a
