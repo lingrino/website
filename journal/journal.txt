@@ -1526,3 +1526,4 @@
 1762880264 http://antirez.com/news/156
 1762882593 https://bengoldhaber.substack.com/p/unexpected-things-that-are-people
 1762893218 https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s11-bronson.pdf
+1762914691 https://www.adaptivecapacitylabs.com/2025/11/11/uptime-labs-building-expertise-in-incident-response
