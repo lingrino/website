@@ -1533,3 +1533,4 @@
 1762924317 https://www.seangoedecke.com/pure-and-impure-engineering/
 1762924724 https://steve-yegge.medium.com/introducing-beads-a-coding-agent-memory-system-637d7d92514a
 1762925085 https://tobi.lutke.com/blogs/news/11280301-the-apprentice-programmer
+1763097966 https://seangoedecke.com/writing-for-ais/
