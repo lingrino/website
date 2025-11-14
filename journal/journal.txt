@@ -1535,3 +1535,4 @@
 1762925085 https://tobi.lutke.com/blogs/news/11280301-the-apprentice-programmer
 1763097966 https://seangoedecke.com/writing-for-ais/
 1763142836 https://willowvoice.com/
+1763154453 https://assets.anthropic.com/m/ec212e6566a0d47/original/Disrupting-the-first-reported-AI-orchestrated-cyber-espionage-campaign.pdf
