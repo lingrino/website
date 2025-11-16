@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'none';
+        style-src 'self';
+        img-src 'self';
+        font-src 'self';
+        manifest-src 'self';
+        upgrade-insecure-requests;
+        block-all-mixed-content;
+        require-trusted-types-for 'script';">
+    <meta http-equiv="Strict-Transport-Security" content="
+      max-age=63072000;
+      includeSubDomains;
+      preload;">
+
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="no-referrer">
+
+    <title>{{ .Title }} - Sean</title>
+    <meta name="description" content="{{ .Title }}">
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="blog">
+        <a href="/" class="back-link">← Home</a>
+        <div class="blog-content">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

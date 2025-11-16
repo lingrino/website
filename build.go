@@ -12,6 +12,10 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/gomarkdown/markdown"
+	"github.com/gomarkdown/markdown/html"
+	"github.com/gomarkdown/markdown/parser"
 )
 
 const (
@@ -67,7 +71,17 @@ func (t *templater) build() error {
 			return os.MkdirAll(filepath.Join(outputDir, strings.TrimPrefix(path, inputDir)), 0755)
 		}
 
+		// Handle markdown files in blog directory
+		relPath := strings.TrimPrefix(path, inputDir+string(filepath.Separator))
+		if strings.HasPrefix(relPath, "blog"+string(filepath.Separator)) && strings.HasSuffix(path, ".md") {
+			return t.buildBlogPost(path)
+		}
+
 		if strings.HasSuffix(path, ".tmpl") {
+			// Skip blog.html.tmpl as it's only used for blog posts, not as a standalone page
+			if filepath.Base(path) == "blog.html.tmpl" {
+				return nil
+			}
 			return t.copyTemplate(path)
 		}
 
@@ -145,4 +159,61 @@ func loadJournal() ([]journal, error) {
 	})
 
 	return entries, nil
+}
+
+type blogPost struct {
+	Title   string
+	Content template.HTML
+}
+
+func (t *templater) buildBlogPost(path string) error {
+	// Read markdown file
+	mdContent, err := os.ReadFile(path)
+	if err != nil {
+		return err
+	}
+
+	// Convert markdown to HTML
+	extensions := parser.CommonExtensions | parser.AutoHeadingIDs | parser.SuperSubscript
+	p := parser.NewWithExtensions(extensions)
+	doc := p.Parse(mdContent)
+
+	htmlFlags := html.CommonFlags | html.HrefTargetBlank
+	opts := html.RendererOptions{Flags: htmlFlags}
+	renderer := html.NewRenderer(opts)
+	htmlContent := markdown.Render(doc, renderer)
+
+	// Extract title from filename (remove .md extension)
+	filename := filepath.Base(path)
+	title := strings.TrimSuffix(filename, ".md")
+
+	// Load blog template
+	tmplPath := filepath.Join(inputDir, "blog.html.tmpl")
+	tmpl, err := template.ParseFiles(tmplPath)
+	if err != nil {
+		return err
+	}
+
+	// Create output directory if needed
+	relPath := strings.TrimPrefix(path, inputDir)
+	outputPath := filepath.Join(outputDir, strings.TrimSuffix(relPath, ".md")+".html")
+	outputDirPath := filepath.Dir(outputPath)
+	err = os.MkdirAll(outputDirPath, 0755)
+	if err != nil {
+		return err
+	}
+
+	// Generate HTML file
+	file, err := os.Create(outputPath)
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+
+	post := blogPost{
+		Title:   title,
+		Content: template.HTML(htmlContent),
+	}
+
+	return tmpl.Execute(file, post)
 }
