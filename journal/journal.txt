@@ -1540,3 +1540,4 @@
 1763314539 https://biomejs.dev/
 1763314658 https://seangoedecke.com/ai-products/
 1763315786 https://macwright.com/2025/11/11/val-town
+1763322385 https://www.blacksmith.sh/
