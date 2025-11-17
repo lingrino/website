@@ -1543,3 +1543,4 @@
 1763322385 https://www.blacksmith.sh/
 1763339533 https://www.heynox.com/
 1763352497 https://josh.ai/
+1763354004 https://rubycentral.org/news/ruby-central-update-friday-10-31-25/
