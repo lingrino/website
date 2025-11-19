@@ -1551,3 +1551,4 @@
 1763522140 https://rachelbythebay.com/w/2025/11/18/down/
 1763524359 http://brooker.co.za/blog/2025/11/18/consistency.html
 1763524878 https://www.dwarkesh.com/p/bits-per-sample
+1763526368 https://byrnehobart.medium.com/the-pirah%C3%A3-are-off-by-one-9c77eb66a6d9
