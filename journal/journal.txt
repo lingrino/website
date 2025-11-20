@@ -1552,3 +1552,4 @@
 1763524359 http://brooker.co.za/blog/2025/11/18/consistency.html
 1763524878 https://www.dwarkesh.com/p/bits-per-sample
 1763526368 https://byrnehobart.medium.com/the-pirah%C3%A3-are-off-by-one-9c77eb66a6d9
+1763637115 https://lethain.com/coding-at-work/
