@@ -1553,3 +1553,4 @@
 1763524878 https://www.dwarkesh.com/p/bits-per-sample
 1763526368 https://byrnehobart.medium.com/the-pirah%C3%A3-are-off-by-one-9c77eb66a6d9
 1763637115 https://lethain.com/coding-at-work/
+1763639808 https://blog.cloudflare.com/18-november-2025-outage/
