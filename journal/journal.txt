@@ -1560,3 +1560,4 @@
 1763839833 https://seangoedecke.com/are-new-models-good/
 1763841092 http://blog.calebjay.com/posts/my-new-life-stack/
 1764188419 https://seangoedecke.com/unblockable/
+1764277185 https://surfingcomplexity.blog/2025/11/26/brief-thoughts-on-the-recent-cloudflare-outage/
