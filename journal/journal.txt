@@ -1565,3 +1565,4 @@
 1764385413 https://seangoedecke.com/bad-code-at-big-companies/
 1764386565 https://bfcm.stripe.com/
 1764392173 https://surfingcomplexity.blog/2025/11/28/incidents-the-exceptional-as-routine/
+1764392274 https://surfingcomplexity.blog/2025/11/27/fun-with-incident-data-and-statistical-process-control/
