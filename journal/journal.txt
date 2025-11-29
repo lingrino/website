@@ -1566,3 +1566,4 @@
 1764386565 https://bfcm.stripe.com/
 1764392173 https://surfingcomplexity.blog/2025/11/28/incidents-the-exceptional-as-routine/
 1764392274 https://surfingcomplexity.blog/2025/11/27/fun-with-incident-data-and-statistical-process-control/
+1764440760 https://myticker.com/
