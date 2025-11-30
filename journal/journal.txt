@@ -1569,3 +1569,4 @@
 1764440760 https://myticker.com/
 1764524267 https://substack.com/@henrikkarlsson/note/c-179211747
 1764524410 https://www.morling.dev/blog/on-idempotency-keys/
+1764534904 https://itscharlibb.substack.com/p/the-realities-of-being-a-pop-star
