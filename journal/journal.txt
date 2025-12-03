@@ -1573,3 +1573,4 @@
 1764694430 https://www.fizzy.do/
 1764781338 https://ashley.dev/posts/empathy-doesnt-scale/
 1764790379 https://mitchellh.com/writing/ghostty-non-profit
+1764793464 https://amber-lang.com/
