@@ -1577,3 +1577,4 @@
 1764817558 https://gist.github.com/Richard-Weiss/efe157692991535403bd7e7fb20b6695
 1764820185 https://www.jefftk.com/p/front-load-giving-because-of-anthropic-donors
 1764835300 https://blog.janestreet.com/getting-from-tested-to-battle-tested/
+1764878799 https://lalitm.com/software-engineering-outside-the-spotlight/
