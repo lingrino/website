@@ -1574,3 +1574,4 @@
 1764781338 https://ashley.dev/posts/empathy-doesnt-scale/
 1764790379 https://mitchellh.com/writing/ghostty-non-profit
 1764793464 https://amber-lang.com/
+1764817558 https://gist.github.com/Richard-Weiss/efe157692991535403bd7e7fb20b6695
