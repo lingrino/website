@@ -1579,3 +1579,4 @@
 1764835300 https://blog.janestreet.com/getting-from-tested-to-battle-tested/
 1764878799 https://lalitm.com/software-engineering-outside-the-spotlight/
 1765044561 https://www.brendangregg.com/blog/2025-12-05/leaving-intel.html
+1765050876 https://muratbuffalo.blogspot.com/2025/12/optimize-for-momentum.html
