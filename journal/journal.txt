@@ -1586,3 +1586,4 @@
 1765137611 https://ryolu.notion.site/how-to-make-something-great
 1765411154 https://github.com/hashicorp/terraform-cdk?tab=readme-ov-file#the-future-of-terraform-cdk
 1765479102 https://openai.com/index/disney-sora-agreement/
+1765479411 https://openai.com/index/introducing-gpt-5-2/
