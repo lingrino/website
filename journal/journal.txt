@@ -1585,3 +1585,4 @@
 1765134328 https://www.dwarkesh.com/p/thoughts-on-ai-progress-dec-2025
 1765137611 https://ryolu.notion.site/how-to-make-something-great
 1765411154 https://github.com/hashicorp/terraform-cdk?tab=readme-ov-file#the-future-of-terraform-cdk
+1765479102 https://openai.com/index/disney-sora-agreement/
