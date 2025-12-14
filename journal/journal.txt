@@ -1587,3 +1587,4 @@
 1765411154 https://github.com/hashicorp/terraform-cdk?tab=readme-ov-file#the-future-of-terraform-cdk
 1765479102 https://openai.com/index/disney-sora-agreement/
 1765479411 https://openai.com/index/introducing-gpt-5-2/
+1765706616 https://lethain.com/company-ai-adoption/
