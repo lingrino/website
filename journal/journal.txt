@@ -1593,3 +1593,4 @@
 1765773785 https://itscharlibb.substack.com/p/the-death-of-cool
 1765783088 https://www.bitsaboutmoney.com/archive/perpetual-futures-explained/
 1765783852 https://www.raycast.com/blog/no-code-reviews-by-default
+1766039105 https://www.jmduke.com/posts/blacksmith-github.html
