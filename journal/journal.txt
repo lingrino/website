@@ -1594,3 +1594,4 @@
 1765783088 https://www.bitsaboutmoney.com/archive/perpetual-futures-explained/
 1765783852 https://www.raycast.com/blog/no-code-reviews-by-default
 1766039105 https://www.jmduke.com/posts/blacksmith-github.html
+1766109592 https://simonwillison.net/2025/Dec/18/code-proven-to-work/
