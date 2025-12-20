@@ -1,3 +1,3 @@
-# my personal website
+# site
 
-<https://lingrino.com>
+<https://seanlingren.com>
