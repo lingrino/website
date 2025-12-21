@@ -1597,3 +1597,4 @@
 1766109592 https://simonwillison.net/2025/Dec/18/code-proven-to-work/
 1766200166 http://brooker.co.za/blog/2025/12/16/natural-language.html
 1766299239 https://antirez.com/news/157
+1766304814 https://helium.computer/
