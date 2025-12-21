@@ -1599,3 +1599,4 @@
 1766299239 https://antirez.com/news/157
 1766304814 https://helium.computer/
 1766344852 https://www.theguardian.com/world/2003/mar/30/everest.magazine
+1766346464 https://www.ben-evans.com/presentations
