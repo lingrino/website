@@ -1617,3 +1617,4 @@
 1766798118 https://exe.dev/
 1766868601 https://newaesthetics.art/
 1766960506 https://jmduke.com/posts/single-use-variables.html
+1766960649 https://seangoedecke.com/nobody-knows-how-software-products-work/
