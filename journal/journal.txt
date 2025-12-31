@@ -1619,3 +1619,4 @@
 1766960506 https://jmduke.com/posts/single-use-variables.html
 1766960649 https://seangoedecke.com/nobody-knows-how-software-products-work/
 1766971561 https://yosefk.com/blog/enabling-c-threads-in-a-python-wasm-environment.html
+1767185142 https://muratbuffalo.blogspot.com/2025/12/rethinking-cost-of-distributed-caches.html
