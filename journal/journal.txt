@@ -1620,3 +1620,4 @@
 1766960649 https://seangoedecke.com/nobody-knows-how-software-products-work/
 1766971561 https://yosefk.com/blog/enabling-c-threads-in-a-python-wasm-environment.html
 1767185142 https://muratbuffalo.blogspot.com/2025/12/rethinking-cost-of-distributed-caches.html
+1767384321 https://tenderlovemaking.com/2025/12/29/can-bundler-be-as-fast-as-uv/
