@@ -1626,3 +1626,4 @@
 1767550671 https://github.com/jessfraz/dotfiles/blob/main/.codex/AGENTS.md
 1767746384 https://tonsky.me/blog/tahoe-icons/
 1767750602 https://chadnauseam.com/coding/random/calculator-app
+1767762613 https://seangoedecke.com/you-cant-design-software-you-dont-work-on/
