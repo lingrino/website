@@ -1624,3 +1624,4 @@
 1767421919 https://map.simonsarris.com/p/ink-in-the-stomach
 1767500584 https://x.com/bcherny/status/2007179832300581177
 1767550671 https://github.com/jessfraz/dotfiles/blob/main/.codex/AGENTS.md
+1767746384 https://tonsky.me/blog/tahoe-icons/
