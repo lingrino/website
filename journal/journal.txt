@@ -1628,3 +1628,4 @@
 1767750602 https://chadnauseam.com/coding/random/calculator-app
 1767762613 https://seangoedecke.com/you-cant-design-software-you-dont-work-on/
 1767762692 https://seangoedecke.com/a-little-bit-cynical/
+1767763748 https://ferd.ca/software-acceleration-and-desynchronization.html
