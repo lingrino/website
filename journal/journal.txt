@@ -1637,3 +1637,4 @@
 1768177708 https://www.dwarkesh.com/p/notes-jan-10-2026
 1768177838 http://antirez.com/news/158
 1768178771 https://fly.io/blog/code-and-let-live/
+1768178946 https://boz.com/articles/gift-naivete
