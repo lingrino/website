@@ -1635,3 +1635,4 @@
 1767918735 https://newsletter.semianalysis.com/p/apple-tsmc-the-partnership-that-built
 1768177427 https://orama.com/
 1768177708 https://www.dwarkesh.com/p/notes-jan-10-2026
+1768177838 http://antirez.com/news/158
