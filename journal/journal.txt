@@ -1639,3 +1639,4 @@
 1768178771 https://fly.io/blog/code-and-let-live/
 1768178946 https://boz.com/articles/gift-naivete
 1768179432 https://mitchellh.com/writing/ghostty-memory-leak-fix
+1768179663 https://robpostonblog.wordpress.com/2026/01/10/robotics-finds-the-simplicity-beyond-complexity/
