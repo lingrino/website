@@ -1641,3 +1641,4 @@
 1768179432 https://mitchellh.com/writing/ghostty-memory-leak-fix
 1768179663 https://robpostonblog.wordpress.com/2026/01/10/robotics-finds-the-simplicity-beyond-complexity/
 1768180144 https://sarahconstantin.substack.com/p/cancer-selective-pan-essential-targets
+1768180575 https://brianguthrie.com/p/the-move-faster-manifesto/
