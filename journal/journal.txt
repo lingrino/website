@@ -1652,3 +1652,4 @@
 1768256866 https://blog.yiningkarlli.com/2025/12/zootopia-2.html
 1768289841 https://bauhausmanifesto.com/
 1768289922 https://www.craigpardey.com/post/2025-12-26-cicd-performance/
+1768289934 https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code
