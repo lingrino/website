@@ -1651,3 +1651,4 @@
 1768249752 https://claude.com/blog/cowork-research-preview
 1768256866 https://blog.yiningkarlli.com/2025/12/zootopia-2.html
 1768289841 https://bauhausmanifesto.com/
+1768289922 https://www.craigpardey.com/post/2025-12-26-cicd-performance/
