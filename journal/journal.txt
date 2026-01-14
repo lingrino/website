@@ -1661,3 +1661,4 @@
 1768422694 https://www.lastweekinaws.com/blog/i-hope-this-email-finds-you-before-i-do/
 1768423535 https://planetscale.com/blog/database-transactions
 1768424957 https://www.noise.xyz/
+1768425010 https://www.monologue.to/
