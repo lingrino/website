@@ -1662,3 +1662,4 @@
 1768423535 https://planetscale.com/blog/database-transactions
 1768424957 https://www.noise.xyz/
 1768425010 https://www.monologue.to/
+1768425148 https://www.bitsaboutmoney.com/archive/gift-card-accountability-sink/
