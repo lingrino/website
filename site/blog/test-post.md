@@ -1,3 +1,7 @@
+---
+date: 2024-01-15
+---
+
 # Test Post
 
 This is a test blog post to verify the blog functionality works.

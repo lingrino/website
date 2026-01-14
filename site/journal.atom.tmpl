@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Sean Lingren - Journal</title>
+  <link href="https://seanlingren.com/journal" rel="alternate"/>
+  <link href="https://seanlingren.com/journal.atom" rel="self" type="application/atom+xml"/>
+  <id>https://seanlingren.com/journal</id>
+  <subtitle>Links and articles I'm reading</subtitle>
+  <author>
+    <name>Sean Lingren</name>
+  </author>
+  {{- range .FeedJournalEntries }}
+  <entry>
+    <title>{{ .URL }}</title>
+    <link href="{{ .URL }}" rel="alternate"/>
+    <id>{{ .URL }}</id>
+    <updated>{{ .DateAtom }}</updated>
+  </entry>
+  {{- end }}
+</feed>

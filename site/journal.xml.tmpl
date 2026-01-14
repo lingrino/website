@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sean Lingren - Journal</title>
+    <link>https://seanlingren.com/journal</link>
+    <description>Links and articles I'm reading</description>
+    <language>en-us</language>
+    <atom:link href="https://seanlingren.com/journal.xml" rel="self" type="application/rss+xml"/>
+    {{- range .FeedJournalEntries }}
+    <item>
+      <title>{{ .URL }}</title>
+      <link>{{ .URL }}</link>
+      <guid>{{ .URL }}</guid>
+      <pubDate>{{ .DateRSS }}</pubDate>
+    </item>
+    {{- end }}
+  </channel>
+</rss>

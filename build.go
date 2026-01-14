@@ -44,11 +44,30 @@ func main() {
 
 type templater struct {
 	JournalEntries []journal
+	BlogPosts      []blogPost
+}
+
+// FeedJournalEntries returns the most recent 50 journal entries for feeds
+func (t *templater) FeedJournalEntries() []journal {
+	if len(t.JournalEntries) <= 50 {
+		return t.JournalEntries
+	}
+	return t.JournalEntries[:50]
+}
+
+// FeedBlogPosts returns the most recent 50 blog posts for feeds
+func (t *templater) FeedBlogPosts() []blogPost {
+	if len(t.BlogPosts) <= 50 {
+		return t.BlogPosts
+	}
+	return t.BlogPosts[:50]
 }
 
 type journal struct {
 	Timestamp int64
 	Date      string
+	DateRSS   string // RFC 822 format for RSS
+	DateAtom  string // RFC 3339 format for Atom
 	URL       string
 }
 
@@ -62,7 +81,8 @@ func newTemplater() (*templater, error) {
 }
 
 func (t *templater) build() error {
-	return filepath.WalkDir(inputDir, func(path string, d fs.DirEntry, err error) error {
+	// First pass: collect blog posts and copy files
+	err := filepath.WalkDir(inputDir, func(path string, d fs.DirEntry, err error) error {
 		if err != nil {
 			return err
 		}
@@ -74,18 +94,51 @@ func (t *templater) build() error {
 		// Handle markdown files in blog directory
 		relPath := strings.TrimPrefix(path, inputDir+string(filepath.Separator))
 		if strings.HasPrefix(relPath, "blog"+string(filepath.Separator)) && strings.HasSuffix(path, ".md") {
-			return t.buildBlogPost(path)
+			post, err := t.buildBlogPost(path)
+			if err != nil {
+				return err
+			}
+			t.BlogPosts = append(t.BlogPosts, *post)
+			return nil
 		}
 
 		if strings.HasSuffix(path, ".tmpl") {
-			// Skip blog.html.tmpl as it's only used for blog posts, not as a standalone page
-			if filepath.Base(path) == "blog.html.tmpl" {
+			// Skip templates that are not standalone pages
+			base := filepath.Base(path)
+			if base == "blog.html.tmpl" {
+				return nil
+			}
+			// Skip feed templates for now - process after blog posts are collected
+			if strings.HasSuffix(base, ".xml.tmpl") || strings.HasSuffix(base, ".atom.tmpl") {
 				return nil
 			}
 			return t.copyTemplate(path)
 		}
 
 		return t.copyFile(path)
+	})
+	if err != nil {
+		return err
+	}
+
+	// Sort blog posts by date (newest first)
+	slices.SortStableFunc(t.BlogPosts, func(a, b blogPost) int {
+		return strings.Compare(b.Date, a.Date)
+	})
+
+	// Second pass: process feed templates (now that BlogPosts is populated)
+	return filepath.WalkDir(inputDir, func(path string, d fs.DirEntry, err error) error {
+		if err != nil {
+			return err
+		}
+		if d.IsDir() {
+			return nil
+		}
+		base := filepath.Base(path)
+		if strings.HasSuffix(base, ".xml.tmpl") || strings.HasSuffix(base, ".atom.tmpl") {
+			return t.copyTemplate(path)
+		}
+		return nil
 	})
 }
 
@@ -144,9 +197,18 @@ func loadJournal() ([]journal, error) {
 		if err != nil {
 			return nil, err
 		}
-		date := time.Unix(timestamp, 0).In(location).Format(time.DateOnly)
+		t := time.Unix(timestamp, 0).In(location)
+		date := t.Format(time.DateOnly)
+		dateRSS := t.Format(time.RFC1123Z)
+		dateAtom := t.Format(time.RFC3339)
 
-		entries = append(entries, journal{Timestamp: timestamp, Date: date, URL: fields[1]})
+		entries = append(entries, journal{
+			Timestamp: timestamp,
+			Date:      date,
+			DateRSS:   dateRSS,
+			DateAtom:  dateAtom,
+			URL:       fields[1],
+		})
 	}
 
 	err = scanner.Err()
@@ -162,36 +224,68 @@ func loadJournal() ([]journal, error) {
 }
 
 type blogPost struct {
-	Title   string
-	Content template.HTML
+	Title    string
+	Slug     string        // filename without extension, for URL generation
+	Date     string        // YYYY-MM-DD format
+	DateRSS  string        // RFC 822 format for RSS
+	DateAtom string        // RFC 3339 format for Atom
+	Content  template.HTML // full HTML content
 }
 
-func (t *templater) buildBlogPost(path string) error {
+func (t *templater) buildBlogPost(path string) (*blogPost, error) {
 	// Read markdown file
 	mdContent, err := os.ReadFile(path)
 	if err != nil {
-		return err
+		return nil, err
 	}
+
+	// Parse frontmatter and content
+	content, date := parseFrontmatter(string(mdContent))
 
 	// Convert markdown to HTML
 	extensions := parser.CommonExtensions | parser.AutoHeadingIDs | parser.SuperSubscript
 	p := parser.NewWithExtensions(extensions)
-	doc := p.Parse(mdContent)
+	doc := p.Parse([]byte(content))
 
 	htmlFlags := html.CommonFlags | html.HrefTargetBlank
 	opts := html.RendererOptions{Flags: htmlFlags}
 	renderer := html.NewRenderer(opts)
 	htmlContent := markdown.Render(doc, renderer)
 
-	// Extract title from filename (remove .md extension)
+	// Extract title and slug from filename (remove .md extension)
 	filename := filepath.Base(path)
-	title := strings.TrimSuffix(filename, ".md")
+	slug := strings.TrimSuffix(filename, ".md")
+	title := strings.ReplaceAll(slug, "-", " ")
+
+	// Format dates for RSS and Atom
+	var dateRSS, dateAtom string
+	if date != "" {
+		location, err := time.LoadLocation("America/Los_Angeles")
+		if err != nil {
+			return nil, err
+		}
+		t, err := time.ParseInLocation(time.DateOnly, date, location)
+		if err != nil {
+			return nil, err
+		}
+		dateRSS = t.Format(time.RFC1123Z)
+		dateAtom = t.Format(time.RFC3339)
+	}
+
+	post := &blogPost{
+		Title:    title,
+		Slug:     slug,
+		Date:     date,
+		DateRSS:  dateRSS,
+		DateAtom: dateAtom,
+		Content:  template.HTML(htmlContent),
+	}
 
 	// Load blog template
 	tmplPath := filepath.Join(inputDir, "blog.html.tmpl")
 	tmpl, err := template.ParseFiles(tmplPath)
 	if err != nil {
-		return err
+		return nil, err
 	}
 
 	// Create output directory if needed
@@ -200,20 +294,48 @@ func (t *templater) buildBlogPost(path string) error {
 	outputDirPath := filepath.Dir(outputPath)
 	err = os.MkdirAll(outputDirPath, 0755)
 	if err != nil {
-		return err
+		return nil, err
 	}
 
 	// Generate HTML file
 	file, err := os.Create(outputPath)
 	if err != nil {
-		return err
+		return nil, err
 	}
 	defer file.Close()
 
-	post := blogPost{
-		Title:   title,
-		Content: template.HTML(htmlContent),
+	err = tmpl.Execute(file, post)
+	if err != nil {
+		return nil, err
 	}
 
-	return tmpl.Execute(file, post)
+	return post, nil
+}
+
+// parseFrontmatter extracts YAML frontmatter from markdown content
+// Returns the content without frontmatter and the date if found
+func parseFrontmatter(content string) (string, string) {
+	if !strings.HasPrefix(content, "---\n") {
+		return content, ""
+	}
+
+	// Find the closing ---
+	endIndex := strings.Index(content[4:], "\n---\n")
+	if endIndex == -1 {
+		return content, ""
+	}
+
+	frontmatter := content[4 : 4+endIndex]
+	remaining := content[4+endIndex+5:] // skip past \n---\n
+
+	// Parse date from frontmatter
+	var date string
+	for _, line := range strings.Split(frontmatter, "\n") {
+		if strings.HasPrefix(line, "date:") {
+			date = strings.TrimSpace(strings.TrimPrefix(line, "date:"))
+			break
+		}
+	}
+
+	return remaining, date
 }
