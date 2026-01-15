@@ -1664,3 +1664,4 @@
 1768425010 https://www.monologue.to/
 1768425148 https://www.bitsaboutmoney.com/archive/gift-card-accountability-sink/
 1768497814 https://www.dwarkesh.com/p/hiring-scouts-to-help-me-find-guests
+1768501844 https://tailscale.com/blog/open-source-terraform-module
