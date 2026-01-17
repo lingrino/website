@@ -1670,3 +1670,4 @@
 1768553841 https://github.com/tldraw/tldraw/issues/7695
 1768611376 https://openai.com/index/the-truth-elon-left-out/
 1768611387 https://usefulfictions.substack.com/p/the-seam-through-the-center-of-things&triedRedirect=true
+1768614178 https://www.interfacecraft.dev/
