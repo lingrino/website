@@ -1668,3 +1668,4 @@
 1768502950 https://fly.io/blog/design-and-implementation/
 1768503254 https://blog.cloudflare.com/cname-a-record-order-dns-standards/
 1768553841 https://github.com/tldraw/tldraw/issues/7695
+1768611376 https://openai.com/index/the-truth-elon-left-out/
