@@ -11,6 +11,7 @@ import (
 	"slices"
 	"strconv"
 	"strings"
+	texttemplate "text/template"
 	"time"
 
 	"github.com/gomarkdown/markdown"
@@ -148,6 +149,7 @@ func (t *templater) build() error {
 	})
 
 	// Second pass: process feed templates (now that BlogPosts is populated)
+	// Use text/template for XML feeds to avoid HTML escaping
 	return filepath.WalkDir(inputDir, func(path string, d fs.DirEntry, err error) error {
 		if err != nil {
 			return err
@@ -157,7 +159,7 @@ func (t *templater) build() error {
 		}
 		base := filepath.Base(path)
 		if strings.HasSuffix(base, ".xml.tmpl") || strings.HasSuffix(base, ".atom.tmpl") {
-			return t.copyTemplate(path)
+			return t.copyXMLTemplate(path)
 		}
 		return nil
 	})
@@ -165,6 +167,23 @@ func (t *templater) build() error {
 
 func (t *templater) copyTemplate(path string) error {
 	tmpl, err := template.ParseFiles(path)
+	if err != nil {
+		return err
+	}
+
+	file, err := os.Create(filepath.Join(outputDir, strings.TrimSuffix(strings.TrimPrefix(path, inputDir), ".tmpl")))
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+
+	return tmpl.Execute(file, t)
+}
+
+// copyXMLTemplate uses text/template instead of html/template
+// to avoid HTML escaping in XML feed output
+func (t *templater) copyXMLTemplate(path string) error {
+	tmpl, err := texttemplate.ParseFiles(path)
 	if err != nil {
 		return err
 	}
