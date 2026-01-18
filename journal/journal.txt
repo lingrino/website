@@ -957,7 +957,7 @@
 1735804800 https://blog.cloudflare.com/behind-the-scenes-with-stream-live-cloudflares-live-streaming-service/
 1735804800 https://vinay.sh/i-am-rich-and-have-no-idea-what-to-do-with-my-life/
 1735891200 https://newsletter.vickiboykis.com/archive/everything-i-did-in-2024/
-1735891200 https://en.wikipedia.org/wiki/Shepard_tone?wprov=sfti1
+1735891200 https://en.wikipedia.org/wiki/Shepard_tone
 1735891200 https://austinkleon.substack.com/p/100-things-that-made-my-year-2024
 1735977600 https://www.lrb.co.uk/the-paper/v46/n24/sophie-smith/sleeping-women
 1736064000 https://www.dwarkeshpatel.com/p/notes-on-china
@@ -1156,7 +1156,7 @@
 1746860400 https://www.airs.com/blog/archives/670
 1746860400 https://surfingcomplexity.blog/2025/05/10/on-work-processes-and-outcomes/
 1746946800 https://fxrant.blogspot.com/2025/04/the-movie-mistake-mystery-from-revenge.html
-1747033200 https://en.wikipedia.org/wiki/Timeline_of_the_far_future?wprov=sfti1
+1747033200 https://en.wikipedia.org/wiki/Timeline_of_the_far_future
 1747119600 https://github.com/hashicorp/terraform-provider-aws/issues/41101
 1747292400 https://www.sec.gov/ix?doc=/Archives/edgar/data/1679788/000167978825000094/coin-20250514.htm
 1747292400 https://github.com/buresdv/Cork
@@ -1417,7 +1417,7 @@
 1758589109 https://planetscale.com/blog/postgres-ha-with-cdc
 1758590607 https://openai.com/index/teen-safety-freedom-and-privacy/
 1758590727 https://courses.csail.mit.edu/6.803/pdf/hubbard1899.pdf
-1758590855 https://progressandpoverty.substack.com/p/so-you-want-to-abolish-property-taxes?r=4rhmcp&triedRedirect=true
+1758590855 https://progressandpoverty.substack.com/p/so-you-want-to-abolish-property-taxes
 1758612212 https://mitchellh.com/writing/libghostty-is-coming
 1758646122 https://worksinprogress.co/print/
 1758653921 https://strandsagents.com/latest/
