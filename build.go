@@ -63,6 +63,27 @@ func (t *templater) FeedBlogPosts() []blogPost {
 	return t.BlogPosts[:50]
 }
 
+// LatestJournalDateAtom returns the most recent journal entry date in Atom format
+func (t *templater) LatestJournalDateAtom() string {
+	if len(t.JournalEntries) == 0 {
+		return time.Now().Format(time.RFC3339)
+	}
+	return t.JournalEntries[0].DateAtom
+}
+
+// LatestBlogDateAtom returns the most recent blog post date in Atom format
+func (t *templater) LatestBlogDateAtom() string {
+	if len(t.BlogPosts) == 0 {
+		return time.Now().Format(time.RFC3339)
+	}
+	for _, p := range t.BlogPosts {
+		if p.DateAtom != "" {
+			return p.DateAtom
+		}
+	}
+	return time.Now().Format(time.RFC3339)
+}
+
 type journal struct {
 	Timestamp int64
 	Date      string
@@ -186,7 +207,16 @@ func loadJournal() ([]journal, error) {
 
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		fields := strings.Fields(scanner.Text())
+		line := scanner.Text()
+		if line == "" {
+			continue
+		}
+
+		fields := strings.Fields(line)
+		if len(fields) < 2 {
+			slog.Warn("skipping malformed journal entry", "line", line)
+			continue
+		}
 
 		timestamp, err := strconv.ParseInt(fields[0], 10, 64)
 		if err != nil {
@@ -319,14 +349,21 @@ func parseFrontmatter(content string) (string, string) {
 		return content, ""
 	}
 
-	// Find the closing ---
-	endIndex := strings.Index(content[4:], "\n---\n")
-	if endIndex == -1 {
+	// Find the closing --- (must be on its own line)
+	rest := content[4:]
+	endIndex := strings.Index(rest, "\n---\n")
+	var frontmatter, remaining string
+
+	if endIndex != -1 {
+		frontmatter = rest[:endIndex]
+		remaining = rest[endIndex+5:] // skip past \n---\n
+	} else if strings.HasSuffix(rest, "\n---") {
+		// Handle case where closing --- is at end of file without trailing newline
+		frontmatter = rest[:len(rest)-4]
+		remaining = ""
+	} else {
 		return content, ""
 	}
-
-	frontmatter := content[4 : 4+endIndex]
-	remaining := content[4+endIndex+5:] // skip past \n---\n
 
 	// Parse date from frontmatter
 	var date string

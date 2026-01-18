@@ -4,6 +4,7 @@
   <link href="https://seanlingren.com/blog" rel="alternate"/>
   <link href="https://seanlingren.com/blog.atom" rel="self" type="application/atom+xml"/>
   <id>https://seanlingren.com/blog</id>
+  <updated>{{ .LatestBlogDateAtom }}</updated>
   <subtitle>sean lingren blog</subtitle>
   <author>
     <name>sean lingren</name>
@@ -14,6 +15,7 @@
     <link href="https://seanlingren.com/blog/{{ .Slug }}.html" rel="alternate"/>
     <id>https://seanlingren.com/blog/{{ .Slug }}.html</id>
     {{- if .DateAtom }}
+    <published>{{ .DateAtom }}</published>
     <updated>{{ .DateAtom }}</updated>
     {{- end }}
     <content type="html"><![CDATA[{{ .Content }}]]></content>
