@@ -1678,3 +1678,4 @@
 1768631150 https://waymo.com/blog/2025/12/autonomously-navigating-the-real-world
 1768635169 https://danwang.co/2025-letter/
 1768718268 https://turso.tech/
+1768771027 https://www.ablg.io/blog/no-management-needed
