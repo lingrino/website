@@ -11,9 +11,9 @@
   </author>
   {{- range .FeedJournalEntries }}
   <entry>
-    <title>{{ .URL }}</title>
-    <link href="{{ .URL }}" rel="alternate"/>
-    <id>{{ .URL }}</id>
+    <title>{{ .URL | xml }}</title>
+    <link href="{{ .URL | xml }}" rel="alternate"/>
+    <id>{{ .URL | xml }}</id>
     <published>{{ .DateAtom }}</published>
     <updated>{{ .DateAtom }}</updated>
   </entry>

@@ -11,7 +11,7 @@
   </author>
   {{- range .FeedBlogPosts }}
   <entry>
-    <title>{{ .Title }}</title>
+    <title>{{ .Title | xml }}</title>
     <link href="https://seanlingren.com/blog/{{ .Slug }}.html" rel="alternate"/>
     <id>https://seanlingren.com/blog/{{ .Slug }}.html</id>
     {{- if .DateAtom }}

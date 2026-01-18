@@ -8,7 +8,7 @@
     <atom:link href="https://seanlingren.com/blog.xml" rel="self" type="application/rss+xml"/>
     {{- range .FeedBlogPosts }}
     <item>
-      <title>{{ .Title }}</title>
+      <title>{{ .Title | xml }}</title>
       <link>https://seanlingren.com/blog/{{ .Slug }}.html</link>
       <guid>https://seanlingren.com/blog/{{ .Slug }}.html</guid>
       {{- if .DateRSS }}

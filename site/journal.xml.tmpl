@@ -8,9 +8,9 @@
     <atom:link href="https://seanlingren.com/journal.xml" rel="self" type="application/rss+xml"/>
     {{- range .FeedJournalEntries }}
     <item>
-      <title>{{ .URL }}</title>
-      <link>{{ .URL }}</link>
-      <guid>{{ .URL }}</guid>
+      <title>{{ .URL | xml }}</title>
+      <link>{{ .URL | xml }}</link>
+      <guid>{{ .URL | xml }}</guid>
       <pubDate>{{ .DateRSS }}</pubDate>
     </item>
     {{- end }}

@@ -181,9 +181,14 @@ func (t *templater) copyTemplate(path string) error {
 }
 
 // copyXMLTemplate uses text/template instead of html/template
-// to avoid HTML escaping in XML feed output
+// to avoid HTML escaping in XML feed output, but provides an xml
+// function for escaping special characters in URLs and text
 func (t *templater) copyXMLTemplate(path string) error {
-	tmpl, err := texttemplate.ParseFiles(path)
+	funcMap := texttemplate.FuncMap{
+		"xml": escapeXML,
+	}
+
+	tmpl, err := texttemplate.New(filepath.Base(path)).Funcs(funcMap).ParseFiles(path)
 	if err != nil {
 		return err
 	}
@@ -195,6 +200,16 @@ func (t *templater) copyXMLTemplate(path string) error {
 	defer file.Close()
 
 	return tmpl.Execute(file, t)
+}
+
+// escapeXML escapes special XML characters in a string
+func escapeXML(s string) string {
+	s = strings.ReplaceAll(s, "&", "&amp;")
+	s = strings.ReplaceAll(s, "<", "&lt;")
+	s = strings.ReplaceAll(s, ">", "&gt;")
+	s = strings.ReplaceAll(s, "\"", "&quot;")
+	s = strings.ReplaceAll(s, "'", "&apos;")
+	return s
 }
 
 func (t *templater) copyFile(path string) error {
