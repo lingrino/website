@@ -5,6 +5,7 @@ import (
 	"html/template"
 	"io"
 	"io/fs"
+	"net/url"
 	"os"
 	"path/filepath"
 	"strings"
@@ -259,20 +260,23 @@ func renderMarkdown(content []byte) []byte {
 
 // isSafeURL checks if a URL scheme is safe (not javascript:, data:, etc.)
 func isSafeURL(dest string) bool {
-	lower := strings.ToLower(dest)
-	// Allow http, https, mailto, tel, and relative URLs
-	if strings.HasPrefix(lower, "http://") ||
-		strings.HasPrefix(lower, "https://") ||
-		strings.HasPrefix(lower, "mailto:") ||
-		strings.HasPrefix(lower, "tel:") {
-		return true
-	}
-	// Block URLs with explicit schemes (javascript:, data:, vbscript:, etc.)
-	if strings.Contains(lower, ":") && !strings.HasPrefix(lower, "/") {
+	u, err := url.Parse(dest)
+	if err != nil {
 		return false
 	}
-	// Allow relative URLs
-	return true
+
+	// No scheme means relative URL - safe
+	if u.Scheme == "" {
+		return true
+	}
+
+	// Allow only specific schemes
+	switch strings.ToLower(u.Scheme) {
+	case "http", "https", "mailto", "tel":
+		return true
+	default:
+		return false
+	}
 }
 
 // renderLink adds target="_blank" and rel="noopener" to external links
