@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!--
+      HTML Head Tags
+      Docs: https://github.com/joshbuchea/HEAD
+    -->
+
+    <!-- Rendering Info -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      Security Headers
+      These are set in HTML because the alternative for this static site is a cloudfront lambda
+      Docs: https://infosec.mozilla.org/guidelines/web_security
+
+      Content Security Policy
+      Docs: https://infosec.mozilla.org/guidelines/web_security#content-security-policy
+      Generator: https://report-uri.com/home/generate
+      Evaluator: https://csp-evaluator.withgoogle.com/
+    -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'none';
+        style-src 'self';
+        img-src 'self';
+        font-src 'self';
+        manifest-src 'self';
+        upgrade-insecure-requests;
+        block-all-mixed-content;
+        require-trusted-types-for 'script';">
+
+    <!--
+      Strict Transport Security
+      Docs: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+      Docs: https://infosec.mozilla.org/guidelines/web_security#http-strict-transport-security
+    -->
+    <meta http-equiv="Strict-Transport-Security" content="
+      max-age=63072000;
+      includeSubDomains;
+      preload;">
+
+    <!--
+      X-XSS-Protection
+      Docs: https://infosec.mozilla.org/guidelines/web_security#x-xss-protection
+    -->
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+
+    <!--
+      X-Content-Type-Options
+      Docs: https://infosec.mozilla.org/guidelines/web_security#x-content-type-options
+    -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+    <!-- Metadata -->
+    <meta name="referrer" content="no-referrer">
+
+    <!-- Titles -->
+    <title>{{ block "title" . }}sean lingren{{ end }}</title>
+    <meta name="description" content="{{ block "description" . }}sean lingren{{ end }}">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- RSS/Atom Feeds -->
+    {{ block "feeds" . }}
+    <link rel="alternate" type="application/rss+xml" title="sean lingren - journal (rss)" href="/journal.xml">
+    <link rel="alternate" type="application/atom+xml" title="sean lingren - journal (atom)" href="/journal.atom">
+    <link rel="alternate" type="application/rss+xml" title="sean lingren - blog (rss)" href="/blog.xml">
+    <link rel="alternate" type="application/atom+xml" title="sean lingren - blog (atom)" href="/blog.atom">
+    {{ end }}
+  </head>
+
+  <body>
+    <div class="main">
+      {{ block "content" . }}{{ end }}
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,26 @@
+{{ define "title" }}sean lingren - journal{{ end }}
+{{ define "description" }}sean lingren journal{{ end }}
+
+{{ define "feeds" }}
+    <link rel="alternate" type="application/rss+xml" title="sean lingren - journal (rss)" href="/journal.xml">
+    <link rel="alternate" type="application/atom+xml" title="sean lingren - journal (atom)" href="/journal.atom">
+{{ end }}
+
+{{ define "content" }}
+      <div class="journal">
+        <a href="/" class="back-link">← Home</a>
+        <h1>journal</h1>
+
+        {{ .Page.Content }}
+
+        <ul class="journal-list">
+        {{- range $i, $j := .Site.JournalEntries }}
+          <li class="journal-entry">
+            <span class="journal-date">{{ $j.Date }}</span>
+            <span class="journal-url"><a href="{{ $j.URL }}" target="_blank" rel="noopener" aria-label="Journal Entry {{ $i }}">{{ $j.URL }}</a></span>
+          </li>
+        {{- end }}
+        </ul>
+
+      </div>
+{{ end }}

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "berkeley-mono-variable";
-  src: url("fonts/berkeley-mono-variable.woff2") format('woff2');
+  src: url("/fonts/berkeley-mono-variable.woff2") format('woff2');
 }
 
 * {
@@ -58,25 +58,13 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.home .contact-list {
-  margin-bottom: 1.5rem;
-}
-
-.home .contact-list .home-li {
-  padding-left: 0;
-}
-
-.home .contact-list .home-li::before {
-  display: none;
-}
-
-.home-li {
+.home li {
   padding: 0.4rem 0;
   position: relative;
   padding-left: 1rem;
 }
 
-.home-li::before {
+.home li::before {
   content: "·";
   position: absolute;
   left: 0;
@@ -99,9 +87,18 @@ body {
   text-decoration-color: #1a1a1a;
 }
 
-.home-li a:first-child {
+.home li a:first-child {
   font-weight: 500;
   color: #000;
+}
+
+/* Contact section: list immediately after #contact heading has no bullets */
+.home #contact + ul li {
+  padding-left: 0;
+}
+
+.home #contact + ul li::before {
+  display: none;
 }
 
 .journal {
@@ -279,4 +276,67 @@ body {
   max-width: 100%;
   height: auto;
   margin: 1.2rem 0;
+}
+
+.blog-index {
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 60px 20px 40px;
+}
+
+.blog-index h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.blog-index .back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.blog-index .back-link:hover {
+  color: #1a1a1a;
+}
+
+.blog-index-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.blog-index-entry {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.blog-index-entry:last-child {
+  border-bottom: none;
+}
+
+.blog-index-date {
+  white-space: nowrap;
+  color: #666;
+  font-weight: 400;
+}
+
+.blog-index-title a {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.blog-index-title a:hover {
+  text-decoration-color: #1a1a1a;
 }

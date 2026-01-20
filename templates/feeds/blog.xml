@@ -9,8 +9,8 @@
     {{- range .FeedBlogPosts }}
     <item>
       <title>{{ .Title | xml }}</title>
-      <link>https://seanlingren.com/blog/{{ .Slug }}.html</link>
-      <guid>https://seanlingren.com/blog/{{ .Slug }}.html</guid>
+      <link>https://seanlingren.com/blog/{{ .Slug }}</link>
+      <guid>https://seanlingren.com/blog/{{ .Slug }}</guid>
       {{- if .DateRSS }}
       <pubDate>{{ .DateRSS }}</pubDate>
       {{- end }}

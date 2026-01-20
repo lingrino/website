@@ -15,23 +15,50 @@ There are no tests or linting configured.
 This is a static site generator for seanlingren.com written in Go.
 
 **Build process (`build.go`):**
-- Reads content from `site/` directory
+- Reads markdown content from `content/` directory
+- Parses YAML frontmatter from markdown files
 - Loads journal entries from `journal/journal.txt`
-- Processes `.tmpl` files with Go's `html/template` (strips `.tmpl` extension)
-- Converts markdown files in `site/blog/` to HTML using `blog.html.tmpl` as wrapper
-- Copies all other files unchanged
-- Outputs everything to `public/`
+- Renders markdown to HTML using gomarkdown
+- Applies HTML templates from `templates/` using Go's html/template
+- Copies static files from `static/` unchanged
+- Outputs everything to `public/` with clean URLs
 
-**Content structure:**
-- `site/` - Source files (HTML, templates, CSS, static assets)
-- `site/blog/*.md` - Blog posts (filename becomes title, converted to HTML)
-- `journal/journal.txt` - Journal entries as `<timestamp> <url>` lines, sorted by timestamp descending
+**Directory structure:**
+- `content/` - Markdown content with YAML frontmatter
+  - `index.md` - Homepage
+  - `journal/index.md` - Journal page
+  - `blog/index.md` - Blog index
+  - `blog/*.md` - Individual blog posts
+- `templates/` - HTML templates
+  - `base.html` - Common HTML boilerplate
+  - `home.html`, `page.html`, `blog-post.html`, `blog-index.html`, `journal.html` - Page templates
+  - `feeds/` - RSS/Atom feed templates
+- `static/` - Static assets (CSS, fonts, robots.txt)
+- `journal/journal.txt` - Journal entries as `<timestamp> <url>` lines
 - `public/` - Generated output (gitignored)
 
+**URL routing:**
+- `content/index.md` → `public/index.html` → `/`
+- `content/journal/index.md` → `public/journal.html` → `/journal`
+- `content/blog/index.md` → `public/blog.html` → `/blog`
+- `content/blog/my-post.md` → `public/blog/my-post.html` → `/blog/my-post`
+
+**Frontmatter schema:**
+```yaml
+---
+title: "Page Title"
+description: "SEO/feed description"
+date: 2025-01-15           # Optional, used for sorting/feeds
+template: page             # Optional, override auto-detection
+draft: true                # Optional, skip during build
+---
+```
+
 **Template data:**
-- Templates receive a `templater` struct with `JournalEntries []journal`
-- Each journal entry has `Timestamp`, `Date` (formatted for America/Los_Angeles), and `URL`
-- Blog posts receive `Title` (from filename) and `Content` (rendered HTML)
+- Templates receive `TemplateData` with `Page` and `Site` fields
+- `Page`: Title, Description, Date, Content (rendered HTML), URL, Slug
+- `Site`: JournalEntries, BlogPosts (sorted by date descending)
+- Blog posts derive title from filename if not set in frontmatter
 
 **Automation:**
 - `journal.yml` workflow adds URLs to journal via workflow_dispatch, stripping tracking params

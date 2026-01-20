@@ -1,0 +1,26 @@
+{{ define "title" }}sean lingren - blog{{ end }}
+{{ define "description" }}sean lingren blog{{ end }}
+
+{{ define "feeds" }}
+    <link rel="alternate" type="application/rss+xml" title="sean lingren - blog (rss)" href="/blog.xml">
+    <link rel="alternate" type="application/atom+xml" title="sean lingren - blog (atom)" href="/blog.atom">
+{{ end }}
+
+{{ define "content" }}
+      <div class="blog-index">
+        <a href="/" class="back-link">← Home</a>
+        <h1>blog</h1>
+
+        {{ .Page.Content }}
+
+        <ul class="blog-index-list">
+        {{- range .Site.BlogPosts }}
+          <li class="blog-index-entry">
+            <span class="blog-index-date">{{ .Date }}</span>
+            <span class="blog-index-title"><a href="/blog/{{ .Slug }}">{{ .Title }}</a></span>
+          </li>
+        {{- end }}
+        </ul>
+
+      </div>
+{{ end }}
