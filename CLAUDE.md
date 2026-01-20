@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Build Commands
 
 ```bash
-go run build.go      # Build the site (outputs to public/)
+go run ./build      # Build the site (outputs to public/)
 ```
 
 There are no tests or linting configured.
@@ -14,7 +14,7 @@ There are no tests or linting configured.
 
 This is a static site generator for seanlingren.com written in Go.
 
-**Build process (`build.go`):**
+**Build process (`build/`):**
 - Reads markdown content from `content/` directory
 - Parses YAML frontmatter from markdown files
 - Loads journal entries from `journal/journal.txt`
@@ -55,7 +55,7 @@ draft: true                # Optional, skip during build
 ```
 
 **Template data:**
-- Templates receive `TemplateData` with `Page` and `Site` fields
+- Templates receive `templateData` with `Page` and `Site` fields
 - `Page`: Title, Description, Date, Content (rendered HTML), URL, Slug
 - `Site`: JournalEntries, BlogPosts (sorted by date descending)
 - Blog posts derive title from filename if not set in frontmatter
