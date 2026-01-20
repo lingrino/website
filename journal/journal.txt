@@ -1685,3 +1685,4 @@
 1768933208 https://jmduke.com/posts/notes-field.html
 1768933588 https://research.swtch.com/fp
 1768933676 https://github.com/brianlovin/claude-config
+1768937181 https://snscratchpad.com/posts/looking-ahead-2026/
