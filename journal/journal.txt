@@ -1683,3 +1683,4 @@
 1768932815 https://linear.app/reviews
 1768933180 https://seangoedecke.com/addicted-to-being-useful/
 1768933208 https://jmduke.com/posts/notes-field.html
+1768933588 https://research.swtch.com/fp
