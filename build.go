@@ -23,11 +23,12 @@ import (
 )
 
 const (
-	contentDir   = "content"
-	templatesDir = "templates"
-	staticDir    = "static"
-	outputDir    = "public"
-	journalFile  = "journal/journal.txt"
+	contentDir      = "content"
+	templatesDir    = "templates"
+	staticDir       = "static"
+	outputDir       = "public"
+	journalFile     = "journal/journal.txt"
+	defaultTitle    = "Untitled"
 )
 
 func logError(err error) {
@@ -300,7 +301,7 @@ func (b *Builder) collectPage(path string) (*pageInfo, error) {
 	relPath := strings.TrimPrefix(path, contentDir+string(filepath.Separator))
 	isBlogPost := strings.HasPrefix(relPath, "blog"+string(filepath.Separator)) && !strings.HasSuffix(relPath, "index.md")
 
-	if isBlogPost && page.Title == "Untitled" {
+	if isBlogPost && page.Title == defaultTitle {
 		// Derive title from filename
 		page.Title = strings.ReplaceAll(page.Slug, "-", " ")
 	}
@@ -536,7 +537,7 @@ func parseFrontmatter(content []byte) (*Page, []byte, error) {
 
 	// If title is empty, derive from filename
 	if page.Title == "" {
-		page.Title = "Untitled"
+		page.Title = defaultTitle
 	}
 
 	return page, []byte(remaining), nil
@@ -567,12 +568,13 @@ func renderLink(w io.Writer, node ast.Node, entering bool) (ast.WalkStatus, bool
 
 	if entering {
 		dest := string(link.Destination)
+		escapedDest := template.HTMLEscapeString(dest)
 		isExternal := strings.HasPrefix(dest, "http://") || strings.HasPrefix(dest, "https://")
 
 		if isExternal {
-			fmt.Fprintf(w, `<a href="%s" target="_blank" rel="noopener">`, dest)
+			fmt.Fprintf(w, `<a href="%s" target="_blank" rel="noopener">`, escapedDest)
 		} else {
-			fmt.Fprintf(w, `<a href="%s">`, dest)
+			fmt.Fprintf(w, `<a href="%s">`, escapedDest)
 		}
 	} else {
 		io.WriteString(w, "</a>")
@@ -655,7 +657,12 @@ func loadJournal() ([]journal, error) {
 	}
 
 	slices.SortStableFunc(entries, func(a, b journal) int {
-		return int(b.Timestamp - a.Timestamp)
+		if b.Timestamp > a.Timestamp {
+			return 1
+		} else if b.Timestamp < a.Timestamp {
+			return -1
+		}
+		return 0
 	})
 
 	return entries, nil
