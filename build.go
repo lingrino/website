@@ -352,7 +352,11 @@ func (b *Builder) renderPages(pages []pageInfo) error {
 		// Render template
 		tmpl, ok := b.templates[info.templateName]
 		if !ok {
-			slog.Warn("template not found, using page template", "template", info.templateName, "path", info.path)
+			// If template was explicitly set in frontmatter, error
+			if info.page.Template != "" {
+				return fmt.Errorf("template %q not found for %s", info.templateName, info.path)
+			}
+			// Otherwise fall back to page template
 			tmpl = b.templates["page"]
 		}
 
@@ -526,7 +530,15 @@ func parseFrontmatter(content []byte) (*Page, []byte, error) {
 	var fm Frontmatter
 	err := yaml.Unmarshal([]byte(frontmatterStr), &fm)
 	if err != nil {
-		return nil, nil, err
+		return nil, nil, fmt.Errorf("failed to parse frontmatter: %w", err)
+	}
+
+	// Validate date format if provided
+	if fm.Date != "" {
+		_, err := time.Parse(time.DateOnly, fm.Date)
+		if err != nil {
+			return nil, nil, fmt.Errorf("invalid date format %q, expected YYYY-MM-DD: %w", fm.Date, err)
+		}
 	}
 
 	page.Title = fm.Title
@@ -624,8 +636,7 @@ func loadJournal() ([]journal, error) {
 
 		fields := strings.Fields(line)
 		if len(fields) < 2 {
-			slog.Warn("skipping malformed journal entry", "line", line)
-			continue
+			return nil, fmt.Errorf("malformed journal entry, expected '<timestamp> <url>', got: %q", line)
 		}
 
 		timestamp, err := strconv.ParseInt(fields[0], 10, 64)
