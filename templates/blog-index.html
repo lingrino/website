@@ -17,7 +17,7 @@
         {{- range .Site.BlogPosts }}
           <li class="blog-index-entry">
             <span class="blog-index-date">{{ .Date }}</span>
-            <span class="blog-index-title"><a href="/blog/{{ .Slug }}/" rel="noopener">{{ .Title }}</a></span>
+            <span class="blog-index-title"><a href="/blog/{{ .Slug }}" rel="noopener">{{ .Title }}</a></span>
           </li>
         {{- end }}
         </ul>

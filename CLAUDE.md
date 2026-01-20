@@ -37,11 +37,11 @@ This is a static site generator for seanlingren.com written in Go.
 - `journal/journal.txt` - Journal entries as `<timestamp> <url>` lines
 - `public/` - Generated output (gitignored)
 
-**URL routing (clean URLs):**
+**URL routing:**
 - `content/index.md` → `public/index.html` → `/`
-- `content/journal/index.md` → `public/journal/index.html` → `/journal/`
-- `content/blog/index.md` → `public/blog/index.html` → `/blog/`
-- `content/blog/my-post.md` → `public/blog/my-post/index.html` → `/blog/my-post/`
+- `content/journal/index.md` → `public/journal.html` → `/journal`
+- `content/blog/index.md` → `public/blog.html` → `/blog`
+- `content/blog/my-post.md` → `public/blog/my-post.html` → `/blog/my-post`
 
 **Frontmatter schema:**
 ```yaml

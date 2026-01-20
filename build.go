@@ -409,34 +409,42 @@ func (b *Builder) determineTemplate(path string, page *Page) string {
 func (b *Builder) determineOutputPath(path string) string {
 	relPath := strings.TrimPrefix(path, contentDir+string(filepath.Separator))
 
-	// index.md -> index.html in same directory
-	if strings.HasSuffix(relPath, "index.md") {
-		dir := strings.TrimSuffix(relPath, "index.md")
-		return filepath.Join(outputDir, dir, "index.html")
+	// Root index.md -> index.html
+	if relPath == "index.md" {
+		return filepath.Join(outputDir, "index.html")
 	}
 
-	// Regular .md -> slug/index.html for clean URLs
-	slug := strings.TrimSuffix(filepath.Base(relPath), ".md")
-	dir := filepath.Dir(relPath)
-	return filepath.Join(outputDir, dir, slug, "index.html")
+	// <dir>/index.md -> <dir>.html
+	if strings.HasSuffix(relPath, string(filepath.Separator)+"index.md") {
+		dir := strings.TrimSuffix(relPath, string(filepath.Separator)+"index.md")
+		return filepath.Join(outputDir, dir+".html")
+	}
+
+	// Regular .md -> .html
+	return filepath.Join(outputDir, strings.TrimSuffix(relPath, ".md")+".html")
 }
 
 func (b *Builder) determineURL(path string) string {
 	relPath := strings.TrimPrefix(path, contentDir+string(filepath.Separator))
 
-	// index.md -> /dir/
-	if strings.HasSuffix(relPath, "index.md") {
-		dir := strings.TrimSuffix(relPath, "index.md")
-		if dir == "" {
-			return "/"
-		}
+	// Root index.md -> /
+	if relPath == "index.md" {
+		return "/"
+	}
+
+	// <dir>/index.md -> /<dir>
+	if strings.HasSuffix(relPath, string(filepath.Separator)+"index.md") {
+		dir := strings.TrimSuffix(relPath, string(filepath.Separator)+"index.md")
 		return "/" + strings.ReplaceAll(dir, string(filepath.Separator), "/")
 	}
 
-	// Regular .md -> /dir/slug/
+	// Regular .md -> /<dir>/<slug>
 	slug := strings.TrimSuffix(filepath.Base(relPath), ".md")
 	dir := filepath.Dir(relPath)
-	return "/" + strings.ReplaceAll(dir, string(filepath.Separator), "/") + "/" + slug + "/"
+	if dir == "." {
+		return "/" + slug
+	}
+	return "/" + strings.ReplaceAll(dir, string(filepath.Separator), "/") + "/" + slug
 }
 
 func (b *Builder) determineSlug(path string) string {

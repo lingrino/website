@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>sean lingren - blog</title>
-    <link>https://seanlingren.com/blog/</link>
+    <link>https://seanlingren.com/blog</link>
     <description>sean lingren blog</description>
     <language>en-us</language>
     <atom:link href="https://seanlingren.com/blog.xml" rel="self" type="application/rss+xml"/>
     {{- range .FeedBlogPosts }}
     <item>
       <title>{{ .Title | xml }}</title>
-      <link>https://seanlingren.com/blog/{{ .Slug }}/</link>
-      <guid>https://seanlingren.com/blog/{{ .Slug }}/</guid>
+      <link>https://seanlingren.com/blog/{{ .Slug }}</link>
+      <guid>https://seanlingren.com/blog/{{ .Slug }}</guid>
       {{- if .DateRSS }}
       <pubDate>{{ .DateRSS }}</pubDate>
       {{- end }}

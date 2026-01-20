@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sean lingren - journal</title>
-    <link>https://seanlingren.com/journal/</link>
+    <link>https://seanlingren.com/journal</link>
     <description>sean lingren journal</description>
     <language>en-us</language>
     <atom:link href="https://seanlingren.com/journal.xml" rel="self" type="application/rss+xml"/>
