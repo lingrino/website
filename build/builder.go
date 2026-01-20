@@ -15,13 +15,15 @@ import (
 )
 
 const (
-	contentDir     = "content"
-	templatesDir   = "templates"
-	staticDir      = "static"
-	outputDir      = "public"
-	journalFile    = "journal/journal.txt"
+	contentDir  = "content"
+	templatesDir = "templates"
+	staticDir    = "static"
+	outputDir    = "public"
+	journalFile  = "journal/journal.txt"
+	timezone     = "America/Los_Angeles"
+
+	// feedEntryLimit caps RSS/Atom feeds to recent entries for performance
 	feedEntryLimit = 50
-	timezone       = "America/Los_Angeles"
 )
 
 // Template names

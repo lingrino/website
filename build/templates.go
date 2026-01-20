@@ -87,11 +87,15 @@ func (b *builder) renderPages(pages []pageInfo) error {
 }
 
 // writeTemplate creates a file and executes a template to it
-func writeTemplate[T interface{ Execute(w io.Writer, data any) error }](path string, tmpl T, data any) error {
+func writeTemplate[T interface{ Execute(w io.Writer, data any) error }](path string, tmpl T, data any) (err error) {
 	f, err := os.Create(path)
 	if err != nil {
 		return err
 	}
-	defer f.Close()
+	defer func() {
+		if cerr := f.Close(); cerr != nil && err == nil {
+			err = cerr
+		}
+	}()
 	return tmpl.Execute(f, data)
 }

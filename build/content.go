@@ -145,16 +145,29 @@ func (b *builder) determineTemplate(path string, pg *page) string {
 	}
 }
 
+// isRootIndex returns true if the relative path is the root index.md
+func isRootIndex(rel string) bool {
+	return rel == "index.md"
+}
+
+// isDirIndex returns true if the path is a directory's index.md and extracts the directory name
+func isDirIndex(rel string) (dir string, ok bool) {
+	suffix := string(filepath.Separator) + "index.md"
+	if strings.HasSuffix(rel, suffix) {
+		return strings.TrimSuffix(rel, suffix), true
+	}
+	return "", false
+}
+
 // determineOutputPath determines the output file path
 func (b *builder) determineOutputPath(path string) string {
 	rel := relPath(path)
 
-	if rel == "index.md" {
+	if isRootIndex(rel) {
 		return filepath.Join(outputDir, "index.html")
 	}
 
-	if strings.HasSuffix(rel, string(filepath.Separator)+"index.md") {
-		dir := strings.TrimSuffix(rel, string(filepath.Separator)+"index.md")
+	if dir, ok := isDirIndex(rel); ok {
 		return filepath.Join(outputDir, dir+".html")
 	}
 
@@ -165,12 +178,11 @@ func (b *builder) determineOutputPath(path string) string {
 func (b *builder) determineURL(path string) string {
 	rel := relPath(path)
 
-	if rel == "index.md" {
+	if isRootIndex(rel) {
 		return "/"
 	}
 
-	if strings.HasSuffix(rel, string(filepath.Separator)+"index.md") {
-		dir := strings.TrimSuffix(rel, string(filepath.Separator)+"index.md")
+	if dir, ok := isDirIndex(rel); ok {
 		return "/" + strings.ReplaceAll(dir, string(filepath.Separator), "/")
 	}
 
@@ -245,6 +257,24 @@ func renderMarkdown(content []byte) []byte {
 	return markdown.Render(doc, renderer)
 }
 
+// isSafeURL checks if a URL scheme is safe (not javascript:, data:, etc.)
+func isSafeURL(dest string) bool {
+	lower := strings.ToLower(dest)
+	// Allow http, https, mailto, tel, and relative URLs
+	if strings.HasPrefix(lower, "http://") ||
+		strings.HasPrefix(lower, "https://") ||
+		strings.HasPrefix(lower, "mailto:") ||
+		strings.HasPrefix(lower, "tel:") {
+		return true
+	}
+	// Block URLs with explicit schemes (javascript:, data:, vbscript:, etc.)
+	if strings.Contains(lower, ":") && !strings.HasPrefix(lower, "/") {
+		return false
+	}
+	// Allow relative URLs
+	return true
+}
+
 // renderLink adds target="_blank" and rel="noopener" to external links
 func renderLink(w io.Writer, node ast.Node, entering bool) (ast.WalkStatus, bool) {
 	link, ok := node.(*ast.Link)
@@ -254,6 +284,13 @@ func renderLink(w io.Writer, node ast.Node, entering bool) (ast.WalkStatus, bool
 
 	if entering {
 		dest := string(link.Destination)
+
+		// Block potentially dangerous URI schemes
+		if !isSafeURL(dest) {
+			fmt.Fprint(w, `<a href="#">`)
+			return ast.GoToNext, true
+		}
+
 		escapedDest := template.HTMLEscapeString(dest)
 		isExternal := strings.HasPrefix(dest, "http://") || strings.HasPrefix(dest, "https://")
 
