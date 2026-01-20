@@ -2,7 +2,9 @@ package main
 
 import (
 	"bufio"
+	"bytes"
 	"cmp"
+	"encoding/xml"
 	"fmt"
 	"io"
 	"os"
@@ -44,12 +46,9 @@ func copyFile(src, dst string) error {
 
 // escapeXML escapes special XML characters in a string
 func escapeXML(s string) string {
-	s = strings.ReplaceAll(s, "&", "&amp;")
-	s = strings.ReplaceAll(s, "<", "&lt;")
-	s = strings.ReplaceAll(s, ">", "&gt;")
-	s = strings.ReplaceAll(s, "\"", "&quot;")
-	s = strings.ReplaceAll(s, "'", "&apos;")
-	return s
+	var buf bytes.Buffer
+	xml.EscapeText(&buf, []byte(s))
+	return buf.String()
 }
 
 // parseDate parses a YYYY-MM-DD date string in the given timezone
