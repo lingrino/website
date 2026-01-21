@@ -7,14 +7,23 @@ import (
 
 // page represents a content page
 type page struct {
-	Title       string
-	Description string
-	Date        string
-	Content     template.HTML
-	URL         string
-	Slug        string
-	Template    string
-	Draft       bool
+	Title          string
+	Description    string
+	Date           string
+	Content        template.HTML
+	MarkdownSource []byte // Raw markdown content with frontmatter
+	URL            string
+	Slug           string
+	Template       string
+	Draft          bool
+}
+
+// MarkdownURL returns the URL for the markdown version of this page
+func (p *page) MarkdownURL() string {
+	if p.URL == "/" {
+		return "/index.md"
+	}
+	return p.URL + ".md"
 }
 
 // siteData holds global site data
@@ -100,6 +109,7 @@ type pageInfo struct {
 	path         string
 	outputPath   string
 	templateName string
+	pathType     pathType
 }
 
 // pathType represents the type of content path

@@ -82,8 +82,89 @@ func (b *builder) renderPages(pages []pageInfo) error {
 		if err := writeTemplate(info.outputPath, tmpl, data); err != nil {
 			return fmt.Errorf("rendering %s: %w", info.path, err)
 		}
+
+		// Write markdown version of the page
+		if err := b.writeMarkdownPage(info); err != nil {
+			return fmt.Errorf("writing markdown for %s: %w", info.path, err)
+		}
 	}
 	return nil
+}
+
+// writeMarkdownPage writes the markdown version of a page
+func (b *builder) writeMarkdownPage(info pageInfo) error {
+	// Determine markdown output path (same as HTML but with .md extension)
+	mdOutputPath := strings.TrimSuffix(info.outputPath, ".html") + ".md"
+
+	var mdContent []byte
+
+	switch info.pathType {
+	case pathJournal:
+		mdContent = b.generateJournalMarkdown(info.page)
+	case pathBlogIndex:
+		mdContent = b.generateBlogIndexMarkdown(info.page)
+	default:
+		// For regular pages, use the original markdown source
+		mdContent = info.page.MarkdownSource
+	}
+
+	return os.WriteFile(mdOutputPath, mdContent, 0644)
+}
+
+// generateJournalMarkdown generates markdown content for the journal page with entries
+func (b *builder) generateJournalMarkdown(pg *page) []byte {
+	var sb strings.Builder
+
+	// Write frontmatter
+	sb.WriteString("---\n")
+	if pg.Title != "" {
+		sb.WriteString(fmt.Sprintf("title: %s\n", pg.Title))
+	}
+	if pg.Description != "" {
+		sb.WriteString(fmt.Sprintf("description: %s\n", pg.Description))
+	}
+	if pg.Date != "" {
+		sb.WriteString(fmt.Sprintf("date: %s\n", pg.Date))
+	}
+	sb.WriteString("---\n\n")
+
+	// Write heading
+	sb.WriteString("# journal\n\n")
+
+	// Write journal entries as a list
+	for _, entry := range b.site.JournalEntries {
+		sb.WriteString(fmt.Sprintf("- %s [%s](%s)\n", entry.Date, entry.URL, entry.URL))
+	}
+
+	return []byte(sb.String())
+}
+
+// generateBlogIndexMarkdown generates markdown content for the blog index with posts
+func (b *builder) generateBlogIndexMarkdown(pg *page) []byte {
+	var sb strings.Builder
+
+	// Write frontmatter
+	sb.WriteString("---\n")
+	if pg.Title != "" {
+		sb.WriteString(fmt.Sprintf("title: %s\n", pg.Title))
+	}
+	if pg.Description != "" {
+		sb.WriteString(fmt.Sprintf("description: %s\n", pg.Description))
+	}
+	if pg.Date != "" {
+		sb.WriteString(fmt.Sprintf("date: %s\n", pg.Date))
+	}
+	sb.WriteString("---\n\n")
+
+	// Write heading
+	sb.WriteString("# blog\n\n")
+
+	// Write blog posts as a list
+	for _, post := range b.site.BlogPosts {
+		sb.WriteString(fmt.Sprintf("- %s [%s](/blog/%s)\n", post.Date, post.Title, post.Slug))
+	}
+
+	return []byte(sb.String())
 }
 
 // writeTemplate creates a file and executes a template to it
