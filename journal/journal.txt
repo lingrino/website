@@ -1691,3 +1691,4 @@
 1769033263 https://go.dev/blog/survey2025
 1769038022 https://www.tbray.org/ongoing/When/202x/2026/01/20/Quamina-2.0
 1769039972 https://confer.to/blog/2025/12/confessions-to-a-data-lake/
+1769040119 https://www.anthropic.com/news/claude-new-constitution
