@@ -1694,3 +1694,4 @@
 1769040119 https://www.anthropic.com/news/claude-new-constitution
 1769040168 https://confer.to/blog/2026/01/encrypted-folders/
 1769055136 https://www.convex.dev/
+1769188376 https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md
