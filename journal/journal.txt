@@ -1695,3 +1695,4 @@
 1769040168 https://confer.to/blog/2026/01/encrypted-folders/
 1769055136 https://www.convex.dev/
 1769188376 https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md
+1769212139 https://seangoedecke.com/how-i-estimate-work/
