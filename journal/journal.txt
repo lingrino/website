@@ -1697,3 +1697,4 @@
 1769188376 https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md
 1769212139 https://seangoedecke.com/how-i-estimate-work/
 1769304054 https://openai.com/index/scaling-postgresql/
+1769304342 https://brandur.org/nanoglyphs/047-stainless
