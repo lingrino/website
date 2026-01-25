@@ -1698,3 +1698,4 @@
 1769212139 https://seangoedecke.com/how-i-estimate-work/
 1769304054 https://openai.com/index/scaling-postgresql/
 1769304342 https://brandur.org/nanoglyphs/047-stainless
+1769304674 https://cursor.com/blog/scaling-agents
