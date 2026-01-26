@@ -1700,3 +1700,4 @@
 1769304342 https://brandur.org/nanoglyphs/047-stainless
 1769304674 https://cursor.com/blog/scaling-agents
 1769376475 https://cannoneyed.com/projects/isometric-nyc
+1769389329 https://openai.com/index/unrolling-the-codex-agent-loop/
