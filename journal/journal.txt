@@ -1703,3 +1703,4 @@
 1769389329 https://openai.com/index/unrolling-the-codex-agent-loop/
 1769485354 https://seangoedecke.com/knowing-how-to-drive-the-car/
 1769485492 https://lethain.com/should-include-eng-in-eng-leadership/
+1769509441 https://www.monumentallabs.co/
