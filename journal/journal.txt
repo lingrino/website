@@ -1705,3 +1705,4 @@
 1769485492 https://lethain.com/should-include-eng-in-eng-leadership/
 1769509441 https://www.monumentallabs.co/
 1769542589 https://openai.com/index/introducing-prism/
+1769559825 https://tailscale.com/blog/aperture-private-alpha
