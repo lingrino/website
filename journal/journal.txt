@@ -1707,3 +1707,4 @@
 1769542589 https://openai.com/index/introducing-prism/
 1769559825 https://tailscale.com/blog/aperture-private-alpha
 1769628322 http://blog.jgc.org/2026/01/the-european-schuko-socket-bothers-me.html
+1769629274 https://www.americanhousing.co/
