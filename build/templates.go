@@ -8,6 +8,8 @@ import (
 	"path/filepath"
 	"strings"
 	texttemplate "text/template"
+
+	"gopkg.in/yaml.v3"
 )
 
 // loadTemplates loads all HTML templates
@@ -108,25 +110,42 @@ func (b *builder) writeMarkdownPage(info pageInfo) error {
 		mdContent = info.page.MarkdownSource
 	}
 
+	if err := os.MkdirAll(filepath.Dir(mdOutputPath), 0755); err != nil {
+		return fmt.Errorf("creating directory for %s: %w", mdOutputPath, err)
+	}
+
 	return os.WriteFile(mdOutputPath, mdContent, 0644)
+}
+
+// yamlScalar formats a string as a properly escaped YAML scalar value
+func yamlScalar(s string) string {
+	data, err := yaml.Marshal(s)
+	if err != nil {
+		return fmt.Sprintf("%q", s)
+	}
+	return strings.TrimSpace(string(data))
+}
+
+// writeFrontmatter writes YAML frontmatter with properly escaped values
+func writeFrontmatter(sb *strings.Builder, pg *page) {
+	sb.WriteString("---\n")
+	if pg.Title != "" {
+		sb.WriteString(fmt.Sprintf("title: %s\n", yamlScalar(pg.Title)))
+	}
+	if pg.Description != "" {
+		sb.WriteString(fmt.Sprintf("description: %s\n", yamlScalar(pg.Description)))
+	}
+	if pg.Date != "" {
+		sb.WriteString(fmt.Sprintf("date: %s\n", yamlScalar(pg.Date)))
+	}
+	sb.WriteString("---\n\n")
 }
 
 // generateJournalMarkdown generates markdown content for the journal page with entries
 func (b *builder) generateJournalMarkdown(pg *page) []byte {
 	var sb strings.Builder
 
-	// Write frontmatter
-	sb.WriteString("---\n")
-	if pg.Title != "" {
-		sb.WriteString(fmt.Sprintf("title: %s\n", pg.Title))
-	}
-	if pg.Description != "" {
-		sb.WriteString(fmt.Sprintf("description: %s\n", pg.Description))
-	}
-	if pg.Date != "" {
-		sb.WriteString(fmt.Sprintf("date: %s\n", pg.Date))
-	}
-	sb.WriteString("---\n\n")
+	writeFrontmatter(&sb, pg)
 
 	// Write heading
 	sb.WriteString("# journal\n\n")
@@ -143,18 +162,7 @@ func (b *builder) generateJournalMarkdown(pg *page) []byte {
 func (b *builder) generateBlogIndexMarkdown(pg *page) []byte {
 	var sb strings.Builder
 
-	// Write frontmatter
-	sb.WriteString("---\n")
-	if pg.Title != "" {
-		sb.WriteString(fmt.Sprintf("title: %s\n", pg.Title))
-	}
-	if pg.Description != "" {
-		sb.WriteString(fmt.Sprintf("description: %s\n", pg.Description))
-	}
-	if pg.Date != "" {
-		sb.WriteString(fmt.Sprintf("date: %s\n", pg.Date))
-	}
-	sb.WriteString("---\n\n")
+	writeFrontmatter(&sb, pg)
 
 	// Write heading
 	sb.WriteString("# blog\n\n")
