@@ -60,6 +60,9 @@ func (b *builder) collectPage(path string) (*pageInfo, error) {
 		return nil, nil
 	}
 
+	// Store raw markdown content with frontmatter for .md output
+	pg.MarkdownSource = content
+
 	pg.Content = template.HTML(renderMarkdown(mdContent))
 	pg.URL = b.determineURL(path)
 	pg.Slug = b.determineSlug(path)
@@ -100,6 +103,7 @@ func (b *builder) collectPage(path string) (*pageInfo, error) {
 		path:         path,
 		outputPath:   outputPath,
 		templateName: templateName,
+		pathType:     pathClass,
 	}, nil
 }
 
