@@ -169,6 +169,21 @@ body {
   color: #1a1a1a;
 }
 
+.journal .journal-anchor {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.journal-entry:hover .journal-anchor {
+  color: #999;
+}
+
+.journal .journal-anchor:hover {
+  color: #666;
+}
+
 .journal .journal-url a {
   color: #555;
 }

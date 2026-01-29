@@ -15,8 +15,8 @@
 
         <ul class="journal-list">
         {{- range $i, $j := .Site.JournalEntries }}
-          <li class="journal-entry">
-            <span class="journal-date">{{ $j.Date }}</span>
+          <li class="journal-entry" id="{{ $j.ID }}">
+            <span class="journal-date"><a href="#{{ $j.ID }}" class="journal-anchor" aria-label="Link to this entry">#</a>{{ $j.Date }}</span>
             <span class="journal-url"><a href="{{ $j.URL }}" target="_blank" rel="noopener" aria-label="Journal Entry {{ $i }}">{{ $j.URL }}</a></span>
           </li>
         {{- end }}

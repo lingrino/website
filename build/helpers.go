@@ -116,5 +116,15 @@ func loadJournal(loc *time.Location) ([]journal, error) {
 		return cmp.Compare(b.Timestamp, a.Timestamp)
 	})
 
+	seen := make(map[int64]int, len(entries))
+	for i := range entries {
+		seen[entries[i].Timestamp]++
+		if seen[entries[i].Timestamp] == 1 {
+			entries[i].ID = fmt.Sprintf("j-%d", entries[i].Timestamp)
+		} else {
+			entries[i].ID = fmt.Sprintf("j-%d-%d", entries[i].Timestamp, seen[entries[i].Timestamp])
+		}
+	}
+
 	return entries, nil
 }

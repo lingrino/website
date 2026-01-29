@@ -77,6 +77,7 @@ type templateData struct {
 
 // journal represents a journal entry
 type journal struct {
+	ID        string
 	Timestamp int64
 	Date      string
 	DateRSS   string
