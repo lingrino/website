@@ -110,6 +110,11 @@ func (b *builder) writeMarkdownPage(info pageInfo) error {
 		mdContent = info.page.MarkdownSource
 	}
 
+	// Ensure file ends with a newline
+	if len(mdContent) > 0 && mdContent[len(mdContent)-1] != '\n' {
+		mdContent = append(mdContent, '\n')
+	}
+
 	if err := os.MkdirAll(filepath.Dir(mdOutputPath), 0755); err != nil {
 		return fmt.Errorf("creating directory for %s: %w", mdOutputPath, err)
 	}
