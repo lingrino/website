@@ -2201,3 +2201,4 @@
 1784904594 https://muratbuffalo.blogspot.com/2026/07/aurora-dsql-scalable-multi-region-oltp.html
 1784909381 https://fly.io/blog/kurt-scott-money-sprites/
 1784915386 https://unsung.aresluna.org/chromes-breaking-and-entering
+1784984676 http://antirez.com/news/171
