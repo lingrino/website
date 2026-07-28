@@ -2204,3 +2204,4 @@
 1784984676 http://antirez.com/news/171
 1784984920 https://planetscale.com/blog/postgres-backups-under-the-hood
 1785216855 https://www.anthropic.com/news/position-open-weights-models
+1785274361 https://www.anthropic.com/research/discovering-cryptographic-weaknesses
