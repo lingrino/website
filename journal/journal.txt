@@ -2205,3 +2205,4 @@
 1784984920 https://planetscale.com/blog/postgres-backups-under-the-hood
 1785216855 https://www.anthropic.com/news/position-open-weights-models
 1785274361 https://www.anthropic.com/research/discovering-cryptographic-weaknesses
+1785341771 https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive
