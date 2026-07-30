@@ -2207,3 +2207,4 @@
 1785274361 https://www.anthropic.com/research/discovering-cryptographic-weaknesses
 1785341771 https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive
 1785342206 https://mitchellh.com/writing/superlogical
+1785455886 https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals
