@@ -2213,3 +2213,4 @@
 1785686505 https://jmduke.com/posts/snacks-are-everywhere.html
 1785686737 https://borretti.me/article/mathematics-without-mathematicians
 1785716110 https://blog.exe.dev/devtools-must-be-open-source
+1785716182 https://surfingcomplexity.blog/2026/08/02/traditional-versus-resilience-engineering-views/
