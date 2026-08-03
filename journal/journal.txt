@@ -2212,3 +2212,4 @@
 1785507209 https://brooker.co.za/blog/2026/07/29/lorenz-and-little.html
 1785686505 https://jmduke.com/posts/snacks-are-everywhere.html
 1785686737 https://borretti.me/article/mathematics-without-mathematicians
+1785716110 https://blog.exe.dev/devtools-must-be-open-source
