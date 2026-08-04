@@ -2216,3 +2216,4 @@
 1785716182 https://surfingcomplexity.blog/2026/08/02/traditional-versus-resilience-engineering-views/
 1785717534 https://earendil.com/posts/session-portability/
 1785789604 https://github.com/boldsoftware/meat
+1785871587 https://www.kernel.sh/blog/hypeman
