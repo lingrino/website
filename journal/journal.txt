@@ -2217,3 +2217,4 @@
 1785717534 https://earendil.com/posts/session-portability/
 1785789604 https://github.com/boldsoftware/meat
 1785871587 https://www.kernel.sh/blog/hypeman
+1785873442 https://jasmi.news/p/no-data-centers-in-my-backyard
