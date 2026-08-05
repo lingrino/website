@@ -2219,3 +2219,4 @@
 1785871587 https://www.kernel.sh/blog/hypeman
 1785873442 https://jasmi.news/p/no-data-centers-in-my-backyard
 1785882134 https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/
+1785893453 https://www.anthropic.com/research/global-workspace
