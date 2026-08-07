@@ -2221,3 +2221,4 @@
 1785882134 https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/
 1785893453 https://www.anthropic.com/research/global-workspace
 1785952068 https://www.discoveryloop.com/
+1786069667 https://getenergy.com/
