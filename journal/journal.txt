@@ -2227,3 +2227,4 @@
 1786225195 https://lethain.com/middle-management-roles-were-also-a-trap/
 1786225829 https://www.ursulakleguin.com/a-rant-about-technology
 1786371021 https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
+1786371872 https://jmduke.com/posts/tech-debt-is-weird.html
