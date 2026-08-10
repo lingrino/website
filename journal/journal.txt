@@ -2230,3 +2230,4 @@
 1786371872 https://jmduke.com/posts/tech-debt-is-weird.html
 1786372033 https://brianlovin.com/writing/how-im-feeling-about-ai-in-august-2026-O7e1TFS
 1786399689 https://www.meta.com/thefutureisforeveryone/
+1786400424 https://mitchellh.com/writing/everyone-should-know-simd
