@@ -2232,3 +2232,4 @@
 1786399689 https://www.meta.com/thefutureisforeveryone/
 1786400424 https://mitchellh.com/writing/everyone-should-know-simd
 1786400448 https://lilianweng.github.io/posts/2026-06-24-scaling-laws/
+1786400470 https://evjang.com/2026/02/04/rocks.html
