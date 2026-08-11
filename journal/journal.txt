@@ -2234,3 +2234,4 @@
 1786400448 https://lilianweng.github.io/posts/2026-06-24-scaling-laws/
 1786400470 https://evjang.com/2026/02/04/rocks.html
 1786402123 https://arslan.io/2026/08/10/joining-cursor/
+1786481786 https://www.notboring.co/p/the-electric-slide
