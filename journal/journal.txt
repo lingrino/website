@@ -2238,3 +2238,4 @@
 1786482535 https://ampcode.com/notes/what-i-want-to-tell-you-about-orbs
 1786482657 https://miren.md/
 1786545013 https://tailscale.com/blog/sqlite-wal-reset-bug
+1786571047 https://sophiebits.com/2026/06/25/there-are-no-lossless-transformations-of-natural-language-text
