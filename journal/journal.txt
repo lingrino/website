@@ -2239,3 +2239,4 @@
 1786482657 https://miren.md/
 1786545013 https://tailscale.com/blog/sqlite-wal-reset-bug
 1786571047 https://sophiebits.com/2026/06/25/there-are-no-lossless-transformations-of-natural-language-text
+1786672514 https://www.astralcodexten.com/p/the-foothills-of-bay-area-house-party
