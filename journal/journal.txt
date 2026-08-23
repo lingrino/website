@@ -2246,3 +2246,4 @@
 1787111144 https://www.githubstatus.com/incidents/zkxwbgr0cnmx
 1787112599 https://www.irregular.com/research/addressing-recent-incidents-ongoing-findings-and-path-forward
 1787262621 https://sockpuppet.org/blog/2026/08/20/stop-making-tuis/
+1787522695 https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/
