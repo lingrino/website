@@ -2252,3 +2252,4 @@
 1787626937 https://www.adaptivecapacitylabs.com/2026/08/24/there-is-more-to-code-review-than-automatable-detection/
 1787627056 https://planetscale.com/blog/why-another-postgres-sharding-solution
 1787627566 https://boristane.com/blog/on-call-is-now-theatre/
+1787627625 https://surfingcomplexity.blog/2026/08/22/wild-ai-related-reliability-incidents-are-coming/
