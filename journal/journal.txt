@@ -2248,3 +2248,4 @@
 1787262621 https://sockpuppet.org/blog/2026/08/20/stop-making-tuis/
 1787522695 https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/
 1787522775 https://fly.io/computers-compared
+1787626778 https://windowsontheory.org/2026/08/24/math-after-ai/
