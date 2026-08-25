@@ -2254,3 +2254,4 @@
 1787627566 https://boristane.com/blog/on-call-is-now-theatre/
 1787627625 https://surfingcomplexity.blog/2026/08/22/wild-ai-related-reliability-incidents-are-coming/
 1787627876 https://seangoedecke.com/you-should-never-be-angry-at-work/
+1787628024 https://getbb.app/
