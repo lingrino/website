@@ -2258,3 +2258,4 @@
 1787713294 https://danluu.com/benchpocalypse/
 1787764280 https://shotbase.com/
 1787768143 https://yaoyue.org/talks/craft/1
+1787781639 https://danluu.com/perf-opt/
