@@ -2261,3 +2261,4 @@
 1787781639 https://danluu.com/perf-opt/
 1787781678 https://nolanlawson.com/2026/08/16/you-can-just-choose-how-many-bugs-you-want-now/
 1787787889 https://openai.com/index/hugging-face-incident-and-the-road-ahead/
+1787805935 https://www.sailresearch.com/blog/performing-live-migrations-of-massive-vms-at-scale
