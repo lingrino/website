@@ -2264,3 +2264,4 @@
 1787805935 https://www.sailresearch.com/blog/performing-live-migrations-of-massive-vms-at-scale
 1787852606 https://www.pamir.ai/
 1787879622 https://htdym.sailresearch.com/
+1787941384 https://sourcehut.org/blog/2026-08-27-tos-changes-and-llms/
