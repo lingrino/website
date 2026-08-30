@@ -2267,3 +2267,4 @@
 1787941384 https://sourcehut.org/blog/2026-08-27-tos-changes-and-llms/
 1787970074 https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/
 1788110490 https://www.rhinegroup.eu/
+1788111510 https://www.dwarkesh.com/p/openai-huggingface
