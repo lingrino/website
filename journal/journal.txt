@@ -2268,3 +2268,4 @@
 1787970074 https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/
 1788110490 https://www.rhinegroup.eu/
 1788111510 https://www.dwarkesh.com/p/openai-huggingface
+1788291038 https://blog.lawrencejones.dev/demystifying-skills-and-mcps/
