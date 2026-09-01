@@ -2270,3 +2270,4 @@
 1788111510 https://www.dwarkesh.com/p/openai-huggingface
 1788291038 https://blog.lawrencejones.dev/demystifying-skills-and-mcps/
 1788291236 https://ersc.io/blog/martin-joins-ersc
+1788306032 https://www.anthropic.com/news/improving-alignment-security-efforts
