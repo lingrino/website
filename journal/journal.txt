@@ -2273,3 +2273,4 @@
 1788306032 https://www.anthropic.com/news/improving-alignment-security-efforts
 1788376720 https://go.dev/blog/goroutine-leak-profiles
 1788376948 https://seangoedecke.com/how-to-protect-yourself-from-workslop/
+1788463210 https://cursor.com/blog/git-at-any-scale
