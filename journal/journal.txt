@@ -2276,3 +2276,4 @@
 1788463210 https://cursor.com/blog/git-at-any-scale
 1788463451 https://openai.com/index/gpt-6-astra/
 1788544044 https://unsung.aresluna.org/unsung-at-500-behind-the-scenes/
+1788641572 https://confer.to/blog/2026/09/confidential-workers-for-private-ai/
