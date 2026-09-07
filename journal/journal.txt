@@ -2279,3 +2279,4 @@
 1788641572 https://confer.to/blog/2026/09/confidential-workers-for-private-ai/
 1788647630 https://bcantrill.dtrace.org/2026/09/05/the-revolt-of-the-reader/
 1788757939 https://www.datadoghq.com/blog/engineering/gitretriever/
+1788759644 https://openai.com/index/an-alien-mind/
