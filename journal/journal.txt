@@ -2282,3 +2282,4 @@
 1788759644 https://openai.com/index/an-alien-mind/
 1788760135 https://nodes-web.com/
 1788831977 https://sfcompute.com/
+1788893797 https://openai.com/index/navier-stokes-solution/
