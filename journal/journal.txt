@@ -2283,3 +2283,4 @@
 1788760135 https://nodes-web.com/
 1788831977 https://sfcompute.com/
 1788893797 https://openai.com/index/navier-stokes-solution/
+1788910314 https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data
